@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ncx version="2005-1" xml:lang="en" xmlns="http://www.daisy.org/z3986/2005/ncx/">
+<head>
+<meta name="dtb:uid" content="urn:uuid:C33307BB-6771-467C-A306-DD2EBFB0B5E4"/>
+<meta name="dtb:depth" content="1"/>
+<meta name="dtb:totalPageCount" content="0"/>
+<meta name="dtb:maxPageNumber" content="0"/>
+</head>
+<docTitle>
+<text>Life and Ministry Meeting Workbook, October 2016</text>
+</docTitle>
+<docAuthor>
+<text>WATCHTOWER</text>
+</docAuthor>
+<navMap>
+<navPoint class="chapter" id="chapter1" playOrder="1">
+<navLabel><text>Our Christian Life and Ministry—Meeting Workbook October 2016</text></navLabel>
+<content src="202016361.xhtml"/>
+</navPoint>
+<navPoint class="chapter" id="chapter2" playOrder="2">
+<navLabel><text>Sample Presentations</text></navLabel>
+<content src="202016362.xhtml"/>
+</navPoint>
+<navPoint class="chapter" id="chapter3" playOrder="3">
+<navLabel><text>October 3-9</text></navLabel>
+<content src="202016363.xhtml"/>
+</navPoint>
+<navPoint class="chapter" id="chapter4" playOrder="4">
+<navLabel><text>“Trust in Jehovah With All Your Heart”</text></navLabel>
+<content src="202016364.xhtml"/>
+</navPoint>
+<navPoint class="chapter" id="chapter5" playOrder="5">
+<navLabel><text>October 10-16</text></navLabel>
+<content src="202016365.xhtml"/>
+</navPoint>
+<navPoint class="chapter" id="chapter6" playOrder="6">
+<navLabel><text>“Do Not Let Your Heart Turn Aside”</text></navLabel>
+<content src="202016366.xhtml"/>
+</navPoint>
+<navPoint class="chapter" id="chapter7" playOrder="7">
+<navLabel><text>October 17-23</text></navLabel>
+<content src="202016367.xhtml"/>
+</navPoint>
+<navPoint class="chapter" id="chapter8" playOrder="8">
+<navLabel><text>Wisdom Is Better Than Gold</text></navLabel>
+<content src="202016368.xhtml"/>
+</navPoint>
+<navPoint class="chapter" id="chapter9" playOrder="9">
+<navLabel><text>How to Give Good Comments</text></navLabel>
+<content src="202016369.xhtml"/>
+</navPoint>
+<navPoint class="chapter" id="chapter10" playOrder="10">
+<navLabel><text>October 24-30</text></navLabel>
+<content src="202016370.xhtml"/>
+</navPoint>
+<navPoint class="chapter" id="chapter11" playOrder="11">
+<navLabel><text>Pursue Peace With Others</text></navLabel>
+<content src="202016371.xhtml"/>
+</navPoint>
+<navPoint class="chapter" id="chapter12" playOrder="12">
+<navLabel><text>October 31–November 6</text></navLabel>
+<content src="202016372.xhtml"/>
+</navPoint>
+<navPoint class="chapter" id="chapter13" playOrder="13">
+<navLabel><text>“Train a Boy in the Way He Should Go”</text></navLabel>
+<content src="202016373.xhtml"/>
+</navPoint>
+<navPoint class="chapter" id="chapter14" playOrder="14">
+<navLabel><text>Are You Making Good Use of JW.ORG Contact Cards?</text></navLabel>
+<content src="202016374.xhtml"/>
+</navPoint>
+<navPoint class="chapter" id="chapter15" playOrder="15">
+<navLabel><text>Page Navigation</text></navLabel>
+<content src="pagenav9.xhtml"/>
+</navPoint>
+</navMap>
+<pageList id="page-mapping" class="pagenavnum">
+<navLabel><text>Page Navigation</text></navLabel>
+<pageTarget id="page-1" value="1" type="normal" playOrder="16">
+<navLabel><text>1</text></navLabel>
+<content src="202016361.xhtml#page1"/>
+</pageTarget>
+<pageTarget id="page-2" value="2" type="normal" playOrder="17">
+<navLabel><text>2</text></navLabel>
+<content src="202016363.xhtml#page2"/>
+</pageTarget>
+<pageTarget id="page-3" value="3" type="normal" playOrder="18">
+<navLabel><text>3</text></navLabel>
+<content src="202016365.xhtml#page3"/>
+</pageTarget>
+<pageTarget id="page-4" value="4" type="normal" playOrder="19">
+<navLabel><text>4</text></navLabel>
+<content src="202016367.xhtml#page4"/>
+</pageTarget>
+<pageTarget id="page-5" value="5" type="normal" playOrder="20">
+<navLabel><text>5</text></navLabel>
+<content src="202016368.xhtml#page5"/>
+</pageTarget>
+<pageTarget id="page-6" value="6" type="normal" playOrder="21">
+<navLabel><text>6</text></navLabel>
+<content src="202016370.xhtml#page6"/>
+</pageTarget>
+<pageTarget id="page-7" value="7" type="normal" playOrder="22">
+<navLabel><text>7</text></navLabel>
+<content src="202016372.xhtml#page7"/>
+</pageTarget>
+<pageTarget id="page-8" value="8" type="normal" playOrder="23">
+<navLabel><text>8</text></navLabel>
+<content src="202016374.xhtml#page8"/>
+</pageTarget>
+</pageList>
+</ncx>

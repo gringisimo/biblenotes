@@ -1,0 +1,42 @@
+/* 1102014243.css  2-14 - ch 4  */
+@import "kr_13.css";
+
+.grpItems.imgWestQuarter p, ul.imgWestQuarter li p {margin-left:40%; }
+ol.numberedDiagram.imgWestQuarter li ul {margin-left:37%; }
+
+.noMarker {list-style-type: none;}
+.noIndent {margin:0em; text-indent:0em;}
+
+ 
+/* boxes */
+ 
+div.boxSupplement, div.blockTeach {
+  	padding-top: 1em;
+    margin-top: 0em;
+    margin-left: 0em;
+    margin-right: 0em;
+    margin-bottom: 1em;
+    border: 1px solid black;}
+
+div.blockTeach {  background-color: #dedada;  }
+div.boxSupplement.rule { border: 2px solid black; }
+
+li.borderDotted--top {  border-top:2px dotted silver; 
+						list-style-type: none; 
+						margin-right:1em; 
+						margin-left:0em;
+						margin-bottom:1em;
+						margin-top:1em;}
+
+
+div.grpItems.borderSolid--bottom {border-bottom:2px solid black;}
+
+
+.imgWestQuarter  {clear:both; margin-left:0em; margin-top:0em; margin-bottom:0em;}
+#p65 {padding-bottom: 2em;}
+#p70 {padding-top: 1em;}
+#p74 {clear:both; padding-top:3em; }
+
+li.timeCirca {clear:both;}
+ol.timeline h3{clear:both; margin-left:0em; margin-top:3em; margin-bottom:2em;}
+

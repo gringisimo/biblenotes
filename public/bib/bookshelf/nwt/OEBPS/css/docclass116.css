@@ -1,0 +1,129 @@
+/* docclass 116
+    NWT GLossary
+    9-30, 10-3, 10-7 
+repository keywords: glossary directory, inline headers*/
+  
+  
+body { 	margin-left: 5%; 
+		margin-right: 5%;
+		text-align: left;
+		-webkit-font-smoothing: subpixel-antialiased; }
+
+h1 { 	font-family: 'Helvetica Neue', "HelveticaNeue", Arial, Helvetica, sans-serif;
+		text-align:left;
+		color:#75000b;
+		font-weight:200;
+		font-size:1.5em;
+		-webkit-font-smoothing: subpixel-antialiased;}
+
+h2{		font: 1.2em/1.25em 'Helvetica Neue', "HelveticaNeue", Arial, Helvetica, sans-serif;
+		text-indent: 0em;
+		text-align:center;
+		color:#75000b;
+		font-weight:200;
+		margin: 1em 0 ;
+		-webkit-font-smoothing: subpixel-antialiased;
+		padding:0em;}
+		
+	h1 strong, h2 strong, h1.strong, h2.strong {font-weight:200;}
+	
+strong { 	
+		font-weight:200;
+		margin: 0em;
+		padding:0em;
+		-webkit-font-smoothing: subpixel-antialiased;}
+
+h3{    font: 0.95em/1.25em 'Helvetica Neue', "HelveticaNeue", Arial, Helvetica, sans-serif;
+	   margin: 1em 0em;
+		padding:0em;
+		font-weight:700;
+		text-indent:0em;
+		text-align:left;
+		display:inline;}
+		
+		h3 strong {font-weight:700;}
+
+.inline {text-indent:0em; margin-left:-16px;}
+
+/* Glossary */
+li		{padding-bottom:1.25em; margin:0 0 0 .3em;} /*space between definitions*/
+ul.dl 	{padding:1em 0em 0em 2.75em;}
+span.dt {list-style-type:none; text-indent:-2em; /*margin-left:-.3em;*/ margin-left:-.24em; font-weight:700;}/*plural terms on one line*/
+.de 	{list-style-type:none; margin-left:-1em;} 
+
+h3.dt {	 display:run-in;  /* spacing to emulate print with run-in display 9-20*/
+		 font-size: 0.95em;
+		 line-height:1.25em;
+		 padding-left:0em;
+		 font-weight:700;
+		 margin:-1em;} /*padding added 11-12*/
+
+.dd {     display:inline;  
+		  font-size:95%;
+		  line-height:1.25em;
+		  margin-left:12px;}
+
+
+	/* glossary directory*/
+	
+.docNav {   margin:0em; padding:0em; display: block; text-align:left;} 
+
+.docNav a{
+		border: 0px solid #3d3d3d;
+		display:inline-block;
+		font-size: 1.5em ;
+		font-weight:200;
+		height:1.75em;
+		padding:12px 2px 0px 0px;
+		text-align:center;
+		text-indent:-0.1em;
+		-webkit-font-smoothing: subpixel-antialiased;
+		-webkit-hyphens:none;
+		width:2.25em;
+		clear:both;
+		text-decoration:none;
+        -webkit-tap-highlight-color: silver;
+		color: #6195c7;
+		font-weight:200;
+		text-decoration:none;}
+
+
+/* navigation */
+p.w_navigation.w_biblebookname a:active, a:active,
+p.w_navigation.w_biblebookname a:link, a:link,
+p.w_navigation.w_biblebookname a:visited, a:visited
+    {
+        
+        font-weight: 200;
+        -webkit-text-fill-color: #6195c7;
+        color: #6195c7; }
+
+p.w_navigation.w_biblebookname a:hover, a:hover {
+	 -webkit-text-fill-color: gray;
+        color: gray; }
+		
+		
+	/* MOBI */
+
+e:link {
+	color: #6195c7;
+}
+ 
+e:visited {
+	color: #6195c7; 
+	text-decoration: none;
+}
+
+e:active {
+	color: #6195c7;
+} 
+
+e:hover {
+	color: #666; 
+	text-decoration: none;
+} 
+
+e:focus {
+	color: #3fa2bf; 
+	background-color: #c5b587;
+}

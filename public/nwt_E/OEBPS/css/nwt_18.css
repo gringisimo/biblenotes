@@ -1,0 +1,134 @@
+
+/* 		nwt_18.CSS */
+/*      TITLE PAGE/PUBLISHERS' PAGE*/
+/* 		revisions 9-24 quote change, 10-8 */
+
+@page {border: .5ex;}
+
+body {
+	margin: 5%;
+	text-align: left;
+	font-size: 95%;}
+
+
+h1{
+	text-align: left;
+	font-size: 1.8em;
+	font-weight:200;
+	font-family: 'Helvetica Neue', 'HelveticaNeue', Arial, Helvetica, sans-serif;
+	color:#75000b;
+	line-height: normal;
+	margin-bottom: 1em;
+	-webkit-font-smoothing: subpixel-antialiased;}
+
+h1 strong, h2 strong, h1.strong, h2.strong {font-weight:200;}
+
+strong { 	
+		font-weight:200;
+		font-family: 'Helvetica Neue', 'HelveticaNeue', Arial, Helvetica, sans-serif;
+		margin: 0em;
+		padding:0em;
+		-webkit-font-smoothing: subpixel-antialiased;}
+
+.contextTtl {
+	text-align: left;
+	font-size: 105%;
+	font-family: 'Helvetica Neue', 'HelveticaNeue', Arial, Helvetica, sans-serif;
+	color: #75000b;
+	font-weight:200;
+	line-height: normal;
+	margin: 0em 0em -.5em 0em;
+	text-transform: none;}
+
+p.contextTtl + h1 {
+margin-top: 0.25em; }
+
+
+
+
+/* verse quote */
+q.scrp { font: 115% "Palatino Linotype", "Georgia", "Times New Roman", serif;
+ 		 margin:2em 0em 1em 0em;
+		 font-weight:200;
+		-webkit-font-smoothing: subpixel-antialiased;
+		clear:both;
+ 		 }
+
+q 						{ quotes: none; } /*remove double quotes 9-26*/
+q:before, q:after		{ content: ""; content: none;}
+
+
+div.groupPubInfo    {margin-top: 2em;}
+
+	
+div.groupPubInfo,
+div.copyrightInfo {
+    margin: 1em 0;
+    padding: 0.5em 0;
+}
+
+.groupPubInfo p.si,
+.copyrightInfo p.si {
+font-size:80%;
+margin: 0;
+padding-left: 1em;
+
+}
+
+.si {
+    font-size: 90%;
+margin: 0.5em 0;
+}
+
+.si + .si {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.sb + .sb { font-size:95%;
+			margin-top:-.5em;
+			margin-bottom:2em;}
+
+
+.ruleAbove				{	border-top: 1px solid silver;
+							margin-top:.5em;
+padding-top:1em;
+							padding-bottom:.5em;
+								clear:both;}
+								
+/*web browsers + other */
+
+a:active, a:link, a:visited   {
+-webkit-text-fill-color: #6195c7;
+color:#6195c7; 
+font-size:95%;}  
+
+a:hover   {color:gray;  
+			text-decoration: none; 
+			font-size:95%;} 
+
+
+/* MOBI */
+
+e:link {
+	color: #6195c7;
+}
+ 
+e:visited {
+	color: #6195c7; 
+	text-decoration: none;
+}
+
+e:active {
+	color: #6195c7;
+} 
+
+e:hover {
+	color: #666; 
+	text-decoration: none;
+} 
+
+e:focus {
+	color: #3fa2bf; 
+	background-color: #c5b587;
+}

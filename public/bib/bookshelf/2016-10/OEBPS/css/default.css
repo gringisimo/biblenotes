@@ -1,0 +1,3750 @@
+/*------------------------------------------------------------------------------
+    MEPS styles - default element styles for MEPS docs
+------------------------------------------------------------------------------*/
+/**************************************************
+// Watchtower Font Stacks
+**************************************************/
+/*#00d0ff; */
+/*#787372;*/
+/*#65605E; */
+/*#B2AbA9;*/
+/* link on gray: #2878bb; */
+/* link on white: #2878bb; */
+/* old link color: #4477a1; */
+html, body, div, span, applet, object, iframe, h1, .st, h2, .ss, h3, h4, h5, h6, p, .sb, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dt, dd, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  text-indent: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/*======================================================================================================================
+CSS2 & SASS Hybrid
+------------------------------------------------------------------------------------------------------------------------
+This file provides CSS2 entries to supplement the SASS-generated styles.
+
+
+Revisions
+------------------------------------------------------------------------------------------------------------------------
+2015.10.01 Update for BHS concerns,WP 1.2016 issue
+2015.12.01 ol.imgWestQuarter, box content corrected
+
+======================================================================================================================*/
+p, .sb,
+.boxContent p,
+.diagram p,
+.mapElement p,
+.boxContent .sb,
+.diagram .sb,
+.mapElement .sb {
+  text-indent: 0em;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  orphans: 2;
+  widows: 2;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+
+body {
+  font-family: myFont, Arial, Helvetica, sans-serif;
+  font-size: 100%;
+  -webkit-font-smoothing: subpixel-antialiased;
+  margin: 5%;
+}
+
+@page {
+  border: 1em;
+}
+img {
+  width: 100% !important;
+  clear: both;
+  margin-top: 0em;
+  margin-right: 0em;
+  margin-bottom: 0em;
+  margin-left: 0em;
+}
+
+div.north_center {
+  width: 100% !important;
+  clear: both;
+  margin-top: 0em;
+  margin-right: 0em;
+  margin-bottom: 1em;
+  margin-left: 0em;
+}
+
+div.south_center {
+  width: 100% !important;
+  clear: both;
+  margin-top: 0em;
+  margin-right: 0em;
+  margin-bottom: 1em;
+  margin-left: 0em;
+}
+
+div.east_right {
+  width: 40% !important;
+  clear: both;
+  float: right;
+  margin-top: 0em;
+  margin-right: 0em;
+  margin-bottom: 1em;
+  margin-left: 1em;
+  display: inline-block;
+}
+
+div.east_right.half {
+  width: 47% !important;
+  clear: both;
+  float: right;
+  margin-top: 0em;
+  margin-right: 0em;
+  margin-bottom: 1em;
+  margin-left: 1em;
+  display: inline-block;
+}
+
+div.east_left {
+  width: 25% !important;
+  clear: both;
+  float: right;
+  margin-top: 0em;
+  margin-right: 0em;
+  margin-bottom: 1em;
+  margin-left: 1em;
+  display: inline-block;
+}
+
+div.west_left {
+  width: 25% !important;
+  clear: both;
+  float: left;
+  margin-top: 0em;
+  margin-right: 1em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  display: inline-block;
+}
+
+div.west_left.quarter {
+  width: 22%;
+  clear: both;
+  float: left;
+  margin-top: 0;
+  margin-right: 1em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  display: inline-block;
+}
+html[dir="ltr"] div.west_left.quarter {
+  padding-right: 0;
+}
+html[dir="rtl"] div.west_left.quarter {
+  padding-left: 0;
+}
+
+div.east_right.quarter,
+div.west_right.quarter {
+  clear: both;
+  width: 22%;
+  float: right;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 1em;
+  margin-left: 0;
+  display: inline-block;
+}
+
+div.table {
+  display: table;
+  margin: 0;
+  padding: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.gridlines table,
+.gridlines tr,
+.gridlines th,
+.gridlines td {
+  border: 1px solid #f9f8f4;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+.wide {
+  max-width: 95%;
+  border-collapse: collapse;
+}
+
+thead {
+  border: 1px solid transparent;
+  border-collapse: collapse;
+  vertical-align: bottom;
+  background-color: #e5e5e5;
+  text-align: left;
+  font-weight: 400;
+  padding: 0;
+  margin: 0;
+}
+
+th, th .se, th .sw, tr th.shaded {
+  vertical-align: bottom;
+  margin: 0;
+  padding: 0;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+td, td .se, td .sw, td.shaded {
+  overflow: auto;
+  margin: 1px;
+  padding: 1px 3px 0 3px;
+  text-indent: 0;
+  text-align: left;
+}
+
+td.shaded {
+  background-color: #f9f8f4;
+}
+
+.stripe tr:nth-child(even) {
+  background-color: #f9f8f4;
+}
+
+p.featureTtl, .featureTtl.sb,
+.featureTtl,
+p.contextTtl,
+.contextTtl.sb,
+.contextTtl {
+  color: #64605d;
+  -webkit-text-fill-color: #64605d;
+  margin-bottom: 0.5em;
+}
+
+.featureTtl strong,
+p.featureTtl strong,
+.featureTtl.sb strong,
+p.contextTtl strong,
+.contextTtl.sb strong,
+.contextTtl strong {
+  font-weight: normal;
+  color: #64605d;
+  -webkit-text-fill-color: #64605d;
+}
+
+.featureTtl a strong,
+p.featureTtl a strong,
+.featureTtl.sb a strong,
+p.contextTtl a strong,
+.contextTtl.sb a strong,
+.contextTtl a strong {
+  color: #2878bb;
+  -webkit-text-fill-color: #2878bb;
+}
+
+ul.noMarker,
+.boxContent ul.noMarker,
+.diagram ul.noMarker,
+.mapElement ul.noMarker {
+  list-style-type: none;
+}
+
+ul.noMarker blockquote {
+  list-style-type: none;
+  margin-bottom: 0;
+  padding-top: 0;
+  padding-right: .5em;
+  padding-bottom: 0;
+  padding-left: .5em;
+}
+
+ul.imgWestQuarter {
+  list-style-type: none;
+  padding-top: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+}
+
+ul.imgWestQuarter li p, ul.imgWestQuarter li .sb,
+ol.imgWestQuarter li p,
+ol.imgWestQuarter li .sb {
+  margin-top: 0;
+  margin-right: 0;
+  margin-left: 40%;
+  margin-bottom: 0;
+}
+
+ul.imgWestQuarter {
+  list-style-type: none;
+  margin-top: 0;
+  margin-right: 0;
+  margin-left: 0;
+  margin-bottom: 0;
+  padding-top: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+}
+
+ul.imgWestQuarter li h3 {
+  padding-left: 0;
+  margin-top: 2.5em;
+  margin-right: 0;
+  margin-left: 0;
+  margin-bottom: 1em;
+}
+
+ol.source {
+  margin-top: 0;
+  margin-right: 0;
+  margin-left: 1.5em;
+  margin-bottom: 0;
+  padding-top: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+}
+
+li {
+  padding-top: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+}
+
+h2 strong, .ss strong,
+h3 strong,
+h3.inline strong {
+  color: #424242;
+  font-weight: 500;
+}
+
+h3.inline {
+  text-align: left;
+  line-height: normal;
+  font-size: 1.20em;
+  padding-top: .50em;
+  padding-right: 0;
+  padding-bottom: .40em;
+  padding-left: 0;
+}
+
+h3.inline strong {
+  padding-right: .25em;
+  padding-left: 0;
+}
+
+.boxContent li p.noTopMargin, .diagram li p.noTopMargin, .mapElement li p.noTopMargin, .boxContent li .noTopMargin.sb, .diagram li .noTopMargin.sb, .mapElement li .noTopMargin.sb {
+  color: inherit;
+  -webkit-text-fill-color: inherit;
+}
+
+.boxContent ul li p, .diagram ul li p, .mapElement ul li p, .boxContent ul li .sb, .diagram ul li .sb, .mapElement ul li .sb {
+  color: inherit;
+  -webkit-text-fill-color: inherit;
+  padding-top: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+}
+
+div.boxSupplement {
+  color: #424242;
+  clear: both;
+  margin-right: 0;
+  margin-left: 0;
+  page-break-inside: avoid;
+  background-color: #e7e7e5;
+  overflow: hidden;
+  -webkit-column-break-inside: avoid;
+}
+
+div.blockTeach.rule .boxTtl.rule {
+  background-color: #fff;
+}
+
+div.boxSupplement,
+div.boxTeach {
+  clear: both;
+  border: 1px solid #e7e7e5;
+  background-color: #e7e7e5;
+  page-break-inside: avoid;
+  overflow: hidden;
+  -webkit-column-break-inside: avoid;
+}
+
+div.blockTeach,
+div.blockTeach.rule {
+  clear: both;
+  border: 1px solid #e7e7e5;
+  background-color: white;
+  page-break-inside: avoid;
+  overflow: hidden;
+  -webkit-column-break-inside: avoid;
+}
+
+div.blockTeach.rule div.boxContent, div.blockTeach.rule div.diagram, div.blockTeach.rule div.mapElement,
+div.boxSupplement.rule div.boxContent,
+div.boxSupplement.rule div.diagram,
+div.boxSupplement.rule div.mapElement {
+  background-color: white;
+}
+
+div.boxSupplement.rule,
+div.boxTeach.rule {
+  clear: both;
+  border: 1px solid #e7e7e5;
+  background-color: #9E9C9B;
+  page-break-inside: avoid;
+  overflow: hidden;
+  -webkit-column-break-inside: avoid;
+}
+
+div.boxSupplement .boxContent ul li, div.boxSupplement .diagram ul li, div.boxSupplement .mapElement ul li,
+div.blockTeach .rule div.boxContent ul li,
+div.blockTeach .rule div.diagram ul li,
+div.blockTeach .rule div.mapElement ul li {
+  color: inherit;
+  -webkit-text-fill-color: inherit;
+}
+
+div.blockTeach.rule div.boxContent ul li, div.blockTeach.rule div.diagram ul li, div.blockTeach.rule div.mapElement ul li {
+  color: inherit;
+  -webkit-text-fill-color: inherit;
+}
+
+div.blockTeach.rule .boxTtl.rule {
+  border-bottom: 1px solid #9E9C9B;
+  text-align: left;
+  padding-top: .60em;
+  padding-right: 1em;
+  padding-bottom: .50em;
+  padding-left: 1em;
+  background-color: white;
+}
+
+div.blockTeach.rule .boxTtl.rule strong {
+  color: #64605d;
+  -webkit-text-fill-color: #64605d;
+}
+
+div.boxTtl.emphasized {
+  padding-top: .60em;
+  padding-right: 1em;
+  padding-bottom: .50em;
+  padding-left: 1em;
+}
+
+div.north_left p, div.north_left .sb,
+div.north_center p,
+div.north_center .sb,
+div.north_right p,
+div.north_right .sb,
+div.south_left p,
+div.south_left .sb,
+div.south_center p,
+div.south_center .sb,
+div.south_center p:last-child,
+div.south_center .sb:last-child,
+div.south_right p,
+div.south_right .sb,
+div.west_left p,
+div.west_left .sb,
+div.west_center p,
+div.west_center .sb,
+div.west_right p,
+div.west_right .sb,
+div.east_left p,
+div.east_left .sb,
+div.east_center p,
+div.east_center .sb,
+div.east_right p,
+div.east_right .sb,
+div.south_center p,
+div.south_center .sb {
+  text-indent: 0;
+  padding-bottom: .90em;
+  font-size: 0.9em !important;
+  margin-top: .5em;
+  margin-right: 0;
+  margin-bottom: 1.5em;
+  margin-left: 0;
+  color: #65605E;
+  -webkit-text-fill-color: #65605E;
+}
+
+div.south_center figcaption {
+  margin-bottom: 1.5em;
+}
+
+h2.shadedHeader.treasures strong, .shadedHeader.treasures.ss strong,
+h2.shadedHeader.ministry strong,
+.shadedHeader.ministry.ss strong,
+h2.shadedHeader.christianLiving strong,
+.shadedHeader.christianLiving.ss strong {
+  color: white;
+  -webkit-text-fill-color: white;
+}
+
+.clearfix {
+  zoom: default;
+}
+
+div.boxContent blockquote, div.diagram blockquote, div.mapElement blockquote {
+  margin-top: 1em;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 27%;
+  clear: none;
+  text-indent: 0;
+  background-color: transparent;
+  padding-top: 0;
+  padding-right: 1.5em;
+  padding-bottom: 0;
+  padding-left: 0.5em;
+  font-size: 1em;
+}
+
+div.boxSupplement div.boxTtl {
+  border-left: 5px solid #9E9C9B;
+}
+html[dir="ltr"] div.boxSupplement div.boxTtl {
+  border-left: 5px solid #9E9C9B;
+}
+html[dir="rtl"] div.boxSupplement div.boxTtl {
+  border-right: 5px solid #9E9C9B;
+}
+html[dir="ltr"] div.boxSupplement div.boxTtl {
+  border-right: none;
+}
+html[dir="rtl"] div.boxSupplement div.boxTtl {
+  border-left: none;
+}
+
+th {
+  text-align: left;
+}
+html[dir="ltr"] th {
+  text-align: left;
+}
+html[dir="rtl"] th {
+  text-align: right;
+}
+
+.floatEast {
+  float: right;
+  text-align: right;
+}
+
+.blockTxt,
+.stdPullQuote,
+.pGroup > div.stdCaption, .pGroup > div.stdCaption {
+  border-right: 0.25em solid #d7d7d7;
+  border-left: 0.25em solid #d7d7d7;
+  padding-right: 4%;
+  padding-left: 4%;
+}
+
+.blockTxt.floatEast,
+.stdPullQuote.floatEast,
+.pGroup > div.floatEast.stdCaption,
+.pGroup > div.floatEast.stdCaption {
+  margin-left: 4%;
+  max-width: 47%;
+}
+
+.blockTxt.floatWest,
+.stdPullQuote.floatWest,
+.pGroup > div.floatWest.stdCaption,
+.pGroup > div.floatWest.stdCaption {
+  margin-right: 4%;
+  max-width: 47%;
+}
+
+.blockTxt p, .blockTxt .sb, .blockTxt .sb,
+.stdPullQuote p,
+.pGroup > div.stdCaption p,
+.stdPullQuote .sb,
+.pGroup > div.stdCaption .sb,
+.pGroup > div.stdCaption p,
+.pGroup > div.stdCaption .sb,
+.stdPullQuote .sb,
+.pGroup > div.stdCaption .sb,
+.pGroup > div.stdCaption .sb {
+  margin: 0;
+}
+
+.blockTxt p, .blockTxt .sb, .blockTxt .sb,
+.stdPullQuote p,
+.pGroup > div.stdCaption p,
+.stdPullQuote .sb,
+.pGroup > div.stdCaption .sb, .pGroup > div.stdCaption p, .pGroup > div.stdCaption .sb,
+.stdPullQuote .sb,
+.pGroup > div.stdCaption .sb, .pGroup > div.stdCaption .sb {
+  text-align: center;
+}
+
+blockquote.rule {
+  padding-top: 0;
+  padding-bottom: 0;
+  font-size: 1.2em;
+  font-weight: normal;
+  color: #65605E;
+  border-right: 0.25em solid #d7d7d7;
+  border-left: 0.25em solid #d7d7d7;
+  padding-right: 4%;
+  padding-left: 4%;
+  text-align: center;
+}
+blockquote.rule .sb,
+blockquote.rule p,
+blockquote.rule .sb {
+  text-align: center;
+}
+
+html[dir="ltr"] .blockTxt, html[dir="ltr"]
+.stdPullQuote, html[dir="ltr"] .pGroup > div.stdCaption, html[dir="ltr"] .pGroup > div.stdCaption {
+  border-left: none;
+}
+html[dir="rtl"] .blockTxt, html[dir="rtl"]
+.stdPullQuote, html[dir="rtl"] .pGroup > div.stdCaption, html[dir="rtl"] .pGroup > div.stdCaption {
+  border-right: none;
+}
+html[dir="ltr"] .blockTxt, html[dir="ltr"]
+.stdPullQuote, html[dir="ltr"] .pGroup > div.stdCaption, html[dir="ltr"] .pGroup > div.stdCaption {
+  padding-left: 0;
+}
+html[dir="rtl"] .blockTxt, html[dir="rtl"]
+.stdPullQuote, html[dir="rtl"] .pGroup > div.stdCaption, html[dir="rtl"] .pGroup > div.stdCaption {
+  padding-right: 0;
+}
+
+html[dir="ltr"] blockquote.rule {
+  border-left: none;
+}
+html[dir="rtl"] blockquote.rule {
+  border-right: none;
+}
+html[dir="ltr"] blockquote.rule {
+  padding-left: 0;
+}
+html[dir="rtl"] blockquote.rule {
+  padding-right: 0;
+}
+
+html[dir="ltr"] .stdPullQuote p, html[dir="ltr"] .pGroup > div.stdCaption p, html[dir="ltr"] .stdPullQuote .sb, html[dir="ltr"] .pGroup > div.stdCaption .sb, html[dir="ltr"] .pGroup > div.stdCaption p, html[dir="ltr"] .pGroup > div.stdCaption .sb, html[dir="ltr"]
+.stdPullQuote .sb, html[dir="ltr"] .pGroup > div.stdCaption .sb, html[dir="ltr"] .pGroup > div.stdCaption .sb {
+  text-align: right;
+}
+html[dir="rtl"] .stdPullQuote p, html[dir="rtl"] .pGroup > div.stdCaption p, html[dir="rtl"] .stdPullQuote .sb, html[dir="rtl"] .pGroup > div.stdCaption .sb, html[dir="rtl"] .pGroup > div.stdCaption p, html[dir="rtl"] .pGroup > div.stdCaption .sb, html[dir="rtl"]
+.stdPullQuote .sb, html[dir="rtl"] .pGroup > div.stdCaption .sb, html[dir="rtl"] .pGroup > div.stdCaption .sb {
+  text-align: left;
+}
+
+body {
+  font-weight: normal;
+}
+
+b, strong {
+  font-weight: bold;
+}
+
+h1, .st, h2, .ss, h3, h4, h5, h6 {
+  color: #64605d;
+}
+
+h1, .st {
+  margin-bottom: 0.5em;
+  font-size: 2em;
+  font-weight: lighter;
+  line-height: inherit;
+}
+h1 strong, .st strong {
+  font-weight: lighter;
+}
+
+h2, .ss {
+  margin-bottom: 0.5em;
+  font-size: 1.5em;
+  font-weight: lighter;
+  line-height: 1.3em;
+}
+h2 strong, .ss strong {
+  font-weight: lighter;
+}
+
+h3 {
+  margin-bottom: 0.5em;
+  font-size: 1.3em;
+  font-weight: lighter;
+  line-height: 1.3em;
+}
+h3 strong {
+  font-weight: lighter;
+}
+
+h4 {
+  font-size: 1.1em;
+  font-weight: lighter;
+}
+
+h2, .ss, h3, h4, h5 {
+  margin-top: 0.75em;
+  margin-bottom: 0.25em;
+}
+
+h1 p, .st p, h1 .sb, .st .sb, h2 p, .ss p, h2 .sb, .ss .sb, h3 p, h3 .sb, h4 p, h4 .sb, h5 p, h5 .sb {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+h1 + h1, .st + h1, h1 + .st, .st + .st,
+h1 + h2,
+.st + h2,
+h1 + .ss,
+.st + .ss,
+h2 + h3,
+.ss + h3,
+h3 + h4,
+h4 + h5 {
+  margin-top: -0.25em;
+}
+
+h2 + p, .ss + p, h2 + .sb, .ss + .sb {
+  margin-top: 0.5em;
+}
+
+header {
+  margin-bottom: 1em;
+}
+
+p, .sb {
+  line-height: 1.5em;
+  margin-top: 0.75em;
+  margin-bottom: 0.75em;
+}
+p:first-child, .sb:first-child {
+  margin-top: 0;
+}
+
+html[dir="ltr"] ul.docNav, html[dir="ltr"] ul.directory {
+  padding-left: 0;
+}
+html[dir="rtl"] ul.docNav, html[dir="rtl"] ul.directory {
+  padding-right: 0;
+}
+ul .outline li p, ul .outline li .sb {
+  display: inline-block;
+}
+html[dir="ltr"] ul .outline li p, html[dir="ltr"] ul .outline li .sb {
+  padding-left: 1em;
+}
+html[dir="rtl"] ul .outline li p, html[dir="rtl"] ul .outline li .sb {
+  padding-right: 1em;
+}
+
+aside {
+  border: none;
+}
+
+blockquote {
+  overflow: auto;
+  margin: 1em 2em;
+  padding: .15em 0;
+}
+blockquote p, blockquote .sb {
+  text-indent: 0 !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+blockquote > div.quarter + p, blockquote > div.quarter + .sb, blockquote > div.half + p, blockquote > div.half + .sb {
+  overflow: auto;
+  padding-right: .15em;
+  padding-left: .15em;
+  padding-bottom: .15em;
+  margin-top: 0;
+}
+blockquote::before, blockquote::after {
+  content: '';
+  content: none;
+}
+
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+img {
+  height: auto;
+  width: 100%;
+}
+img.thumb, img#invisibleImage {
+  max-width: none;
+  min-width: 0;
+  width: auto;
+}
+
+figure {
+  display: block;
+  background: transparent;
+}
+
+figcaption {
+  color: #65605E;
+  font-weight: normal;
+  max-width: none;
+  border-top: none;
+  border-bottom: none;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+figcaption p, figcaption .sb {
+  margin-bottom: 0;
+}
+figcaption p + p, figcaption .sb + p, figcaption p + .sb, figcaption .sb + .sb {
+  margin-top: 0.5em;
+}
+figcaption figcaption > p, figcaption figcaption > .sb {
+  font-size: 0.9em;
+  margin-top: 0.5em;
+  padding: 0 1em;
+}
+html[dir="ltr"] figcaption figcaption > p, html[dir="ltr"] figcaption figcaption > .sb {
+  text-align: left;
+}
+html[dir="rtl"] figcaption figcaption > p, html[dir="rtl"] figcaption figcaption > .sb {
+  text-align: right;
+}
+figcaption figcaption > p p, figcaption figcaption > .sb p, figcaption figcaption > p .sb, figcaption figcaption > .sb .sb {
+  margin-top: 0;
+}
+
+sup {
+  line-height: 1.7em;
+  font-size: 0.7em;
+  vertical-align: top;
+}
+html[dir="ltr"] sup {
+  padding-right: 0.25em;
+}
+html[dir="rtl"] sup {
+  padding-left: 0.25em;
+}
+
+sup,
+sup strong {
+  font-weight: normal;
+}
+
+ins {
+  color: #113ff8 !important;
+}
+
+del {
+  color: #867f7e !important;
+}
+
+caption {
+  text-align: left;
+  color: #65605E;
+  font-size: 1.25em;
+  font-weight: lighter;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+  line-height: 1.15;
+}
+
+/*------------------------------------------------------------------------------
+    MEPS named styles
+------------------------------------------------------------------------------*/
+.groupPubInfo,
+.copyrightInfo {
+  margin: 1em 0;
+  padding: 0.5em 0;
+}
+.groupPubInfo p.si, .groupPubInfo .si.sb,
+.copyrightInfo p.si,
+.copyrightInfo .si.sb {
+  margin: 0;
+}
+.groupPubInfo p.st, .groupPubInfo .st.sb,
+.groupPubInfo h1,
+.groupPubInfo .st,
+.copyrightInfo p.st,
+.copyrightInfo .st.sb,
+.copyrightInfo h1,
+.copyrightInfo .st {
+  font-size: 1em;
+  font-weight: normal;
+}
+
+.centered {
+  text-align: center;
+}
+
+.indent {
+  margin-left: 2em;
+  margin-right: 2em;
+}
+
+.noIndent {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+p.noTopMargin, .noTopMargin.sb {
+  margin-top: -0.5em;
+}
+
+h1 + p.noTopMargin, .st + p.noTopMargin, h1 + .noTopMargin.sb, .st + .noTopMargin.sb,
+h2 + p.noTopMargin,
+.ss + p.noTopMargin,
+h2 + .noTopMargin.sb,
+.ss + .noTopMargin.sb,
+h3 + p.noTopMargin,
+h3 + .noTopMargin.sb {
+  margin-top: 0em;
+}
+
+.pGroup > p.noTopMargin, .pGroup > .noTopMargin.sb {
+  margin-top: 0;
+}
+
+.copyrightInfo {
+  overflow: auto;
+}
+html[dir="ltr"] .copyrightInfo {
+  text-align: left;
+}
+html[dir="rtl"] .copyrightInfo {
+  text-align: right;
+}
+
+.displayNone {
+  display: none !important;
+}
+
+.featureTtl,
+.contextTtl {
+  color: #64605d;
+  margin-bottom: 0.5em;
+}
+.featureTtl strong,
+.contextTtl strong {
+  font-weight: lighter;
+}
+.featureTtl + h1, .featureTtl + .st, .featureTtl + h2, .featureTtl + .ss,
+.contextTtl + h1,
+.contextTtl + .st,
+.contextTtl + h2,
+.contextTtl + .ss {
+  margin-top: -0.25em;
+}
+
+.w_question,
+.qu {
+  color: #535353;
+  font-size: 0.8em;
+  margin-top: 0.75em;
+  margin-bottom: 0.5em;
+}
+.w_question strong,
+.qu strong {
+  font-weight: normal;
+}
+
+.ruleAbove {
+  border-top: 1px solid #dddddd;
+  margin-top: 1em;
+  padding-top: 1em;
+  overflow: hidden;
+}
+
+.bottomRule {
+  border-bottom: 1px solid #dddddd;
+}
+
+.headingRuleBottom, h2.headingRuleBottom, .headingRuleBottom.ss {
+  border-bottom: 2px solid #64605d;
+}
+
+p.fcc, p.groupEndnote, .groupEndnote.sb,
+p.groupFootnote,
+.groupFootnote.sb,
+div.sb.groupExtScrpCite, .fcc.sb {
+  color: #64605d;
+  font-size: 0.875em;
+}
+
+.groupEndnote,
+.groupFootnote,
+div.groupExtScrpCite {
+  border-top: 1px solid #cccccc;
+  margin-top: 1em;
+  padding-top: 1em;
+  color: #64605d;
+  clear: both;
+}
+
+.grpItems {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.borderSolid--bottom:not(:last-of-type) {
+  border-bottom: 1px solid #cccccc;
+}
+
+h3.inline {
+  display: run-in;
+}
+h3.inline strong {
+  font-weight: bold;
+}
+
+.openingContent {
+  font-size: 1.3em;
+  color: #65605E;
+  margin-bottom: 2em;
+}
+.openingContent.bottomRule {
+  padding-bottom: 0.5em;
+  margin-bottom: 0.5em;
+}
+.openingContent.txtSizeDefault {
+  font-size: inherit;
+}
+.openingContent p, .openingContent .sb {
+  margin: 0.75em 0;
+  text-indent: 0 !important;
+}
+.openingContent p:first-child, .openingContent .sb:first-child {
+  margin-top: 0;
+}
+.openingContent blockquote {
+  margin-bottom: 1em;
+  clear: none;
+  margin-left: 0;
+  margin-right: 0;
+}
+.openingContent p:last-child, .openingContent .sb:last-child {
+  margin-bottom: 0;
+}
+.openingContent ul {
+  list-style-type: disc;
+}
+html[dir="ltr"] .openingContent ul {
+  padding-left: 25px;
+}
+html[dir="rtl"] .openingContent ul {
+  padding-right: 25px;
+}
+.openingContent ul li p, .openingContent ul li .sb {
+  text-indent: 0;
+  margin-bottom: 0.5em;
+}
+
+.metaIntro h2, .metaIntro .ss {
+  font-size: 0.75em;
+}
+.metaIntro p, .metaIntro .sb {
+  margin: 0 0 .5em 0;
+  font-size: 90%;
+}
+
+.quarter + blockquote,
+.boxContent > blockquote,
+.diagram > blockquote,
+.mapElement > blockquote,
+li blockquote,
+blockquote.noIndent {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.groupTOC a {
+  font-weight: bold;
+}
+.groupTOC .boxContent, .groupTOC .diagram, .groupTOC .mapElement {
+  padding: 0 1em;
+}
+
+.groupTOC + .closingContent {
+  padding: 0;
+}
+.groupTOC + .closingContent h5 {
+  padding-top: 0;
+  margin-top: -0.75em;
+  margin-bottom: 1em;
+  font-size: 1.3em;
+}
+.groupTOC + .closingContent h5 + p, .groupTOC + .closingContent h5 + .sb {
+  margin-top: 0;
+}
+
+h2.rule, .rule.ss {
+  margin-top: 1em;
+}
+
+.figcaption {
+  color: #65605E;
+  font-weight: 300;
+  max-width: none;
+  border-top: 0;
+  border-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.figcaption p, .figcaption .sb {
+  font-size: .9em;
+  margin-top: .5em;
+  padding: 0 1em;
+}
+html[dir="ltr"] .figcaption p, html[dir="ltr"] .figcaption .sb {
+  text-align: left;
+}
+html[dir="rtl"] .figcaption p, html[dir="rtl"] .figcaption .sb {
+  text-align: right;
+}
+
+.groupStudySched .rule {
+  margin-top: 0.5em;
+  padding-top: 0.5em;
+  border-top: 1px solid #9E9C9B;
+}
+.groupStudySched p, .groupStudySched .sb {
+  margin-bottom: 0.5em;
+}
+.groupStudySched h3, .groupStudySched h3 strong {
+  font-weight: lighter;
+}
+
+h1 + .pGroup h2, .st + .pGroup h2, h1 + .pGroup .ss, .st + .pGroup .ss, h1 + .pGroup h3, .st + .pGroup h3 {
+  margin-top: 0.5em;
+}
+
+.relatedContent {
+  font-size: 0.875em;
+  border-top: 1px solid #cccccc;
+  margin-top: 1em;
+  padding-top: 1em;
+  color: #64605d;
+}
+.relatedContent p:first-child, .relatedContent .sb:first-child {
+  margin-top: 0;
+}
+
+.altsize {
+  font-size: 0.85em;
+}
+
+.small {
+  font-size: 0.85em;
+}
+
+.blockTxt,
+.stdPullQuote,
+.pGroup > div.stdCaption,
+.stdCaption {
+  color: #65605E;
+  font-weight: normal;
+}
+.blockTxt .boxContent, .blockTxt .diagram, .blockTxt .mapElement,
+.stdPullQuote .boxContent,
+.pGroup > div.stdCaption .boxContent,
+.stdPullQuote .diagram,
+.pGroup > div.stdCaption .diagram,
+.stdPullQuote .mapElement,
+.pGroup > div.stdCaption .mapElement,
+.stdCaption .boxContent,
+.stdCaption .diagram,
+.stdCaption .mapElement {
+  background-color: inherit;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+.stdCaption {
+  font-size: 0.9em;
+  margin-top: 0.5em;
+  padding: 0 1em;
+}
+html[dir="ltr"] .stdCaption {
+  text-align: left;
+}
+html[dir="rtl"] .stdCaption {
+  text-align: right;
+}
+.stdCaption p, .stdCaption .sb {
+  margin-top: 0;
+}
+
+.blockTxt,
+.stdPullQuote,
+.pGroup > div.stdCaption {
+  padding-top: 0;
+  padding-bottom: 0;
+  font-size: 1.2em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+html[dir="ltr"] .blockTxt, html[dir="ltr"]
+.stdPullQuote, html[dir="ltr"] .pGroup > div.stdCaption {
+  border-right: 0.25em solid #d7d7d7;
+}
+html[dir="rtl"] .blockTxt, html[dir="rtl"]
+.stdPullQuote, html[dir="rtl"] .pGroup > div.stdCaption {
+  border-left: 0.25em solid #d7d7d7;
+}
+html[dir="ltr"] .blockTxt, html[dir="ltr"]
+.stdPullQuote, html[dir="ltr"] .pGroup > div.stdCaption {
+  padding-right: 4%;
+}
+html[dir="rtl"] .blockTxt, html[dir="rtl"]
+.stdPullQuote, html[dir="rtl"] .pGroup > div.stdCaption {
+  padding-left: 4%;
+}
+html[dir="ltr"] .blockTxt p, html[dir="ltr"] .blockTxt .sb, html[dir="ltr"]
+.stdPullQuote p, html[dir="ltr"] .pGroup > div.stdCaption p, html[dir="ltr"]
+.stdPullQuote .sb, html[dir="ltr"] .pGroup > div.stdCaption .sb {
+  text-align: right;
+}
+html[dir="rtl"] .blockTxt p, html[dir="rtl"] .blockTxt .sb, html[dir="rtl"]
+.stdPullQuote p, html[dir="rtl"] .pGroup > div.stdCaption p, html[dir="rtl"]
+.stdPullQuote .sb, html[dir="rtl"] .pGroup > div.stdCaption .sb {
+  text-align: left;
+}
+html[dir="ltr"] .blockTxt, html[dir="ltr"]
+.stdPullQuote, html[dir="ltr"] .pGroup > div.stdCaption {
+  margin-left: 33%;
+}
+html[dir="rtl"] .blockTxt, html[dir="rtl"]
+.stdPullQuote, html[dir="rtl"] .pGroup > div.stdCaption {
+  margin-right: 33%;
+}
+html[dir="ltr"] .blockTxt, html[dir="ltr"]
+.stdPullQuote, html[dir="ltr"] .pGroup > div.stdCaption {
+  clear: right;
+}
+html[dir="rtl"] .blockTxt, html[dir="rtl"]
+.stdPullQuote, html[dir="rtl"] .pGroup > div.stdCaption {
+  clear: left;
+}
+.blockTxt.floatEast,
+.stdPullQuote.floatEast,
+.pGroup > div.floatEast.stdCaption {
+  max-width: 47%;
+}
+html[dir="ltr"] .blockTxt.floatEast, html[dir="ltr"]
+.stdPullQuote.floatEast, html[dir="ltr"] .pGroup > div.floatEast.stdCaption {
+  margin-left: 4%;
+}
+html[dir="rtl"] .blockTxt.floatEast, html[dir="rtl"]
+.stdPullQuote.floatEast, html[dir="rtl"] .pGroup > div.floatEast.stdCaption {
+  margin-right: 4%;
+}
+.blockTxt.floatWest,
+.stdPullQuote.floatWest,
+.pGroup > div.floatWest.stdCaption {
+  max-width: 47%;
+}
+html[dir="ltr"] .blockTxt.floatWest, html[dir="ltr"]
+.stdPullQuote.floatWest, html[dir="ltr"] .pGroup > div.floatWest.stdCaption {
+  margin-right: 4%;
+}
+html[dir="rtl"] .blockTxt.floatWest, html[dir="rtl"]
+.stdPullQuote.floatWest, html[dir="rtl"] .pGroup > div.floatWest.stdCaption {
+  margin-left: 4%;
+}
+.blockTxt p, .blockTxt .sb,
+.stdPullQuote p,
+.pGroup > div.stdCaption p,
+.stdPullQuote .sb,
+.pGroup > div.stdCaption .sb {
+  margin: 0;
+}
+html[dir="ltr"] .blockTxt p, html[dir="ltr"] .blockTxt .sb, html[dir="ltr"]
+.stdPullQuote p, html[dir="ltr"] .pGroup > div.stdCaption p, html[dir="ltr"]
+.stdPullQuote .sb, html[dir="ltr"] .pGroup > div.stdCaption .sb {
+  text-align: right;
+}
+html[dir="rtl"] .blockTxt p, html[dir="rtl"] .blockTxt .sb, html[dir="rtl"]
+.stdPullQuote p, html[dir="rtl"] .pGroup > div.stdCaption p, html[dir="rtl"]
+.stdPullQuote .sb, html[dir="rtl"] .pGroup > div.stdCaption .sb {
+  text-align: left;
+}
+
+.section {
+  clear: none;
+}
+
+.studyPurpose .sn {
+  font-size: 1.1em;
+  font-weight: normal;
+  color: #64605d;
+}
+
+.pageNum {
+  display: none;
+}
+
+.docNav {
+  clear: both;
+  display: block;
+  margin-top: 1.5em;
+  text-align: center;
+}
+.docNav:before, .docNav:after {
+  content: " ";
+  display: table;
+}
+.docNav:after {
+  clear: both;
+}
+.docNav a {
+  display: inline-block;
+  font-size: 1.35em;
+  font-weight: 300;
+  height: 2em;
+  line-height: 2em;
+  margin: 0 0.25em 0.25em 0;
+  width: 2em;
+}
+html[dir="ltr"] .docNav a {
+  float: left;
+}
+html[dir="rtl"] .docNav a {
+  float: right;
+}
+
+html[dir="ltr"] .floatEast {
+  float: right;
+}
+html[dir="rtl"] .floatEast {
+  float: left;
+}
+html[dir="ltr"] .floatEast {
+  text-align: right;
+}
+html[dir="rtl"] .floatEast {
+  text-align: left;
+}
+
+html[dir="ltr"] .floatWest {
+  float: left;
+}
+html[dir="rtl"] .floatWest {
+  float: right;
+}
+html[dir="ltr"] .floatWest {
+  text-align: left;
+}
+html[dir="rtl"] .floatWest {
+  text-align: right;
+}
+
+.floatEast,
+.floatWest {
+  max-width: 45%;
+}
+.floatEast img,
+.floatWest img {
+  width: inherit;
+  height: inherit;
+}
+
+.north_center {
+  margin-top: 0;
+  margin-bottom: 0.5em;
+  vertical-align: top;
+}
+html[dir="ltr"] .north_center {
+  margin-right: 0;
+}
+html[dir="rtl"] .north_center {
+  margin-left: 0;
+}
+html[dir="ltr"] .north_center {
+  margin-left: auto;
+}
+html[dir="rtl"] .north_center {
+  margin-right: auto;
+}
+
+.south_center {
+  vertical-align: bottom;
+}
+
+div.south_center {
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+.byline {
+  font-size: 0.85em;
+}
+
+.themeScrp {
+  margin-bottom: 1.5em;
+  color: #64605d;
+  font-size: 1.1em;
+  font-weight: normal;
+}
+
+.inline {
+  font-weight: bold;
+}
+
+.clearfix {
+  zoom: 1;
+}
+.clearfix:after, .clearfix:before {
+  content: " ";
+  display: table;
+}
+
+.synopsis:before, .synopsis:after {
+  content: " ";
+  display: table;
+}
+
+.spacingTop {
+  margin-top: 1em;
+}
+
+.underline {
+  text-decoration: underline !important;
+}
+
+.ni {
+  color: #aaaaaa;
+}
+
+.shadedHeader {
+  display: block;
+  padding: 0.25em 1em;
+  color: #ffffff;
+}
+.shadedHeader a {
+  color: #ffffff;
+  text-decoration: underline;
+}
+.shadedHeader.treasures {
+  background-color: #5A6A70;
+}
+.shadedHeader.ministry {
+  background-color: #C18626;
+}
+.shadedHeader.christianLiving {
+  background-color: #961526;
+}
+
+blockquote.rule {
+  padding-top: 0;
+  padding-bottom: 0;
+  font-size: 1.2em;
+  font-weight: normal;
+  color: #65605E;
+}
+html[dir="ltr"] blockquote.rule {
+  border-right: 0.25em solid #d7d7d7;
+}
+html[dir="rtl"] blockquote.rule {
+  border-left: 0.25em solid #d7d7d7;
+}
+html[dir="ltr"] blockquote.rule {
+  padding-right: 4%;
+}
+html[dir="rtl"] blockquote.rule {
+  padding-left: 4%;
+}
+html[dir="ltr"] blockquote.rule p, html[dir="ltr"] blockquote.rule .sb {
+  text-align: right;
+}
+html[dir="rtl"] blockquote.rule p, html[dir="rtl"] blockquote.rule .sb {
+  text-align: left;
+}
+
+.s1, .s2, .s3, .s4 {
+  margin-top: 0em;
+  margin-bottom: 0em;
+}
+.s1 p, .s2 p, .s3 p, .s4 p, .s1 .sb, .s2 .sb, .s3 .sb, .s4 .sb {
+  margin-top: 0em;
+}
+
+.sc, .se, .sg, .sh, .sn, .s1, .s2, .s3, .s4 {
+  text-indent: 0em;
+}
+
+.sd {
+  text-indent: 0em;
+}
+
+.sf, p.so, .so.sb {
+  text-indent: 0em;
+}
+
+.sm, .sq, .sr {
+  text-indent: 0em;
+}
+
+.sa {
+  margin: 0 1.5em 1.2em;
+  font-size: 1.1em;
+  font-weight: normal;
+}
+.sa em, .sa bold {
+  font-weight: normal;
+}
+
+blockquote .sa {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.si {
+  margin: 0.5em 0;
+}
+html[dir="ltr"] .si {
+  padding-left: 2em;
+}
+html[dir="rtl"] .si {
+  padding-right: 2em;
+}
+
+.sj {
+  text-indent: 26em;
+  text-indent: 0;
+}
+html[dir="ltr"] .sj {
+  margin-left: 40%;
+}
+html[dir="rtl"] .sj {
+  margin-right: 40%;
+}
+
+p.sk, .sk.sb {
+  text-indent: 1.5em;
+}
+
+.sl {
+  text-indent: -2em;
+}
+html[dir="ltr"] .sl {
+  padding-left: 2em;
+}
+html[dir="rtl"] .sl {
+  padding-right: 2em;
+}
+
+.sp {
+  text-indent: -1em;
+}
+html[dir="ltr"] .sp {
+  padding-left: 2em;
+}
+html[dir="rtl"] .sp {
+  padding-right: 2em;
+}
+
+.su {
+  margin: 0.3em 0;
+  text-indent: -1em;
+}
+html[dir="ltr"] .su {
+  padding-left: 1em;
+}
+html[dir="rtl"] .su {
+  padding-right: 1em;
+}
+
+.sv {
+  margin: 0.3em 0;
+  text-indent: -1.5em;
+}
+html[dir="ltr"] .sv {
+  padding-left: 4.5em;
+}
+html[dir="rtl"] .sv {
+  padding-right: 4.5em;
+}
+
+.sx {
+  margin: 0.3em 0;
+  text-indent: -1em;
+}
+html[dir="ltr"] .sx {
+  padding-left: 1.5em;
+}
+html[dir="rtl"] .sx {
+  padding-right: 1.5em;
+}
+
+.sy {
+  margin: 0.3em 0;
+  text-indent: -1em;
+}
+html[dir="ltr"] .sy {
+  padding-left: 3.5em;
+}
+html[dir="rtl"] .sy {
+  padding-right: 3.5em;
+}
+
+.sz {
+  text-indent: -1em;
+}
+html[dir="ltr"] .sz {
+  margin-left: 2.5em;
+}
+html[dir="rtl"] .sz {
+  margin-right: 2.5em;
+}
+html[dir="ltr"] .sz {
+  padding-left: 1em;
+}
+html[dir="rtl"] .sz {
+  padding-right: 1em;
+}
+
+.su .txtSrcBullet, .sv .txtSrcBullet, .sw .txtSrcBullet, .sx .txtSrcBullet, .sy .txtSrcBullet, .sz .txtSrcBullet {
+  text-indent: -0.5em;
+}
+
+.s5 {
+  margin-left: 1.5em;
+}
+
+.s6 {
+  text-indent: 4.5em;
+}
+
+.s7 {
+  text-indent: 7.5em;
+}
+
+.s8 {
+  text-indent: 10.4em;
+}
+
+.s9 {
+  text-indent: 13.6em;
+}
+
+.s0 {
+  text-indent: 15em;
+}
+
+.article:not(.legacy) .sf, .article:not(.legacy) .sq {
+  border-top: 1px solid #cccccc;
+  color: #64605d;
+  font-size: 1.1em;
+  font-weight: normal;
+  padding-top: 0.5em;
+}
+
+li p, li .sb,
+td p,
+td .sb,
+blockquote p,
+blockquote .sb {
+  margin-left: 0;
+  margin-right: 0;
+  text-indent: 0;
+}
+
+.bibleCitation,
+.docClass-BibleBook,
+.bible,
+.scrp {
+  font-style: normal;
+  text-indent: 0;
+}
+.bibleCitation p, .bibleCitation .sb,
+.bibleCitation .sb,
+.docClass-BibleBook p,
+.docClass-BibleBook .sb,
+.docClass-BibleBook .sb,
+.bible p,
+.bible .sb,
+.bible .sb,
+.scrp p,
+.scrp .sb,
+.scrp .sb {
+  line-height: 1.5em;
+  margin: 0;
+}
+.bibleCitation h2, .bibleCitation .ss,
+.bibleCitation .ss,
+.docClass-BibleBook h2,
+.docClass-BibleBook .ss,
+.docClass-BibleBook .ss,
+.bible h2,
+.bible .ss,
+.bible .ss,
+.scrp h2,
+.scrp .ss,
+.scrp .ss {
+  color: inherit;
+  font-size: 0.8em;
+  margin: 0 auto;
+  text-align: center;
+  text-indent: 0;
+}
+.bibleCitation p + div, .bibleCitation .sb + div,
+.bibleCitation div + p,
+.bibleCitation div + .sb,
+.bibleCitation p + p,
+.bibleCitation .sb + p,
+.bibleCitation p + .sb,
+.bibleCitation .sb + .sb,
+.docClass-BibleBook p + div,
+.docClass-BibleBook .sb + div,
+.docClass-BibleBook div + p,
+.docClass-BibleBook div + .sb,
+.docClass-BibleBook p + p,
+.docClass-BibleBook .sb + p,
+.docClass-BibleBook p + .sb,
+.docClass-BibleBook .sb + .sb,
+.bible p + div,
+.bible .sb + div,
+.bible div + p,
+.bible div + .sb,
+.bible p + p,
+.bible .sb + p,
+.bible p + .sb,
+.bible .sb + .sb,
+.scrp p + div,
+.scrp .sb + div,
+.scrp div + p,
+.scrp div + .sb,
+.scrp p + p,
+.scrp .sb + p,
+.scrp p + .sb,
+.scrp .sb + .sb {
+  text-indent: 1.25em;
+}
+.bibleCitation .sw,
+.docClass-BibleBook .sw,
+.bible .sw,
+.scrp .sw {
+  font-size: 0.8em;
+  line-height: 1.2em;
+  margin: 0.5em 0;
+  padding: 0 2em;
+  text-indent: 2em;
+}
+.bibleCitation .dc,
+.bibleCitation .cl,
+.docClass-BibleBook .dc,
+.docClass-BibleBook .cl,
+.bible .dc,
+.bible .cl,
+.scrp .dc,
+.scrp .cl {
+  font-size: 2em;
+}
+.bibleCitation .dc strong,
+.bibleCitation .cl strong,
+.docClass-BibleBook .dc strong,
+.docClass-BibleBook .cl strong,
+.bible .dc strong,
+.bible .cl strong,
+.scrp .dc strong,
+.scrp .cl strong {
+  font-weight: 200;
+}
+.bibleCitation .vl,
+.docClass-BibleBook .vl,
+.bible .vl,
+.scrp .vl {
+  padding: 0 0.25em;
+  font-weight: 400;
+}
+.bibleCitation .dx,
+.bibleCitation .vx,
+.docClass-BibleBook .dx,
+.docClass-BibleBook .vx,
+.bible .dx,
+.bible .vx,
+.scrp .dx,
+.scrp .vx {
+  font-weight: bold;
+}
+.bibleCitation p.sl, .bibleCitation .sl.sb,
+.docClass-BibleBook p.sl,
+.docClass-BibleBook .sl.sb,
+.bible p.sl,
+.bible .sl.sb,
+.scrp p.sl,
+.scrp .sl.sb {
+  margin-top: 0.2em;
+  margin-bottom: 0;
+  text-indent: -3em;
+}
+html[dir="ltr"] .bibleCitation p.sl, html[dir="ltr"] .bibleCitation .sl.sb, html[dir="ltr"]
+.docClass-BibleBook p.sl, html[dir="ltr"]
+.docClass-BibleBook .sl.sb, html[dir="ltr"]
+.bible p.sl, html[dir="ltr"]
+.bible .sl.sb, html[dir="ltr"]
+.scrp p.sl, html[dir="ltr"]
+.scrp .sl.sb {
+  margin-left: 0.5em;
+}
+html[dir="rtl"] .bibleCitation p.sl, html[dir="rtl"] .bibleCitation .sl.sb, html[dir="rtl"]
+.docClass-BibleBook p.sl, html[dir="rtl"]
+.docClass-BibleBook .sl.sb, html[dir="rtl"]
+.bible p.sl, html[dir="rtl"]
+.bible .sl.sb, html[dir="rtl"]
+.scrp p.sl, html[dir="rtl"]
+.scrp .sl.sb {
+  margin-right: 0.5em;
+}
+html[dir="ltr"] .bibleCitation p.sl, html[dir="ltr"] .bibleCitation .sl.sb, html[dir="ltr"]
+.docClass-BibleBook p.sl, html[dir="ltr"]
+.docClass-BibleBook .sl.sb, html[dir="ltr"]
+.bible p.sl, html[dir="ltr"]
+.bible .sl.sb, html[dir="ltr"]
+.scrp p.sl, html[dir="ltr"]
+.scrp .sl.sb {
+  margin-right: 0;
+}
+html[dir="rtl"] .bibleCitation p.sl, html[dir="rtl"] .bibleCitation .sl.sb, html[dir="rtl"]
+.docClass-BibleBook p.sl, html[dir="rtl"]
+.docClass-BibleBook .sl.sb, html[dir="rtl"]
+.bible p.sl, html[dir="rtl"]
+.bible .sl.sb, html[dir="rtl"]
+.scrp p.sl, html[dir="rtl"]
+.scrp .sl.sb {
+  margin-left: 0;
+}
+html[dir="ltr"] .bibleCitation p.sl, html[dir="ltr"] .bibleCitation .sl.sb, html[dir="ltr"]
+.docClass-BibleBook p.sl, html[dir="ltr"]
+.docClass-BibleBook .sl.sb, html[dir="ltr"]
+.bible p.sl, html[dir="ltr"]
+.bible .sl.sb, html[dir="ltr"]
+.scrp p.sl, html[dir="ltr"]
+.scrp .sl.sb {
+  padding-left: 3em;
+}
+html[dir="rtl"] .bibleCitation p.sl, html[dir="rtl"] .bibleCitation .sl.sb, html[dir="rtl"]
+.docClass-BibleBook p.sl, html[dir="rtl"]
+.docClass-BibleBook .sl.sb, html[dir="rtl"]
+.bible p.sl, html[dir="rtl"]
+.bible .sl.sb, html[dir="rtl"]
+.scrp p.sl, html[dir="rtl"]
+.scrp .sl.sb {
+  padding-right: 3em;
+}
+.bibleCitation p.sz, .bibleCitation .sz.sb,
+.docClass-BibleBook p.sz,
+.docClass-BibleBook .sz.sb,
+.bible p.sz,
+.bible .sz.sb,
+.scrp p.sz,
+.scrp .sz.sb {
+  margin: 0.2em 1em;
+  text-indent: -1em;
+}
+html[dir="ltr"] .bibleCitation p.sz, html[dir="ltr"] .bibleCitation .sz.sb, html[dir="ltr"]
+.docClass-BibleBook p.sz, html[dir="ltr"]
+.docClass-BibleBook .sz.sb, html[dir="ltr"]
+.bible p.sz, html[dir="ltr"]
+.bible .sz.sb, html[dir="ltr"]
+.scrp p.sz, html[dir="ltr"]
+.scrp .sz.sb {
+  padding-left: 2.5em;
+}
+html[dir="rtl"] .bibleCitation p.sz, html[dir="rtl"] .bibleCitation .sz.sb, html[dir="rtl"]
+.docClass-BibleBook p.sz, html[dir="rtl"]
+.docClass-BibleBook .sz.sb, html[dir="rtl"]
+.bible p.sz, html[dir="rtl"]
+.bible .sz.sb, html[dir="rtl"]
+.scrp p.sz, html[dir="rtl"]
+.scrp .sz.sb {
+  padding-right: 2.5em;
+}
+.bibleCitation sup,
+.docClass-BibleBook sup,
+.bible sup,
+.scrp sup {
+  vertical-align: super;
+  line-height: 1.3em;
+  font-size: 0.7em;
+}
+
+.bible .pageNum,
+.docClass-BibleBookChapterHeadings .pageNum {
+  display: none;
+}
+.bible .outline ul,
+.docClass-BibleBookChapterHeadings .outline ul {
+  list-style-type: none;
+  margin-top: 0;
+}
+html[dir="ltr"] .bible .outline ul, html[dir="ltr"]
+.docClass-BibleBookChapterHeadings .outline ul {
+  padding-left: 0;
+}
+html[dir="rtl"] .bible .outline ul, html[dir="rtl"]
+.docClass-BibleBookChapterHeadings .outline ul {
+  padding-right: 0;
+}
+.bible .outline ul.outline li.chapterNo > p, .bible .outline ul.outline li.chapterNo > .sb,
+.docClass-BibleBookChapterHeadings .outline ul.outline li.chapterNo > p,
+.docClass-BibleBookChapterHeadings .outline ul.outline li.chapterNo > .sb {
+  line-height: 2em;
+}
+.bible .outline li,
+.docClass-BibleBookChapterHeadings .outline li {
+  list-style-type: none;
+}
+html[dir="ltr"] .bible .outline li, html[dir="ltr"]
+.docClass-BibleBookChapterHeadings .outline li {
+  padding-left: 0.75em;
+}
+html[dir="rtl"] .bible .outline li, html[dir="rtl"]
+.docClass-BibleBookChapterHeadings .outline li {
+  padding-right: 0.75em;
+}
+.bible .outline p, .bible .outline .sb,
+.bible .outline .sb,
+.docClass-BibleBookChapterHeadings .outline p,
+.docClass-BibleBookChapterHeadings .outline .sb,
+.docClass-BibleBookChapterHeadings .outline .sb {
+  margin-bottom: 0;
+}
+.bible .outline .chapterNo,
+.docClass-BibleBookChapterHeadings .outline .chapterNo {
+  margin-top: 0.5em;
+}
+html[dir="ltr"] .bible .outline .chapterNo, html[dir="ltr"]
+.docClass-BibleBookChapterHeadings .outline .chapterNo {
+  padding-left: 0;
+}
+html[dir="rtl"] .bible .outline .chapterNo, html[dir="rtl"]
+.docClass-BibleBookChapterHeadings .outline .chapterNo {
+  padding-right: 0;
+}
+.bible .outline .chapterNo > p, .bible .outline .chapterNo > .sb,
+.docClass-BibleBookChapterHeadings .outline .chapterNo > p,
+.docClass-BibleBookChapterHeadings .outline .chapterNo > .sb {
+  vertical-align: top;
+  margin-bottom: 0.5em;
+}
+html[dir="ltr"] .bible .outline .chapterNo > p, html[dir="ltr"] .bible .outline .chapterNo > .sb, html[dir="ltr"]
+.docClass-BibleBookChapterHeadings .outline .chapterNo > p, html[dir="ltr"]
+.docClass-BibleBookChapterHeadings .outline .chapterNo > .sb {
+  text-align: right;
+}
+html[dir="rtl"] .bible .outline .chapterNo > p, html[dir="rtl"] .bible .outline .chapterNo > .sb, html[dir="rtl"]
+.docClass-BibleBookChapterHeadings .outline .chapterNo > p, html[dir="rtl"]
+.docClass-BibleBookChapterHeadings .outline .chapterNo > .sb {
+  text-align: left;
+}
+html[dir="ltr"] .bible .outline .chapterNo > p, html[dir="ltr"] .bible .outline .chapterNo > .sb, html[dir="ltr"]
+.docClass-BibleBookChapterHeadings .outline .chapterNo > p, html[dir="ltr"]
+.docClass-BibleBookChapterHeadings .outline .chapterNo > .sb {
+  margin-right: 0;
+}
+html[dir="rtl"] .bible .outline .chapterNo > p, html[dir="rtl"] .bible .outline .chapterNo > .sb, html[dir="rtl"]
+.docClass-BibleBookChapterHeadings .outline .chapterNo > p, html[dir="rtl"]
+.docClass-BibleBookChapterHeadings .outline .chapterNo > .sb {
+  margin-left: 0;
+}
+.bible .outline .chapterNo > p a, .bible .outline .chapterNo > .sb a,
+.bible .outline .chapterNo > p a strong,
+.bible .outline .chapterNo > .sb a strong,
+.docClass-BibleBookChapterHeadings .outline .chapterNo > p a,
+.docClass-BibleBookChapterHeadings .outline .chapterNo > .sb a,
+.docClass-BibleBookChapterHeadings .outline .chapterNo > p a strong,
+.docClass-BibleBookChapterHeadings .outline .chapterNo > .sb a strong {
+  font-size: 1.3em;
+  font-weight: lighter;
+  padding-top: 0;
+  vertical-align: top;
+}
+.bible .outline .chapterNo > ul,
+.docClass-BibleBookChapterHeadings .outline .chapterNo > ul {
+  display: inline-block;
+  margin-top: 0.15em;
+}
+html[dir="ltr"] .bible .outline .chapterNo > ul, html[dir="ltr"]
+.docClass-BibleBookChapterHeadings .outline .chapterNo > ul {
+  margin-left: 0;
+}
+html[dir="rtl"] .bible .outline .chapterNo > ul, html[dir="rtl"]
+.docClass-BibleBookChapterHeadings .outline .chapterNo > ul {
+  margin-right: 0;
+}
+html[dir="ltr"] .bible .outline .chapterNo > ul, html[dir="ltr"]
+.docClass-BibleBookChapterHeadings .outline .chapterNo > ul {
+  padding-left: 0.5em;
+}
+html[dir="rtl"] .bible .outline .chapterNo > ul, html[dir="rtl"]
+.docClass-BibleBookChapterHeadings .outline .chapterNo > ul {
+  padding-right: 0.5em;
+}
+
+.docClass-BibleBookChapterHeadings .outline .chapterNo > ul {
+  max-width: 80%;
+}
+
+.article.bible.html5 .dc,
+.article.bible.html5 .dv,
+.article.bible.html5 .cl,
+.article.bible.html5 .vl {
+  font-family: myFont, Arial, Helvetica, sans-serif;
+  color: #2878bb;
+  cursor: pointer;
+}
+
+ul {
+  list-style: disc;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  border: 0;
+}
+html[dir="ltr"] ul {
+  padding-left: 1.5em;
+}
+html[dir="rtl"] ul {
+  padding-right: 1.5em;
+}
+
+li p, li .sb {
+  text-indent: 0 !important;
+}
+html[dir="ltr"] li p, html[dir="ltr"] li .sb {
+  padding-left: 0 !important;
+}
+html[dir="rtl"] li p, html[dir="rtl"] li .sb {
+  padding-right: 0 !important;
+}
+
+li.listTitle {
+  margin-bottom: 0.75em;
+  font-weight: normal;
+  font-size: 1.3em;
+}
+li.listTitle strong {
+  font-weight: normal;
+}
+
+ol.imgWestEighth, ol.imgWestQuarter, ul.imgWestEighth, ul.imgWestQuarter {
+  list-style-type: none;
+  clear: both;
+}
+html[dir="ltr"] ol.imgWestEighth, html[dir="ltr"] ol.imgWestQuarter, html[dir="ltr"] ul.imgWestEighth, html[dir="ltr"] ul.imgWestQuarter {
+  padding-left: 0;
+}
+html[dir="rtl"] ol.imgWestEighth, html[dir="rtl"] ol.imgWestQuarter, html[dir="rtl"] ul.imgWestEighth, html[dir="rtl"] ul.imgWestQuarter {
+  padding-right: 0;
+}
+ol.imgWestEighth:before, ol.imgWestEighth:after, ol.imgWestQuarter:before, ol.imgWestQuarter:after, ul.imgWestEighth:before, ul.imgWestEighth:after, ul.imgWestQuarter:before, ul.imgWestQuarter:after {
+  content: " ";
+  display: table;
+}
+ol.imgWestEighth li, ol.imgWestQuarter li, ul.imgWestEighth li, ul.imgWestQuarter li {
+  list-style-type: none;
+  margin: 2em 0;
+  padding: 0;
+  clear: both;
+}
+ol.imgWestEighth li li, ol.imgWestQuarter li li, ul.imgWestEighth li li, ul.imgWestQuarter li li {
+  margin: 0;
+}
+ol.imgWestQuarter li > p, ol.imgWestQuarter li > .sb, ul.imgWestQuarter li > p, ul.imgWestQuarter li > .sb {
+  width: auto;
+}
+html[dir="ltr"] ol.imgWestQuarter li > p, html[dir="ltr"] ol.imgWestQuarter li > .sb, html[dir="ltr"] ul.imgWestQuarter li > p, html[dir="ltr"] ul.imgWestQuarter li > .sb {
+  margin-left: 27%;
+}
+html[dir="rtl"] ol.imgWestQuarter li > p, html[dir="rtl"] ol.imgWestQuarter li > .sb, html[dir="rtl"] ul.imgWestQuarter li > p, html[dir="rtl"] ul.imgWestQuarter li > .sb {
+  margin-right: 27%;
+}
+ol.imgWestQuarter li > p:first-of-type, ol.imgWestQuarter li > .sb:first-of-type, ul.imgWestQuarter li > p:first-of-type, ul.imgWestQuarter li > .sb:first-of-type {
+  margin-top: 0;
+}
+ol.listSpacing li, ul.listSpacing li {
+  margin: 4em 0;
+}
+ol.listSpacing li:first-of-type, ul.listSpacing li:first-of-type {
+  margin-top: 2em;
+}
+
+ol.source, ul.source {
+  list-style-type: none;
+}
+html[dir="ltr"] ol.source, html[dir="ltr"] ul.source {
+  padding-left: 0;
+}
+html[dir="rtl"] ol.source, html[dir="rtl"] ul.source {
+  padding-right: 0;
+}
+
+ul.noMarker {
+  list-style-type: none;
+}
+html[dir="ltr"] ul.noMarker li {
+  margin-left: 0;
+}
+html[dir="rtl"] ul.noMarker li {
+  margin-right: 0;
+}
+ul.noMarker li p.noTopMargin, ul.noMarker li .noTopMargin.sb {
+  margin-top: -0.5em;
+}
+ul.noMarker li p.indent, ul.noMarker li .indent.sb {
+  margin-left: 2em;
+  margin-right: 2em;
+}
+aside > ul.noMarker {
+  margin-top: 0;
+}
+ul.noMarker li > P {
+  margin-bottom: 1em;
+}
+ul.noMarker li > p + p, ul.noMarker li > .sb + p, ul.noMarker li > p + .sb, ul.noMarker li > .sb + .sb {
+  margin-top: 0;
+}
+ul.noMarker + ul {
+  margin-top: 2em;
+}
+ul.imgWestQuarter::before, ul.imgEastQuarter::before {
+  content: " ";
+  display: table;
+}
+ul.imgWestQuarter::after, ul.imgEastQuarter::after {
+  clear: both;
+  content: " ";
+  display: table;
+}
+ul.imgWestQuarter li, ul.imgEastQuarter li {
+  clear: both;
+  list-style-type: none;
+}
+ul.imgWestQuarter li div.west_left,
+ul.imgWestQuarter li div.east_right, ul.imgEastQuarter li div.west_left,
+ul.imgEastQuarter li div.east_right {
+  max-width: 22%;
+}
+ul.imgWestQuarter p, ul.imgWestQuarter .sb {
+  width: auto;
+}
+html[dir="ltr"] ul.imgWestQuarter p, html[dir="ltr"] ul.imgWestQuarter .sb {
+  margin-left: 27%;
+}
+html[dir="rtl"] ul.imgWestQuarter p, html[dir="rtl"] ul.imgWestQuarter .sb {
+  margin-right: 27%;
+}
+ul.imgEastQuarter p, ul.imgEastQuarter .sb {
+  width: auto;
+}
+html[dir="ltr"] ul.imgEastQuarter p, html[dir="ltr"] ul.imgEastQuarter .sb {
+  margin-right: 27%;
+}
+html[dir="rtl"] ul.imgEastQuarter p, html[dir="rtl"] ul.imgEastQuarter .sb {
+  margin-left: 27%;
+}
+ul.listImgGrid li {
+  width: 32%;
+  display: inline-block;
+}
+ul.listImgGrid li div {
+  max-width: 100%;
+}
+ul.listImgGrid.threeColumn li {
+  width: 28%;
+  display: inline-block;
+  list-style: none;
+  vertical-align: top;
+  padding: 0 1% 0 0;
+  margin: 0;
+}
+ul.noIndent {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+ul.noIndent li {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+ul .indent {
+  margin-left: 2em;
+  margin-right: 2em;
+}
+ul li p, ul li .sb {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  text-indent: 0 !important;
+  margin-bottom: 0.5em;
+}
+ul li p.sa, ul li .sa.sb {
+  font-size: 1em;
+  padding-left: 0;
+  padding-right: 0;
+}
+ul li blockquote {
+  overflow: visible;
+}
+html[dir="ltr"] ul li blockquote {
+  margin-left: 0;
+}
+html[dir="rtl"] ul li blockquote {
+  margin-right: 0;
+}
+html[dir="ltr"] ul li blockquote {
+  margin-right: 0;
+}
+html[dir="rtl"] ul li blockquote {
+  margin-left: 0;
+}
+
+html[dir="ltr"] ol {
+  margin-left: 1em;
+}
+html[dir="rtl"] ol {
+  margin-right: 1em;
+}
+html[dir="ltr"] ol {
+  padding-left: 1em;
+}
+html[dir="rtl"] ol {
+  padding-right: 1em;
+}
+ol.source {
+  list-style-type: none;
+}
+html[dir="ltr"] ol.source {
+  padding-left: 0;
+}
+html[dir="rtl"] ol.source {
+  padding-right: 0;
+}
+
+.pGroup ul p:first-of-type, .pGroup ul .sb:first-of-type {
+  margin-bottom: 0.5em;
+}
+.pGroup ul p:nth-of-type(2), .pGroup ul .sb:nth-of-type(2) {
+  margin-top: 0.75em;
+}
+
+ul + ul {
+  margin-top: 0;
+}
+
+aside ul.noMarker li p, aside ul.noMarker li .sb {
+  margin: 0 0 1em 0;
+}
+
+ul.mapListLocation {
+  clear: both;
+  margin-bottom: 20px;
+  margin-top: 2em;
+  overflow: hidden;
+}
+ul.mapListLocation li {
+  display: block;
+  line-height: 1.5em;
+  width: 40%;
+}
+html[dir="ltr"] ul.mapListLocation li {
+  float: left;
+}
+html[dir="rtl"] ul.mapListLocation li {
+  float: right;
+}
+html[dir="ltr"] ul.mapListLocation li {
+  margin-right: 1.5em;
+}
+html[dir="rtl"] ul.mapListLocation li {
+  margin-left: 1.5em;
+}
+ul.mapListLocation li.listTitle,
+ul.mapListLocation li.listTitle p strong,
+ul.mapListLocation li.listTitle .sb strong {
+  float: none;
+  width: 100%;
+}
+
+.document ul + ul {
+  margin-top: 1em;
+}
+
+.txtSrcBullet {
+  font-weight: 400;
+  display: inline-block;
+}
+
+ol.upperAlpha {
+  list-style-type: upper-alpha;
+}
+
+ol.lowerAlpha {
+  list-style-type: lower-alpha;
+}
+
+.meps-lang-A ol {
+  list-style-type: -moz-arabic-indic;
+  list-style-type: arabic-indic;
+}
+
+.meps-lang-PR ol {
+  list-style-type: -moz-persian;
+  list-style-type: persian;
+}
+
+ol.timeline {
+  list-style-type: disc;
+  margin-top: 2em;
+  padding-top: 1em;
+}
+html[dir="ltr"] ol.timeline {
+  margin-left: 0 !important;
+}
+html[dir="rtl"] ol.timeline {
+  margin-right: 0 !important;
+}
+html[dir="ltr"] ol.timeline {
+  padding-left: 0 !important;
+}
+html[dir="rtl"] ol.timeline {
+  padding-right: 0 !important;
+}
+html[dir="ltr"] ol.timeline {
+  border-left: 9px solid #ebebeb;
+}
+html[dir="rtl"] ol.timeline {
+  border-right: 9px solid #ebebeb;
+}
+ol.timeline.arrowCap {
+  position: relative;
+  width: 90%;
+}
+html[dir="ltr"] ol.timeline.arrowCap {
+  margin-left: 7%;
+}
+html[dir="rtl"] ol.timeline.arrowCap {
+  margin-right: 7%;
+}
+html[dir="ltr"] ol.timeline.arrowCap {
+  margin-right: 7%;
+}
+html[dir="rtl"] ol.timeline.arrowCap {
+  margin-left: 7%;
+}
+ol.timeline.arrowCap:after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  left: -25px;
+  border-top: 20px solid #ebebeb;
+  border-left: 20px inset transparent;
+  border-right: 20px inset transparent;
+}
+ol.timeline li {
+  list-style-type: disc;
+}
+html[dir="ltr"] ol.timeline li {
+  padding-left: 30px;
+}
+html[dir="rtl"] ol.timeline li {
+  padding-right: 30px;
+}
+html[dir="ltr"] ol.timeline li {
+  margin-left: 9px;
+}
+html[dir="rtl"] ol.timeline li {
+  margin-right: 9px;
+}
+ol.timeline ol.timeline {
+  margin-top: 0;
+}
+html[dir="ltr"] ol.timeline ol.timeline {
+  border-left: none;
+}
+html[dir="rtl"] ol.timeline ol.timeline {
+  border-right: none;
+}
+html[dir="ltr"] ol.timeline ol.timeline {
+  margin-left: -30px;
+}
+html[dir="rtl"] ol.timeline ol.timeline {
+  margin-right: -30px;
+}
+ol.timeline li.timeline-bigFinish {
+  bottom: -10em;
+}
+html[dir="ltr"] ol.timeline li.timeline-bigFinish {
+  left: -25px;
+}
+html[dir="rtl"] ol.timeline li.timeline-bigFinish {
+  right: -25px;
+}
+ol.timeline li.timeline-bigFinish h4 {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+ul.outline {
+  display: block;
+  line-height: 1.3em;
+  list-style: none;
+  list-style-position: inside;
+  margin: 0;
+  padding: 0;
+}
+ul.outline ul {
+  padding-left: 16px;
+  margin-bottom: 0;
+}
+ul.outline a {
+  font-weight: 400;
+  text-decoration: none;
+}
+ul.outline li {
+  display: block;
+  float: none;
+  margin-bottom: 0.25em;
+}
+ul.outline li p, ul.outline li .sb {
+  display: inline-block;
+  padding-left: 1em !important;
+  text-indent: -1em !important;
+}
+html[dir="ltr"] ul.outline li p, html[dir="ltr"] ul.outline li .sb {
+  margin-left: 0;
+}
+html[dir="rtl"] ul.outline li p, html[dir="rtl"] ul.outline li .sb {
+  margin-right: 0;
+}
+ul.outline li.L1 {
+  margin-bottom: 0.75em;
+}
+
+.tableDiv {
+  margin-top: 2em;
+  margin-bottom: 1em;
+  overflow: auto;
+}
+.pGroup > .tableDiv {
+  margin-top: 0.75em;
+}
+h2 + .tableDiv, .ss + .tableDiv, h3 + .tableDiv {
+  margin-top: 0;
+}
+.tableDiv + .tableDiv {
+  border-top: 1px solid #dbd8d3;
+  margin-top: 1em;
+  padding-top: 1em;
+}
+.tableDiv.gridlines table,
+.tableDiv.gridlines tr,
+.tableDiv.gridlines th,
+.tableDiv.gridlines td {
+  border: #dddddd 1px solid;
+}
+.tableDiv.stripe tr:nth-child(even) {
+  background-color: #f2f1ef;
+}
+.tableDiv.wide {
+  font-size: 0.8em;
+  max-width: none;
+  width: 100%;
+}
+.tableDiv.wide td {
+  min-width: 5em;
+}
+.tableDiv.wide td span.b {
+  white-space: nowrap;
+}
+.tableDiv.half {
+  width: 49%;
+}
+.tableDiv.full table {
+  min-width: 100%;
+}
+.tableDiv table {
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+}
+.tableDiv table caption {
+  margin-bottom: 0;
+}
+html[dir="ltr"] .tableDiv table caption {
+  text-align: left;
+}
+html[dir="rtl"] .tableDiv table caption {
+  text-align: right;
+}
+.tableDiv table caption p, .tableDiv table caption .sb {
+  margin-bottom: 0;
+}
+html[dir="ltr"] .tableDiv table th {
+  text-align: left;
+}
+html[dir="rtl"] .tableDiv table th {
+  text-align: right;
+}
+.tableDiv table td, .tableDiv table th {
+  padding: 10px 0.5em;
+  min-width: 50%;
+  vertical-align: top;
+}
+.tableDiv table td p, .tableDiv table td .sb, .tableDiv table th p, .tableDiv table th .sb {
+  text-indent: 0;
+  margin: 0;
+  padding: 0;
+}
+.tableDiv table td ul:first-child,
+.tableDiv table td ol:first-child, .tableDiv table th ul:first-child,
+.tableDiv table th ol:first-child {
+  margin: 0;
+}
+.tableDiv.rowBorder tr {
+  border-bottom: 1px solid #e0dfdc;
+}
+.tableDiv.rowBorder tr:last-child {
+  border-bottom: none;
+}
+.tableDiv .shaded {
+  background-color: #f2f1ef;
+}
+.tableDiv .publication th {
+  background-color: #f0f0f0;
+  font-size: 0.9em;
+}
+
+.chart {
+  background-color: #ffffff;
+  color: #333333;
+  clear: both;
+}
+
+.diagram,
+.mapElement {
+  margin: 2em auto;
+  background-color: #e7e7e5;
+  color: #65605e;
+  clear: both;
+}
+.diagram ol, .diagram ul,
+.mapElement ol,
+.mapElement ul {
+  margin-top: 0;
+}
+.diagram aside > ul,
+.mapElement aside > ul {
+  margin: 0;
+}
+
+.closingContent,
+.blockTeach,
+.boxTeach,
+.boxSupplement {
+  margin: 2em auto;
+  border: none;
+  list-style-type: initial;
+  clear: both;
+  padding: 0;
+}
+.closingContent .boxTtl,
+.blockTeach .boxTtl,
+.boxTeach .boxTtl,
+.boxSupplement .boxTtl {
+  padding-bottom: 0.5em;
+}
+.closingContent:first-child,
+.blockTeach:first-child,
+.boxTeach:first-child,
+.boxSupplement:first-child {
+  margin-top: 3em;
+}
+.closingContent:before, .closingContent:after,
+.blockTeach:before,
+.blockTeach:after,
+.boxTeach:before,
+.boxTeach:after,
+.boxSupplement:before,
+.boxSupplement:after {
+  content: " ";
+  display: table;
+}
+.closingContent.wide,
+.blockTeach.wide,
+.boxTeach.wide,
+.boxSupplement.wide {
+  overflow: auto;
+  margin-bottom: 1em;
+}
+.closingContent aside > ul,
+.blockTeach aside > ul,
+.boxTeach aside > ul,
+.boxSupplement aside > ul {
+  margin: 0.5em 0;
+}
+.closingContent.bgTransparent,
+.blockTeach.bgTransparent,
+.boxTeach.bgTransparent,
+.boxSupplement.bgTransparent {
+  background-color: transparent;
+}
+.closingContent.rule .boxSubTtl + .boxContent, .closingContent.rule .boxSubTtl + .diagram, .closingContent.rule .boxSubTtl + .mapElement,
+.closingContent.rule .boxTtl + .boxContent,
+.closingContent.rule .boxTtl + .diagram,
+.closingContent.rule .boxTtl + .mapElement,
+.closingContent.rule .boxContent + .groupFootnote,
+.closingContent.rule .diagram + .groupFootnote,
+.closingContent.rule .mapElement + .groupFootnote,
+.closingContent.rule .boxContent + div.groupExtScrpCite,
+.closingContent.rule .diagram + div.groupExtScrpCite,
+.closingContent.rule .mapElement + div.groupExtScrpCite,
+.blockTeach.rule .boxSubTtl + .boxContent,
+.blockTeach.rule .boxSubTtl + .diagram,
+.blockTeach.rule .boxSubTtl + .mapElement,
+.blockTeach.rule .boxTtl + .boxContent,
+.blockTeach.rule .boxTtl + .diagram,
+.blockTeach.rule .boxTtl + .mapElement,
+.blockTeach.rule .boxContent + .groupFootnote,
+.blockTeach.rule .diagram + .groupFootnote,
+.blockTeach.rule .mapElement + .groupFootnote,
+.blockTeach.rule .boxContent + div.groupExtScrpCite,
+.blockTeach.rule .diagram + div.groupExtScrpCite,
+.blockTeach.rule .mapElement + div.groupExtScrpCite,
+.boxTeach.rule .boxSubTtl + .boxContent,
+.boxTeach.rule .boxSubTtl + .diagram,
+.boxTeach.rule .boxSubTtl + .mapElement,
+.boxTeach.rule .boxTtl + .boxContent,
+.boxTeach.rule .boxTtl + .diagram,
+.boxTeach.rule .boxTtl + .mapElement,
+.boxTeach.rule .boxContent + .groupFootnote,
+.boxTeach.rule .diagram + .groupFootnote,
+.boxTeach.rule .mapElement + .groupFootnote,
+.boxTeach.rule .boxContent + div.groupExtScrpCite,
+.boxTeach.rule .diagram + div.groupExtScrpCite,
+.boxTeach.rule .mapElement + div.groupExtScrpCite,
+.boxSupplement.rule .boxSubTtl + .boxContent,
+.boxSupplement.rule .boxSubTtl + .diagram,
+.boxSupplement.rule .boxSubTtl + .mapElement,
+.boxSupplement.rule .boxTtl + .boxContent,
+.boxSupplement.rule .boxTtl + .diagram,
+.boxSupplement.rule .boxTtl + .mapElement,
+.boxSupplement.rule .boxContent + .groupFootnote,
+.boxSupplement.rule .diagram + .groupFootnote,
+.boxSupplement.rule .mapElement + .groupFootnote,
+.boxSupplement.rule .boxContent + div.groupExtScrpCite,
+.boxSupplement.rule .diagram + div.groupExtScrpCite,
+.boxSupplement.rule .mapElement + div.groupExtScrpCite {
+  background-color: white;
+  border-left: 1px solid #e7e7e5;
+  border-right: 1px solid #e7e7e5;
+  border-bottom: 1px solid #e7e7e5;
+}
+.closingContent.rule .boxTtl.rule,
+.blockTeach.rule .boxTtl.rule,
+.boxTeach.rule .boxTtl.rule,
+.boxSupplement.rule .boxTtl.rule {
+  border: 1px solid #e7e7e5 !important;
+  background-color: #ffffff !important;
+  color: #64605d !important;
+}
+.closingContent .openingContent,
+.blockTeach .openingContent,
+.boxTeach .openingContent,
+.boxSupplement .openingContent {
+  padding: 1.5em 1em 1em;
+  margin-bottom: 0;
+}
+.closingContent .openingContent + .boxContent, .closingContent .openingContent + .diagram, .closingContent .openingContent + .mapElement,
+.blockTeach .openingContent + .boxContent,
+.blockTeach .openingContent + .diagram,
+.blockTeach .openingContent + .mapElement,
+.boxTeach .openingContent + .boxContent,
+.boxTeach .openingContent + .diagram,
+.boxTeach .openingContent + .mapElement,
+.boxSupplement .openingContent + .boxContent,
+.boxSupplement .openingContent + .diagram,
+.boxSupplement .openingContent + .mapElement {
+  margin-top: 0;
+}
+.closingContent .groupEndnote,
+.closingContent .groupFootnote,
+.closingContent div.groupExtScrpCite,
+.blockTeach .groupEndnote,
+.blockTeach .groupFootnote,
+.blockTeach div.groupExtScrpCite,
+.boxTeach .groupEndnote,
+.boxTeach .groupFootnote,
+.boxTeach div.groupExtScrpCite,
+.boxSupplement .groupEndnote,
+.boxSupplement .groupFootnote,
+.boxSupplement div.groupExtScrpCite {
+  padding: 1em 1em;
+}
+.closingContent .north_center,
+.blockTeach .north_center,
+.boxTeach .north_center,
+.boxSupplement .north_center {
+  margin-bottom: 0;
+}
+.closingContent .north_center figure,
+.blockTeach .north_center figure,
+.boxTeach .north_center figure,
+.boxSupplement .north_center figure {
+  background-color: #e7e7e5;
+}
+.closingContent .north_center figure .figcaption,
+.blockTeach .north_center figure .figcaption,
+.boxTeach .north_center figure .figcaption,
+.boxSupplement .north_center figure .figcaption {
+  padding-bottom: 0.5em;
+}
+
+.boxSupplement {
+  background-color: #e7e7e5;
+  color: #65605e;
+}
+
+.blockTeach aside .boxTtl + .boxContent, .blockTeach aside .boxTtl + .diagram, .blockTeach aside .boxTtl + .mapElement {
+  background-color: white;
+  border-left: 1px solid #e7e7e5;
+  border-right: 1px solid #e7e7e5;
+  border-bottom: 1px solid #e7e7e5;
+}
+
+.blockTeach,
+.boxSupplement {
+  margin: 1.5em auto;
+}
+
+.boxSupplement.floatEast {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 0 2%;
+}
+html[dir="ltr"] .boxSupplement.floatEast {
+  text-align: left;
+}
+html[dir="rtl"] .boxSupplement.floatEast {
+  text-align: right;
+}
+html[dir="ltr"] .boxSupplement.floatEast {
+  margin-left: 3%;
+}
+html[dir="rtl"] .boxSupplement.floatEast {
+  margin-right: 3%;
+}
+.boxSupplement.floatEast .boxContent, .boxSupplement.floatEast .diagram, .boxSupplement.floatEast .mapElement {
+  margin-top: 0;
+}
+
+.boxTtl {
+  color: #65605e;
+  padding: 0.5em 1em;
+  font-size: 1.3em;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: normal;
+  line-height: 1.2;
+  overflow: auto;
+  background-color: #e7e7e5;
+}
+html[dir="ltr"] .boxTtl {
+  border-left: 5px solid #9E9C9B;
+}
+html[dir="rtl"] .boxTtl {
+  border-right: 5px solid #9E9C9B;
+}
+html[dir="ltr"] .boxTtl {
+  padding-left: 3%;
+}
+html[dir="rtl"] .boxTtl {
+  padding-right: 3%;
+}
+.boxTtl strong {
+  font-weight: normal;
+}
+.boxTtl.emphasized {
+  font-weight: bold;
+}
+
+.closingContent .boxTtl,
+.blockTeach .boxTtl {
+  padding: 0.5em 1em;
+  background-color: #9E9C9B;
+  color: #ebebeb;
+}
+html[dir="ltr"] .closingContent .boxTtl, html[dir="ltr"]
+.blockTeach .boxTtl {
+  border-left: none;
+}
+html[dir="rtl"] .closingContent .boxTtl, html[dir="rtl"]
+.blockTeach .boxTtl {
+  border-right: none;
+}
+.closingContent .boxTtl.emphasized,
+.blockTeach .boxTtl.emphasized {
+  color: #ffffff;
+}
+
+.boxSubTtl {
+  background-color: #e7e7e5;
+  padding: 0 4% 10px;
+  margin: 0;
+}
+html[dir="ltr"] .boxSubTtl.rule {
+  border-left: 2px solid #9E9C9B;
+}
+html[dir="rtl"] .boxSubTtl.rule {
+  border-right: 2px solid #9E9C9B;
+}
+html[dir="ltr"] .boxSubTtl.rule {
+  padding-left: 3%;
+}
+html[dir="rtl"] .boxSubTtl.rule {
+  padding-right: 3%;
+}
+.boxSubTtl p, .boxSubTtl .sb {
+  padding: 0;
+  margin: 0;
+}
+
+.boxContent, .diagram, .mapElement {
+  padding: 1.5em 1em 1em;
+  overflow: auto;
+}
+.boxContent blockquote, .diagram blockquote, .mapElement blockquote {
+  font-size: 1.15em;
+}
+.boxContent > div.quarter:first-child, .diagram > div.quarter:first-child, .mapElement > div.quarter:first-child, .boxContent > div.half:first-child, .diagram > div.half:first-child, .mapElement > div.half:first-child {
+  margin-top: 1em;
+}
+.boxContent > blockquote, .diagram > blockquote, .mapElement > blockquote {
+  margin-left: 0;
+  margin-right: 0;
+  overflow: auto;
+}
+.boxContent h1, .diagram h1, .mapElement h1, .boxContent .st, .diagram .st, .mapElement .st, .boxContent h2, .diagram h2, .mapElement h2, .boxContent .ss, .diagram .ss, .mapElement .ss, .boxContent h3, .diagram h3, .mapElement h3 {
+  color: #64605d;
+}
+.boxContent > h2, .diagram > h2, .mapElement > h2, .boxContent > .ss, .diagram > .ss, .mapElement > .ss, .boxContent > h3, .diagram > h3, .mapElement > h3 {
+  margin-top: 0;
+}
+.boxContent + div.groupFootnote, .diagram + div.groupFootnote, .mapElement + div.groupFootnote, .boxContent + div.groupExtScrpCite, .diagram + div.groupExtScrpCite, .mapElement + div.groupExtScrpCite, .boxContent + div.groupEndnote, .diagram + div.groupEndnote, .mapElement + div.groupEndnote {
+  border-top: none;
+  margin-top: 0;
+}
+.boxContent p:first-child, .diagram p:first-child, .mapElement p:first-child, .boxContent .sb:first-child, .diagram .sb:first-child, .mapElement .sb:first-child {
+  margin-top: 0;
+}
+.boxContent p, .diagram p, .mapElement p, .boxContent .sb, .diagram .sb, .mapElement .sb {
+  margin-bottom: 0.5em;
+  text-indent: 0;
+}
+html[dir="ltr"] .boxContent p, html[dir="ltr"] .diagram p, html[dir="ltr"] .mapElement p, html[dir="ltr"] .boxContent .sb, html[dir="ltr"] .diagram .sb, html[dir="ltr"] .mapElement .sb {
+  margin-left: 0;
+}
+html[dir="rtl"] .boxContent p, html[dir="rtl"] .diagram p, html[dir="rtl"] .mapElement p, html[dir="rtl"] .boxContent .sb, html[dir="rtl"] .diagram .sb, html[dir="rtl"] .mapElement .sb {
+  margin-right: 0;
+}
+.boxContent ol, .diagram ol, .mapElement ol,
+.boxContent ul,
+.diagram ul,
+.mapElement ul {
+  margin-top: 0;
+}
+html[dir="ltr"] .boxContent ol.noMarker, html[dir="ltr"] .diagram ol.noMarker, html[dir="ltr"] .mapElement ol.noMarker, html[dir="ltr"]
+.boxContent ul.noMarker, html[dir="ltr"]
+.diagram ul.noMarker, html[dir="ltr"]
+.mapElement ul.noMarker {
+  padding-left: 0;
+}
+html[dir="rtl"] .boxContent ol.noMarker, html[dir="rtl"] .diagram ol.noMarker, html[dir="rtl"] .mapElement ol.noMarker, html[dir="rtl"]
+.boxContent ul.noMarker, html[dir="rtl"]
+.diagram ul.noMarker, html[dir="rtl"]
+.mapElement ul.noMarker {
+  padding-right: 0;
+}
+
+.closingContent .boxContent > ul, .closingContent .diagram > ul, .closingContent .mapElement > ul,
+.blockTeach .boxContent > ul,
+.blockTeach .diagram > ul,
+.blockTeach .mapElement > ul,
+.boxTeach .boxContent > ul,
+.boxTeach .diagram > ul,
+.boxTeach .mapElement > ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  list-style-type: none;
+}
+html[dir="ltr"] .closingContent .boxContent > ul, html[dir="ltr"] .closingContent .diagram > ul, html[dir="ltr"] .closingContent .mapElement > ul, html[dir="ltr"]
+.blockTeach .boxContent > ul, html[dir="ltr"]
+.blockTeach .diagram > ul, html[dir="ltr"]
+.blockTeach .mapElement > ul, html[dir="ltr"]
+.boxTeach .boxContent > ul, html[dir="ltr"]
+.boxTeach .diagram > ul, html[dir="ltr"]
+.boxTeach .mapElement > ul {
+  margin-left: 0;
+}
+html[dir="rtl"] .closingContent .boxContent > ul, html[dir="rtl"] .closingContent .diagram > ul, html[dir="rtl"] .closingContent .mapElement > ul, html[dir="rtl"]
+.blockTeach .boxContent > ul, html[dir="rtl"]
+.blockTeach .diagram > ul, html[dir="rtl"]
+.blockTeach .mapElement > ul, html[dir="rtl"]
+.boxTeach .boxContent > ul, html[dir="rtl"]
+.boxTeach .diagram > ul, html[dir="rtl"]
+.boxTeach .mapElement > ul {
+  margin-right: 0;
+}
+html[dir="ltr"] .closingContent .boxContent > ul, html[dir="ltr"] .closingContent .diagram > ul, html[dir="ltr"] .closingContent .mapElement > ul, html[dir="ltr"]
+.blockTeach .boxContent > ul, html[dir="ltr"]
+.blockTeach .diagram > ul, html[dir="ltr"]
+.blockTeach .mapElement > ul, html[dir="ltr"]
+.boxTeach .boxContent > ul, html[dir="ltr"]
+.boxTeach .diagram > ul, html[dir="ltr"]
+.boxTeach .mapElement > ul {
+  padding-left: 0;
+}
+html[dir="rtl"] .closingContent .boxContent > ul, html[dir="rtl"] .closingContent .diagram > ul, html[dir="rtl"] .closingContent .mapElement > ul, html[dir="rtl"]
+.blockTeach .boxContent > ul, html[dir="rtl"]
+.blockTeach .diagram > ul, html[dir="rtl"]
+.blockTeach .mapElement > ul, html[dir="rtl"]
+.boxTeach .boxContent > ul, html[dir="rtl"]
+.boxTeach .diagram > ul, html[dir="rtl"]
+.boxTeach .mapElement > ul {
+  padding-right: 0;
+}
+.closingContent .boxContent > p + ul, .closingContent .diagram > p + ul, .closingContent .mapElement > p + ul, .closingContent .boxContent > .sb + ul, .closingContent .diagram > .sb + ul, .closingContent .mapElement > .sb + ul,
+.blockTeach .boxContent > p + ul,
+.blockTeach .diagram > p + ul,
+.blockTeach .mapElement > p + ul,
+.blockTeach .boxContent > .sb + ul,
+.blockTeach .diagram > .sb + ul,
+.blockTeach .mapElement > .sb + ul,
+.boxTeach .boxContent > p + ul,
+.boxTeach .diagram > p + ul,
+.boxTeach .mapElement > p + ul,
+.boxTeach .boxContent > .sb + ul,
+.boxTeach .diagram > .sb + ul,
+.boxTeach .mapElement > .sb + ul {
+  margin-top: 0;
+  list-style-type: inherit;
+}
+html[dir="ltr"] .closingContent .boxContent > p + ul, html[dir="ltr"] .closingContent .diagram > p + ul, html[dir="ltr"] .closingContent .mapElement > p + ul, html[dir="ltr"] .closingContent .boxContent > .sb + ul, html[dir="ltr"] .closingContent .diagram > .sb + ul, html[dir="ltr"] .closingContent .mapElement > .sb + ul, html[dir="ltr"]
+.blockTeach .boxContent > p + ul, html[dir="ltr"]
+.blockTeach .diagram > p + ul, html[dir="ltr"]
+.blockTeach .mapElement > p + ul, html[dir="ltr"]
+.blockTeach .boxContent > .sb + ul, html[dir="ltr"]
+.blockTeach .diagram > .sb + ul, html[dir="ltr"]
+.blockTeach .mapElement > .sb + ul, html[dir="ltr"]
+.boxTeach .boxContent > p + ul, html[dir="ltr"]
+.boxTeach .diagram > p + ul, html[dir="ltr"]
+.boxTeach .mapElement > p + ul, html[dir="ltr"]
+.boxTeach .boxContent > .sb + ul, html[dir="ltr"]
+.boxTeach .diagram > .sb + ul, html[dir="ltr"]
+.boxTeach .mapElement > .sb + ul {
+  margin-left: 1em;
+}
+html[dir="rtl"] .closingContent .boxContent > p + ul, html[dir="rtl"] .closingContent .diagram > p + ul, html[dir="rtl"] .closingContent .mapElement > p + ul, html[dir="rtl"] .closingContent .boxContent > .sb + ul, html[dir="rtl"] .closingContent .diagram > .sb + ul, html[dir="rtl"] .closingContent .mapElement > .sb + ul, html[dir="rtl"]
+.blockTeach .boxContent > p + ul, html[dir="rtl"]
+.blockTeach .diagram > p + ul, html[dir="rtl"]
+.blockTeach .mapElement > p + ul, html[dir="rtl"]
+.blockTeach .boxContent > .sb + ul, html[dir="rtl"]
+.blockTeach .diagram > .sb + ul, html[dir="rtl"]
+.blockTeach .mapElement > .sb + ul, html[dir="rtl"]
+.boxTeach .boxContent > p + ul, html[dir="rtl"]
+.boxTeach .diagram > p + ul, html[dir="rtl"]
+.boxTeach .mapElement > p + ul, html[dir="rtl"]
+.boxTeach .boxContent > .sb + ul, html[dir="rtl"]
+.boxTeach .diagram > .sb + ul, html[dir="rtl"]
+.boxTeach .mapElement > .sb + ul {
+  margin-right: 1em;
+}
+html[dir="ltr"] .closingContent .boxContent > p + ul, html[dir="ltr"] .closingContent .diagram > p + ul, html[dir="ltr"] .closingContent .mapElement > p + ul, html[dir="ltr"] .closingContent .boxContent > .sb + ul, html[dir="ltr"] .closingContent .diagram > .sb + ul, html[dir="ltr"] .closingContent .mapElement > .sb + ul, html[dir="ltr"]
+.blockTeach .boxContent > p + ul, html[dir="ltr"]
+.blockTeach .diagram > p + ul, html[dir="ltr"]
+.blockTeach .mapElement > p + ul, html[dir="ltr"]
+.blockTeach .boxContent > .sb + ul, html[dir="ltr"]
+.blockTeach .diagram > .sb + ul, html[dir="ltr"]
+.blockTeach .mapElement > .sb + ul, html[dir="ltr"]
+.boxTeach .boxContent > p + ul, html[dir="ltr"]
+.boxTeach .diagram > p + ul, html[dir="ltr"]
+.boxTeach .mapElement > p + ul, html[dir="ltr"]
+.boxTeach .boxContent > .sb + ul, html[dir="ltr"]
+.boxTeach .diagram > .sb + ul, html[dir="ltr"]
+.boxTeach .mapElement > .sb + ul {
+  padding-left: 0.5em;
+}
+html[dir="rtl"] .closingContent .boxContent > p + ul, html[dir="rtl"] .closingContent .diagram > p + ul, html[dir="rtl"] .closingContent .mapElement > p + ul, html[dir="rtl"] .closingContent .boxContent > .sb + ul, html[dir="rtl"] .closingContent .diagram > .sb + ul, html[dir="rtl"] .closingContent .mapElement > .sb + ul, html[dir="rtl"]
+.blockTeach .boxContent > p + ul, html[dir="rtl"]
+.blockTeach .diagram > p + ul, html[dir="rtl"]
+.blockTeach .mapElement > p + ul, html[dir="rtl"]
+.blockTeach .boxContent > .sb + ul, html[dir="rtl"]
+.blockTeach .diagram > .sb + ul, html[dir="rtl"]
+.blockTeach .mapElement > .sb + ul, html[dir="rtl"]
+.boxTeach .boxContent > p + ul, html[dir="rtl"]
+.boxTeach .diagram > p + ul, html[dir="rtl"]
+.boxTeach .mapElement > p + ul, html[dir="rtl"]
+.boxTeach .boxContent > .sb + ul, html[dir="rtl"]
+.boxTeach .diagram > .sb + ul, html[dir="rtl"]
+.boxTeach .mapElement > .sb + ul {
+  padding-right: 0.5em;
+}
+.closingContent .boxContent ul.noMarker li p, .closingContent .diagram ul.noMarker li p, .closingContent .mapElement ul.noMarker li p, .closingContent .boxContent ul.noMarker li .sb, .closingContent .diagram ul.noMarker li .sb, .closingContent .mapElement ul.noMarker li .sb,
+.blockTeach .boxContent ul.noMarker li p,
+.blockTeach .diagram ul.noMarker li p,
+.blockTeach .mapElement ul.noMarker li p,
+.blockTeach .boxContent ul.noMarker li .sb,
+.blockTeach .diagram ul.noMarker li .sb,
+.blockTeach .mapElement ul.noMarker li .sb,
+.boxTeach .boxContent ul.noMarker li p,
+.boxTeach .diagram ul.noMarker li p,
+.boxTeach .mapElement ul.noMarker li p,
+.boxTeach .boxContent ul.noMarker li .sb,
+.boxTeach .diagram ul.noMarker li .sb,
+.boxTeach .mapElement ul.noMarker li .sb {
+  line-height: normal;
+}
+.closingContent .boxContent blockquote, .closingContent .diagram blockquote, .closingContent .mapElement blockquote,
+.blockTeach .boxContent blockquote,
+.blockTeach .diagram blockquote,
+.blockTeach .mapElement blockquote,
+.boxTeach .boxContent blockquote,
+.boxTeach .diagram blockquote,
+.boxTeach .mapElement blockquote {
+  display: inline-table;
+}
+.closingContent .boxContent p.si, .closingContent .diagram p.si, .closingContent .mapElement p.si, .closingContent .boxContent .si.sb, .closingContent .diagram .si.sb, .closingContent .mapElement .si.sb, .closingContent .boxContent p.sc, .closingContent .diagram p.sc, .closingContent .mapElement p.sc, .closingContent .boxContent .sc.sb, .closingContent .diagram .sc.sb, .closingContent .mapElement .sc.sb,
+.blockTeach .boxContent p.si,
+.blockTeach .diagram p.si,
+.blockTeach .mapElement p.si,
+.blockTeach .boxContent .si.sb,
+.blockTeach .diagram .si.sb,
+.blockTeach .mapElement .si.sb,
+.blockTeach .boxContent p.sc,
+.blockTeach .diagram p.sc,
+.blockTeach .mapElement p.sc,
+.blockTeach .boxContent .sc.sb,
+.blockTeach .diagram .sc.sb,
+.blockTeach .mapElement .sc.sb,
+.boxTeach .boxContent p.si,
+.boxTeach .diagram p.si,
+.boxTeach .mapElement p.si,
+.boxTeach .boxContent .si.sb,
+.boxTeach .diagram .si.sb,
+.boxTeach .mapElement .si.sb,
+.boxTeach .boxContent p.sc,
+.boxTeach .diagram p.sc,
+.boxTeach .mapElement p.sc,
+.boxTeach .boxContent .sc.sb,
+.boxTeach .diagram .sc.sb,
+.boxTeach .mapElement .sc.sb {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.boxTtl + .boxContent, .boxTtl + .diagram, .boxTtl + .mapElement,
+.boxSubTtl + .boxContent,
+.boxSubTtl + .diagram,
+.boxSubTtl + .mapElement {
+  padding-top: 1em;
+  margin-top: 0;
+}
+
+.studyPurpose {
+  margin-top: 1em;
+}
+.studyPurpose p, .studyPurpose .sb {
+  margin-bottom: 0.5em;
+}
+.studyPurpose > p, .studyPurpose > .sb {
+  padding-top: 0.5em;
+}
+.studyPurpose .boxContent, .studyPurpose .diagram, .studyPurpose .mapElement {
+  padding: 0.25em 1em;
+}
+
+aside .tableDiv {
+  margin-top: 0;
+}
+
+ul.imgWestEighth, ul.imgWestQuarter, div.imgWestEighth, div.imgWestQuarter, ol.imgWestEighth, ol.imgWestQuarter {
+  padding: 0;
+  width: 100%;
+}
+ul.imgWestEighth:before, ul.imgWestEighth:after, ul.imgWestQuarter:before, ul.imgWestQuarter:after, div.imgWestEighth:before, div.imgWestEighth:after, div.imgWestQuarter:before, div.imgWestQuarter:after, ol.imgWestEighth:before, ol.imgWestEighth:after, ol.imgWestQuarter:before, ol.imgWestQuarter:after {
+  content: " ";
+  display: table;
+}
+ul.imgWestEighth:after, ul.imgWestQuarter:after, div.imgWestEighth:after, div.imgWestQuarter:after, ol.imgWestEighth:after, ol.imgWestQuarter:after {
+  clear: both;
+}
+
+div.imgWestQuarter {
+  padding: 0;
+  width: 100%;
+}
+div.imgWestQuarter > p, div.imgWestQuarter > .sb {
+  width: auto;
+}
+html[dir="ltr"] div.imgWestQuarter > p, html[dir="ltr"] div.imgWestQuarter > .sb {
+  margin-left: 27%;
+}
+html[dir="rtl"] div.imgWestQuarter > p, html[dir="rtl"] div.imgWestQuarter > .sb {
+  margin-right: 27%;
+}
+div.imgWestQuarter > p:first-of-type, div.imgWestQuarter > .sb:first-of-type {
+  margin-top: 0;
+}
+
+div.imgEighthQuarter {
+  padding: 0;
+  width: 100%;
+}
+div.imgEighthQuarter > p, div.imgEighthQuarter > .sb {
+  margin-left: 0;
+  margin-right: 0;
+}
+html[dir="ltr"] div.imgEighthQuarter > p, html[dir="ltr"] div.imgEighthQuarter > .sb {
+  margin-left: 14%;
+}
+html[dir="rtl"] div.imgEighthQuarter > p, html[dir="rtl"] div.imgEighthQuarter > .sb {
+  margin-right: 14%;
+}
+div.imgEighthQuarter > p:first-of-type, div.imgEighthQuarter > .sb:first-of-type {
+  margin-top: 0;
+}
+
+.imgGrid div.south_left,
+.imgGrid div.south_center,
+.imgGrid div.south_right {
+  display: inline-block;
+  margin: 1em 0;
+  vertical-align: top;
+  clear: none;
+}
+html[dir="ltr"] .imgGrid div.south_left, html[dir="ltr"]
+.imgGrid div.south_center, html[dir="ltr"]
+.imgGrid div.south_right {
+  padding-right: 2.7%;
+}
+html[dir="rtl"] .imgGrid div.south_left, html[dir="rtl"]
+.imgGrid div.south_center, html[dir="rtl"]
+.imgGrid div.south_right {
+  padding-left: 2.7%;
+}
+.imgGrid.threeColumn > P {
+  display: none;
+}
+.imgGrid.threeColumn div.south_left.quarter,
+.imgGrid.threeColumn div.south_center.quarter,
+.imgGrid.threeColumn div.south_right.quarter {
+  margin: 2% 0;
+  max-width: 22%;
+}
+html[dir="ltr"] .imgGrid.threeColumn div.south_left.quarter, html[dir="ltr"]
+.imgGrid.threeColumn div.south_center.quarter, html[dir="ltr"]
+.imgGrid.threeColumn div.south_right.quarter {
+  padding-right: 10%;
+}
+html[dir="rtl"] .imgGrid.threeColumn div.south_left.quarter, html[dir="rtl"]
+.imgGrid.threeColumn div.south_center.quarter, html[dir="rtl"]
+.imgGrid.threeColumn div.south_right.quarter {
+  padding-left: 10%;
+}
+.imgGrid.threeColumn div.south_left.quarter:nth-of-type(3n),
+.imgGrid.threeColumn div.south_center.quarter:nth-of-type(3n),
+.imgGrid.threeColumn div.south_right.quarter:nth-of-type(3n) {
+  clear: right;
+}
+html[dir="ltr"] .imgGrid.threeColumn div.south_left.quarter:nth-of-type(3n), html[dir="ltr"]
+.imgGrid.threeColumn div.south_center.quarter:nth-of-type(3n), html[dir="ltr"]
+.imgGrid.threeColumn div.south_right.quarter:nth-of-type(3n) {
+  padding-right: 0;
+}
+html[dir="rtl"] .imgGrid.threeColumn div.south_left.quarter:nth-of-type(3n), html[dir="rtl"]
+.imgGrid.threeColumn div.south_center.quarter:nth-of-type(3n), html[dir="rtl"]
+.imgGrid.threeColumn div.south_right.quarter:nth-of-type(3n) {
+  padding-left: 0;
+}
+.imgGrid.threeColumn div.south_left.quarter:nth-of-type(2n),
+.imgGrid.threeColumn div.south_left.quarter:nth-of-type(1n),
+.imgGrid.threeColumn div.south_center.quarter:nth-of-type(2n),
+.imgGrid.threeColumn div.south_center.quarter:nth-of-type(1n),
+.imgGrid.threeColumn div.south_right.quarter:nth-of-type(2n),
+.imgGrid.threeColumn div.south_right.quarter:nth-of-type(1n) {
+  clear: none;
+}
+html[dir="ltr"] .imgGrid.threeColumn div.south_left.quarter:nth-of-type(2n), html[dir="ltr"]
+.imgGrid.threeColumn div.south_left.quarter:nth-of-type(1n), html[dir="ltr"]
+.imgGrid.threeColumn div.south_center.quarter:nth-of-type(2n), html[dir="ltr"]
+.imgGrid.threeColumn div.south_center.quarter:nth-of-type(1n), html[dir="ltr"]
+.imgGrid.threeColumn div.south_right.quarter:nth-of-type(2n), html[dir="ltr"]
+.imgGrid.threeColumn div.south_right.quarter:nth-of-type(1n) {
+  padding-right: 10%;
+}
+html[dir="rtl"] .imgGrid.threeColumn div.south_left.quarter:nth-of-type(2n), html[dir="rtl"]
+.imgGrid.threeColumn div.south_left.quarter:nth-of-type(1n), html[dir="rtl"]
+.imgGrid.threeColumn div.south_center.quarter:nth-of-type(2n), html[dir="rtl"]
+.imgGrid.threeColumn div.south_center.quarter:nth-of-type(1n), html[dir="rtl"]
+.imgGrid.threeColumn div.south_right.quarter:nth-of-type(2n), html[dir="rtl"]
+.imgGrid.threeColumn div.south_right.quarter:nth-of-type(1n) {
+  padding-left: 10%;
+}
+.imgGrid.threeColumn.alignBottom div {
+  vertical-align: bottom;
+}
+html[dir="ltr"] .imgGrid div.south_left:nth-of-type(odd), html[dir="ltr"]
+.imgGrid div.south_right:nth-of-type(odd), html[dir="ltr"]
+.imgGrid .imgGrid div.south_center:nth-of-type(odd) {
+  padding-right: 4.5%;
+}
+html[dir="rtl"] .imgGrid div.south_left:nth-of-type(odd), html[dir="rtl"]
+.imgGrid div.south_right:nth-of-type(odd), html[dir="rtl"]
+.imgGrid .imgGrid div.south_center:nth-of-type(odd) {
+  padding-left: 4.5%;
+}
+html[dir="ltr"] .imgGrid div.south_left:nth-of-type(even), html[dir="ltr"]
+.imgGrid div.south_right:nth-of-type(even), html[dir="ltr"]
+.imgGrid div.south_center:nth-of-type(even) {
+  padding-right: 0;
+}
+html[dir="rtl"] .imgGrid div.south_left:nth-of-type(even), html[dir="rtl"]
+.imgGrid div.south_right:nth-of-type(even), html[dir="rtl"]
+.imgGrid div.south_center:nth-of-type(even) {
+  padding-left: 0;
+}
+
+div.south_center,
+div.south_right,
+div.south_left,
+div.north_center,
+div.north_right,
+div.north_left {
+  float: none;
+  clear: both;
+}
+
+div.east_center,
+div.east_left,
+div.east_right,
+div.south_center.floatEast,
+div.south_right.floatEast,
+div.north_center.floatEast,
+div.north_right.floatEast {
+  margin: 0 0 .5em;
+  max-width: 47%;
+  display: block;
+}
+html[dir="ltr"] div.east_center, html[dir="ltr"]
+div.east_left, html[dir="ltr"]
+div.east_right, html[dir="ltr"]
+div.south_center.floatEast, html[dir="ltr"]
+div.south_right.floatEast, html[dir="ltr"]
+div.north_center.floatEast, html[dir="ltr"]
+div.north_right.floatEast {
+  padding-left: 3%;
+}
+html[dir="rtl"] div.east_center, html[dir="rtl"]
+div.east_left, html[dir="rtl"]
+div.east_right, html[dir="rtl"]
+div.south_center.floatEast, html[dir="rtl"]
+div.south_right.floatEast, html[dir="rtl"]
+div.north_center.floatEast, html[dir="rtl"]
+div.north_right.floatEast {
+  padding-right: 3%;
+}
+html[dir="ltr"] div.east_center, html[dir="ltr"]
+div.east_left, html[dir="ltr"]
+div.east_right, html[dir="ltr"]
+div.south_center.floatEast, html[dir="ltr"]
+div.south_right.floatEast, html[dir="ltr"]
+div.north_center.floatEast, html[dir="ltr"]
+div.north_right.floatEast {
+  float: right;
+}
+html[dir="rtl"] div.east_center, html[dir="rtl"]
+div.east_left, html[dir="rtl"]
+div.east_right, html[dir="rtl"]
+div.south_center.floatEast, html[dir="rtl"]
+div.south_right.floatEast, html[dir="rtl"]
+div.north_center.floatEast, html[dir="rtl"]
+div.north_right.floatEast {
+  float: left;
+}
+html[dir="ltr"] div.east_center, html[dir="ltr"]
+div.east_left, html[dir="ltr"]
+div.east_right, html[dir="ltr"]
+div.south_center.floatEast, html[dir="ltr"]
+div.south_right.floatEast, html[dir="ltr"]
+div.north_center.floatEast, html[dir="ltr"]
+div.north_right.floatEast {
+  clear: right;
+}
+html[dir="rtl"] div.east_center, html[dir="rtl"]
+div.east_left, html[dir="rtl"]
+div.east_right, html[dir="rtl"]
+div.south_center.floatEast, html[dir="rtl"]
+div.south_right.floatEast, html[dir="rtl"]
+div.north_center.floatEast, html[dir="rtl"]
+div.north_right.floatEast {
+  clear: left;
+}
+
+div.west_center,
+div.west_left,
+div.west_right,
+div.south_center.floatWest,
+div.south_left.floatWest,
+div.north_center.floatWest,
+div.north_left.floatWest {
+  margin: 0 0 .5em;
+  max-width: 47%;
+  display: block;
+}
+html[dir="ltr"] div.west_center, html[dir="ltr"]
+div.west_left, html[dir="ltr"]
+div.west_right, html[dir="ltr"]
+div.south_center.floatWest, html[dir="ltr"]
+div.south_left.floatWest, html[dir="ltr"]
+div.north_center.floatWest, html[dir="ltr"]
+div.north_left.floatWest {
+  padding-right: 3%;
+}
+html[dir="rtl"] div.west_center, html[dir="rtl"]
+div.west_left, html[dir="rtl"]
+div.west_right, html[dir="rtl"]
+div.south_center.floatWest, html[dir="rtl"]
+div.south_left.floatWest, html[dir="rtl"]
+div.north_center.floatWest, html[dir="rtl"]
+div.north_left.floatWest {
+  padding-left: 3%;
+}
+html[dir="ltr"] div.west_center, html[dir="ltr"]
+div.west_left, html[dir="ltr"]
+div.west_right, html[dir="ltr"]
+div.south_center.floatWest, html[dir="ltr"]
+div.south_left.floatWest, html[dir="ltr"]
+div.north_center.floatWest, html[dir="ltr"]
+div.north_left.floatWest {
+  float: left;
+}
+html[dir="rtl"] div.west_center, html[dir="rtl"]
+div.west_left, html[dir="rtl"]
+div.west_right, html[dir="rtl"]
+div.south_center.floatWest, html[dir="rtl"]
+div.south_left.floatWest, html[dir="rtl"]
+div.north_center.floatWest, html[dir="rtl"]
+div.north_left.floatWest {
+  float: right;
+}
+html[dir="ltr"] div.west_center, html[dir="ltr"]
+div.west_left, html[dir="ltr"]
+div.west_right, html[dir="ltr"]
+div.south_center.floatWest, html[dir="ltr"]
+div.south_left.floatWest, html[dir="ltr"]
+div.north_center.floatWest, html[dir="ltr"]
+div.north_left.floatWest {
+  clear: left;
+}
+html[dir="rtl"] div.west_center, html[dir="rtl"]
+div.west_left, html[dir="rtl"]
+div.west_right, html[dir="rtl"]
+div.south_center.floatWest, html[dir="rtl"]
+div.south_left.floatWest, html[dir="rtl"]
+div.north_center.floatWest, html[dir="rtl"]
+div.north_left.floatWest {
+  clear: right;
+}
+
+div.half {
+  max-width: 47%;
+}
+
+div.quarter {
+  max-width: 22%;
+}
+
+div.eighth {
+  max-width: 11%;
+}
+
+/*===------------------------------------------------------------------------===
+ * Styles by DocumentClassification - Song
+ *===------------------------------------------------------------------------=*/
+html[dir="ltr"] .docClass-Song ol {
+  padding-left: 1.5em;
+}
+html[dir="rtl"] .docClass-Song ol {
+  padding-right: 1.5em;
+}
+html[dir="ltr"] .docClass-Song ol {
+  margin-left: 0;
+}
+html[dir="rtl"] .docClass-Song ol {
+  margin-right: 0;
+}
+html[dir="ltr"] .docClass-Song li .sp {
+  padding-left: 1em;
+}
+html[dir="rtl"] .docClass-Song li .sp {
+  padding-right: 1em;
+}
+html[dir="ltr"] .docClass-Song li .sz {
+  margin-left: 1.5em;
+}
+html[dir="rtl"] .docClass-Song li .sz {
+  margin-right: 1.5em;
+}
+.docClass-Song .bodyTxt p, .docClass-Song .bodyTxt .sb {
+  margin-bottom: 0.25em;
+}
+.docClass-Song .contextTtl {
+  margin-bottom: 0;
+}
+.docClass-Song .contextTtl + h1, .docClass-Song .contextTtl + .st {
+  margin-top: 0;
+}
+.docClass-Song .themeScrp {
+  margin-top: -0.75em;
+}
+.docClass-Song .closingContent p, .docClass-Song .closingContent .sb {
+  color: #64605d;
+  font-size: 0.9em;
+}
+.docClass-Song .chorus {
+  margin: 1em 0 2em;
+}
+.docClass-Song .chorus .se {
+  color: #65605e;
+}
+.docClass-Song .sl {
+  margin-top: 1em;
+}
+
+.docClass-Glossary h2, .docClass-Glossary .ss {
+  text-align: center;
+}
+.docClass-Glossary ul.dl {
+  list-style: none;
+}
+html[dir="ltr"] .docClass-Glossary ul.dl {
+  margin-left: 0;
+}
+html[dir="rtl"] .docClass-Glossary ul.dl {
+  margin-right: 0;
+}
+html[dir="ltr"] .docClass-Glossary ul.dl {
+  padding-left: 0;
+}
+html[dir="rtl"] .docClass-Glossary ul.dl {
+  padding-right: 0;
+}
+.docClass-Glossary h3.inline {
+  color: #000000;
+  display: inline;
+  font-size: 1em;
+  line-height: 1.4em;
+  margin: 0;
+}
+html[dir="ltr"] .docClass-Glossary h3.inline {
+  float: left;
+}
+html[dir="rtl"] .docClass-Glossary h3.inline {
+  float: right;
+}
+html[dir="ltr"] .docClass-Glossary h3.inline {
+  padding-right: 0.25em;
+}
+html[dir="rtl"] .docClass-Glossary h3.inline {
+  padding-left: 0.25em;
+}
+.docClass-Glossary h3.dt strong {
+  color: #000000;
+  font-weight: bold;
+}
+.docClass-Glossary .dd {
+  display: block;
+  margin-top: 1em;
+}
+html[dir="ltr"] .docClass-Glossary .dd {
+  margin-left: 2em;
+}
+html[dir="rtl"] .docClass-Glossary .dd {
+  margin-right: 2em;
+}
+.docClass-Glossary .dl .dt:not(:first-child) {
+  margin-top: 1em;
+}
+.docClass-Glossary .sb {
+  margin-top: 0;
+  margin-bottom: 0;
+  text-indent: 0;
+}
+html[dir="ltr"] .docClass-Glossary .sb {
+  margin-right: 0.25em;
+}
+html[dir="rtl"] .docClass-Glossary .sb {
+  margin-left: 0.25em;
+}
+html[dir="ltr"] .docClass-Glossary .sb {
+  margin-left: 0;
+}
+html[dir="rtl"] .docClass-Glossary .sb {
+  margin-right: 0;
+}
+.docClass-Glossary .ss {
+  text-align: center;
+}
+
+.publication.docClass-Glossary h3 {
+  color: #000000 !important;
+}
+
+.docClass-TitlePage p, .docClass-TitlePage .sb,
+.docClass-TitlePage h1,
+.docClass-TitlePage .st {
+  text-align: center;
+}
+.docClass-TitlePage .contextTtl {
+  margin-bottom: 2em;
+}
+html[dir="ltr"] .docClass-TitlePage .contextTtl {
+  text-align: left;
+}
+html[dir="rtl"] .docClass-TitlePage .contextTtl {
+  text-align: right;
+}
+.docClass-TitlePage ul {
+  list-style-position: inside;
+}
+
+.docClass-WatchtowerTOC .boxContent, .docClass-WatchtowerTOC .diagram, .docClass-WatchtowerTOC .mapElement, .dc68 .boxContent, .dc68 .diagram, .dc68 .mapElement, .docClass-AwakeTOC .boxContent, .docClass-AwakeTOC .diagram, .docClass-AwakeTOC .mapElement, .dc78 .boxContent, .dc78 .diagram, .dc78 .mapElement {
+  border: none;
+  background-color: transparent;
+  color: #333333;
+  margin: 0;
+}
+html[dir="ltr"] .docClass-WatchtowerTOC .copyrightInfo, html[dir="ltr"] .dc68 .copyrightInfo, html[dir="ltr"] .docClass-AwakeTOC .copyrightInfo, html[dir="ltr"] .dc78 .copyrightInfo {
+  text-align: left;
+}
+html[dir="rtl"] .docClass-WatchtowerTOC .copyrightInfo, html[dir="rtl"] .dc68 .copyrightInfo, html[dir="rtl"] .docClass-AwakeTOC .copyrightInfo, html[dir="rtl"] .dc78 .copyrightInfo {
+  text-align: right;
+}
+.docClass-WatchtowerTOC .copyrightInfo h1, .docClass-WatchtowerTOC .copyrightInfo .st,
+.docClass-WatchtowerTOC .copyrightInfo .st, .dc68 .copyrightInfo h1, .dc68 .copyrightInfo .st,
+.dc68 .copyrightInfo .st, .docClass-AwakeTOC .copyrightInfo h1, .docClass-AwakeTOC .copyrightInfo .st,
+.docClass-AwakeTOC .copyrightInfo .st, .dc78 .copyrightInfo h1, .dc78 .copyrightInfo .st,
+.dc78 .copyrightInfo .st {
+  font-size: 1em;
+}
+
+.docClass-AwakeTOC .groupTOC h3.rule,
+.docClass-WatchtowerTOC .groupTOC h3.rule {
+  border: none;
+  margin-top: 0;
+  padding-top: 0;
+}
+.docClass-AwakeTOC .groupStudySched .groupTOC p.sc, .docClass-AwakeTOC .groupStudySched .groupTOC .sc.sb,
+.docClass-WatchtowerTOC .groupStudySched .groupTOC p.sc,
+.docClass-WatchtowerTOC .groupStudySched .groupTOC .sc.sb {
+  margin-top: 0.5em;
+  margin-bottom: 0;
+  font-size: 1.5em;
+  font-weight: lighter;
+}
+.docClass-AwakeTOC .groupStudySched .groupTOC p.sc strong, .docClass-AwakeTOC .groupStudySched .groupTOC .sc.sb strong,
+.docClass-WatchtowerTOC .groupStudySched .groupTOC p.sc strong,
+.docClass-WatchtowerTOC .groupStudySched .groupTOC .sc.sb strong {
+  font-weight: lighter;
+}
+.docClass-AwakeTOC .groupStudySched .groupTOC p.sc + p.sc, .docClass-AwakeTOC .groupStudySched .groupTOC .sc.sb + p.sc, .docClass-AwakeTOC .groupStudySched .groupTOC p.sc + .sc.sb, .docClass-AwakeTOC .groupStudySched .groupTOC .sc.sb + .sc.sb,
+.docClass-WatchtowerTOC .groupStudySched .groupTOC p.sc + p.sc,
+.docClass-WatchtowerTOC .groupStudySched .groupTOC .sc.sb + p.sc,
+.docClass-WatchtowerTOC .groupStudySched .groupTOC p.sc + .sc.sb,
+.docClass-WatchtowerTOC .groupStudySched .groupTOC .sc.sb + .sc.sb {
+  margin-top: 0;
+  font-size: inherit;
+  font-weight: normal;
+}
+.docClass-AwakeTOC .groupStudySched .groupTOC p.sc + p.sc strong, .docClass-AwakeTOC .groupStudySched .groupTOC .sc.sb + p.sc strong, .docClass-AwakeTOC .groupStudySched .groupTOC p.sc + .sc.sb strong, .docClass-AwakeTOC .groupStudySched .groupTOC .sc.sb + .sc.sb strong,
+.docClass-WatchtowerTOC .groupStudySched .groupTOC p.sc + p.sc strong,
+.docClass-WatchtowerTOC .groupStudySched .groupTOC .sc.sb + p.sc strong,
+.docClass-WatchtowerTOC .groupStudySched .groupTOC p.sc + .sc.sb strong,
+.docClass-WatchtowerTOC .groupStudySched .groupTOC .sc.sb + .sc.sb strong {
+  font-weight: normal;
+}
+.docClass-AwakeTOC .groupStudySched .groupTOC h3:not(:first-of-type),
+.docClass-WatchtowerTOC .groupStudySched .groupTOC h3:not(:first-of-type) {
+  margin-top: 1.5em;
+}
+.docClass-AwakeTOC .closingContent,
+.docClass-WatchtowerTOC .closingContent {
+  margin: 2em auto;
+  border: none;
+  list-style-type: initial;
+  padding: 1em 4%;
+}
+.docClass-AwakeTOC .closingContent .boxTtl,
+.docClass-WatchtowerTOC .closingContent .boxTtl {
+  padding-bottom: 0.5em;
+}
+.docClass-AwakeTOC .closingContent > h2, .docClass-AwakeTOC .closingContent > .ss,
+.docClass-WatchtowerTOC .closingContent > h2,
+.docClass-WatchtowerTOC .closingContent > .ss {
+  margin-top: 0;
+}
+.docClass-AwakeTOC .closingContent h4,
+.docClass-WatchtowerTOC .closingContent h4 {
+  font-size: 1.5em;
+  font-weight: lighter;
+}
+.docClass-AwakeTOC .closingContent h5,
+.docClass-WatchtowerTOC .closingContent h5 {
+  font-size: 1.3em;
+  font-weight: lighter;
+}
+.docClass-AwakeTOC .closingContent p + h5, .docClass-AwakeTOC .closingContent .sb + h5,
+.docClass-WatchtowerTOC .closingContent p + h5,
+.docClass-WatchtowerTOC .closingContent .sb + h5 {
+  margin-top: -0.25em;
+}
+
+.docClass-WatchingWorld .mapElement {
+  background-color: inherit;
+}
+
+body {
+  font-family: myFont, Arial, Helvetica, sans-serif;
+  font-size: 1em;
+  -webkit-font-smoothing: subpixel-antialiased;
+  margin: 5%;
+}
+html[dir="ltr"] body {
+  text-align: left;
+}
+html[dir="rtl"] body {
+  text-align: right;
+}
+
+body p, body .sb {
+  text-indent: 0;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+
+img {
+  height: auto;
+  width: 100%;
+}
+
+@page {
+  border: 1em;
+}
+h1.coverTtl.strong, .coverTtl.strong.st,
+.coverTtl.st {
+  font-size: 2em;
+}
+
+p.w_pagenavnum, .w_pagenavnum.sb {
+  font-family: myFont, Arial, Helvetica, sans-serif;
+  font-size: x-large;
+}
+
+div.groupExtScrpCite {
+  color: #333333;
+}
+
+div.groupExtScrpCite {
+  clear: both;
+  margin-top: 2em;
+}
+
+div.groupExtScrpCite p, div.groupExtScrpCite .sb {
+  margin-top: 1em;
+  padding-bottom: 0;
+}
+
+h1, .st,
+.st,
+h2,
+.ss,
+.ss,
+h3,
+h4,
+h5,
+h6 {
+  color: #64605d;
+  -webkit-text-fill-color: #64605d;
+}
+
+a:link {
+  -webkit-text-fill-color: #2878bb;
+  color: #2878bb;
+}
+
+a:visited {
+  -webkit-text-fill-color: gray;
+  color: #c9c9c9;
+  text-decoration: none;
+}
+
+a:hover {
+  -webkit-text-fill-color: blue;
+  color: #0000FF;
+  text-decoration: none;
+}
+
+a:active {
+  -webkit-text-fill-color: maroon;
+  color: #800000;
+}
+
+e:link {
+  color: #2878bb;
+}
+
+e:visited {
+  color: #c9c9c9;
+  text-decoration: none;
+}
+
+e:active {
+  color: #800000;
+}
+
+e:hover {
+  color: #0000FF;
+  text-decoration: none;
+}
+
+e:focus {
+  color: #3fa2bf;
+}
+
+div.east_right,
+div.west_left {
+  max-width: 40%;
+}
+div.east_right.quarter,
+div.west_left.quarter {
+  max-width: 22%;
+}
+
+html[dir="ltr"] .tableDiv table th {
+  text-align: left;
+}
+html[dir="rtl"] .tableDiv table th {
+  text-align: right;
+}

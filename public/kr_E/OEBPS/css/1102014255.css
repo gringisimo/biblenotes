@@ -1,0 +1,31 @@
+/* kr 13 for chapter 16 */
+/* docid 1102014255 */
+/* 2-10-15 */
+
+@import "kr_13.css";
+
+/* ch 16 */
+
+
+div.w_afterparimg {display:inline; vertical-align: bottom;}
+
+
+.imgGrid.threeColumn.alignBottom div {
+vertical-align: bottom;
+}
+.imgGrid div.south_left, .imgGrid div.south_right, .imgGrid div.south_center {
+clear: none;
+}
+div.south_center, div.south_right, div.south_left, div.north_center, div.north_right, div.north_left {
+float: none;
+}
+.imgGrid.threeColumn div.south_left.quarter, .imgGrid.threeColumn div.south_center.quarter, .imgGrid.threeColumn div.south_right.quarter {
+padding-right: 10%;
+clear: none;
+max-width: 22%;
+}
+#p100, #p101, #p102, #p104, #p105, #p106, #p107, #p108,  #p110, #p111
+{display:none; margin:0em; padding:0em; display:inline; position:relative; clear:both; width:30%}
+
+#p103, #p106, #p109
+{display:none; margin:0em; padding:0em; display:block; position:relative; clear:both; width:30% }

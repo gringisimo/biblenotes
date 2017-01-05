@@ -1,0 +1,167 @@
+/* CH 2 - 1102014241.CSS  2-3-15 */
+@import "kr_13.css";
+
+ol.numberedDiagram .imgWestQuarter{margin-left: 3%; }
+ol.numberedDiagram.imgWestQuarter li {list-style-type: decimal; 
+										font-family: sans-serif;}
+ol.numberedDiagram.imgWestQuarter li p {margin-left: 33%; }
+ol.numberedDiagram.imgWestQuarter li ul {margin-left: 40%; }
+ol.numberedDiagram.imgWestQuarter li ul li {list-style-type: disc; line-height: .95em;  text-align: left;}
+ol.numberedDiagram.imgWestQuarter li ul li p{list-style-type: disc; line-height: 1em; margin-left: 0%; text-align: left;}
+ul.imgWestQuarter li {margin-bottom:2em;}
+/* classes */
+.noMarker {list-style-type: none;}
+.noIndent {margin:0em; text-indent:0em;}
+
+
+h3, div.grpItems.borderSolid--bottom h3
+{   text-align: left;
+    text-indent: 0em;
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-size: 1em;
+    font-variant: normal;
+    margin-top: 2em;
+    margin-right: 0em;
+    margin-bottom: .5em;
+    margin-left: 0em;
+    -webkit-font-smoothing: subpixel-antialiased;}
+ 
+
+li.borderDotted--top {  border-top: 2px dotted silver; 
+						list-style-type: none; 
+						margin-right: 1em; 
+						margin-left: 0em;
+						margin-bottom: 1em;
+						margin-top: 1em;}
+
+
+div.grpItems.borderSolid--bottom {border-bottom: 2px solid black;}
+
+
+/*ch 1 */
+.imgWestQuarter  {clear: both; margin-left: 0em; margin-top: 3em; margin-bottom: 2em;}
+.imgWestQuarter p {display: block;}
+
+li.timeCirca {clear: both;}
+ol.timeline h3{clear: both; margin-left: 0em; margin-top: 3em; margin-bottom: 2em;}
+
+.timeline div.west_left.quarter {
+  width: 25% !important;
+    line-height: 1.20em !important;
+    margin: 0em 1em 2em 0em !important;
+    float: left;
+    display:inline;
+	clear:both;}
+ 
+.wide div.north_left.quarter {
+ width: 25% !important;
+    margin-top: 0em;
+	margin-right: 1em;
+	margin-bottom: 0em;
+	margin-left: 0em !important;
+    float: left;
+    display: block;
+	clear:both;}
+ 
+.pGroup + .boxSupplement.rule {margin-top:2em;}
+
+.boxSupplement.rule .boxSubTtl.rule, .boxSubTtl.rule {  
+    text-align: center;
+    padding-bottom: .2em;
+	font-weight: 700;
+    border-bottom: 1px solid #CCC; 
+	clear: both;
+}
+
+.boxSubTtl.rule p
+{ 	text-align: center;
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-size: 1.1em !important;}
+
+.boxSupplement.rule .boxTtl {  
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-size: 1.5em !important;
+    padding-bottom: .2em;
+	padding-top:1em;
+	padding-left: 1em;
+    border-bottom: 1px solid #CCC; /* supplemental box rule */
+	color:#8C8886}
+	
+.boxSupplement h3  {
+    font-size: 1.25em !important;
+	color:#8C8886
+}
+
+
+div.boxSupplement.rule .boxContent, div.blockTeach .boxContent {
+    margin-left: 0%;
+}
+
+div.boxSupplement.rule div.boxTtl.rule {  
+    text-align: center;
+    font-size: 130% !important;
+   }
+ 
+div.boxContent {
+margin-left: 0%;
+} 
+.boxContent ul.listImgGrid {margin-top:2em; margin-bottom:2em; clear:both;}
+
+.ListImgGrid {float:left; display:inline; list-style:none;}
+
+.boxContent ul.listImgGrid.centered.noMarker.noIndent li  {display:inline-block; list-style:none; width:32%;}
+
+.boxContent ul.listImgGrid.centered.noMarker.noIndent li div.north_left.quarter p, 
+.boxContent ul.listImgGrid.centered.noMarker.noIndent li p{
+font-size: .8em;
+line-height: 1em;
+vertical-align: bottom;
+display: block;
+text-align: center;
+clear: both;
+}
+
+
+ul.listImgGrid.centered.noMarker.noIndent li div.north_left.quarter{ 
+    width: 100%;
+	line-height: 1.20em !important;
+    margin: 0em !important;
+    float: left;
+	display: inline;}
+
+ul.listImgGrid.centered.noMarker.noIndent + li.borderDotted--top + h3.centered 
+{
+clear: both;
+padding-top: 2em;}
+
+ul.listImgGrid:after {
+content: ".";
+display: block;
+height: 0px;
+clear: both;
+visibility: hidden;}
+
+ol.timeline div.north_left.quarter { 
+	width: 25% !important;
+    line-height: 1.20em !important;
+    margin-top: 2em;
+	margin-right: 0em;
+	margin-bottom: 2em;
+	margin-left: 2em !important;
+    float: initial;
+    display: inline-block;
+}
+
+
+ol.timeline li div.south_left.quarter { 
+	width: 25% !important;
+    line-height: 1.20em !important;
+    margin-top: 2em;
+	margin-right: 75%;
+	margin-bottom: 2em;
+	margin-left: 0em !important;
+    float: initial;
+	display:block;
+	clear:both;
+}

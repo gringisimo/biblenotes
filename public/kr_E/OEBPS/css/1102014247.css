@@ -1,0 +1,12 @@
+/* 1102014247.css  2-14 - ch 8  */
+@import "kr_13.css";
+
+.boxSupplement .groupFootnote p{
+	margin:1em;
+}
+.boxSupplement div.groupFootnote:before, div.groupExtScrpCite:before {
+	margin: 1em;
+}
+div.tableDiv.hidden{
+	display: none;
+}

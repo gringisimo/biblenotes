@@ -1,0 +1,127 @@
+/* epub2toc.css */
+
+/* ------------------------------------------------------ */
+
+@page {    	
+	border: .5ex; 
+}
+
+body {
+	text-align: left;
+	margin-top: 5%;
+	margin-right: 5%;
+	margin-bottom: 5%;
+	margin-left: 5%;
+}
+
+strong {
+	font-weight: normal;
+}
+
+
+/* H */
+
+h1 {
+	text-align: center;
+	text-transform: uppercase;
+	font-family: "Times New Roman", "TimesNewRomanPSMT", Times, serif !important;
+	font-size: 1.25em;
+	font-weight: bold;
+	padding-top: .25em;
+	padding-right: 0em;
+	padding-bottom: 0em;
+	padding-left: 0em;
+	margin-bottom: 0em;
+	border-bottom: 1px solid gray;
+	-webkit-font-smoothing: subpixel-antialiased;
+} 
+
+h2  {
+	text-align: center;
+	text-indent: 0em;
+	line-height: 1.2em;
+	font-family: Arial, Helvetica, sans-serif !important;
+	font-size: .85em;
+	margin-top: 0em;
+	margin-right: 0em;
+	margin-bottom: 0em;
+	margin-left: 0em;
+	page-break-after: avoid;
+	-webkit-font-smoothing: subpixel-antialiased;
+}
+
+
+/* OTHER */	
+
+li {
+	display: none;
+}
+
+
+/* P */	
+
+p { 	
+	font-size: small;
+	-webkit-font-smoothing: subpixel-antialiased;
+    orphans: 2;
+	widows: 2;
+}
+
+
+/* LINK ELEMENTS */
+
+/*apple: ibooks, ipad, iphone*/
+
+a:link {	
+	-webkit-text-fill-color: #3fa2bf;
+	color: #3fa2bf;
+} 
+
+a:visited { 
+	text-decoration: none;
+	-webkit-text-fill-color: gray;
+	color: #c9c9c9; 
+}
+
+a:hover {
+	text-decoration: none;
+	-webkit-text-fill-color: blue;
+	color: #0000ff
+} 
+
+a:active { 
+	-webkit-text-fill-color: maroon;
+	color: #800000;
+} 
+
+/*web browsers + other */
+ 
+
+/* MOBI */
+
+e:link {
+	color: #3fa2bf;
+} 
+
+e:visited {
+	color: #c9c9c9; 
+	text-decoration: none;
+}
+
+e:active {
+	color: #800000;
+} 
+
+e:hover {
+	color: #0000ff; 
+	text-decoration: none;
+} 
+
+e:focus {
+	color: #3fa2bf; 
+	background-color: #c5b587;
+}
+
+/* ------------------------------------------------------ */
+	 
+

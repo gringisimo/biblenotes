@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ncx version="2005-1" xml:lang="en" xmlns="http://www.daisy.org/z3986/2005/ncx/">
+<head>
+<meta name="dtb:uid" content="urn:uuid:619F692F-9682-4CC4-9DE0-387452E5A4B8"/>
+<meta name="dtb:depth" content="1"/>
+<meta name="dtb:totalPageCount" content="0"/>
+<meta name="dtb:maxPageNumber" content="0"/>
+</head>
+<docTitle>
+<text>Life and Ministry Meeting Workbook, September 2016</text>
+</docTitle>
+<docAuthor>
+<text>WATCHTOWER</text>
+</docAuthor>
+<navMap>
+<navPoint class="chapter" id="chapter1" playOrder="1">
+<navLabel><text>Our Christian Life and Ministry—Meeting Workbook September 2016</text></navLabel>
+<content src="202016320.xhtml"/>
+</navPoint>
+<navPoint class="chapter" id="chapter2" playOrder="2">
+<navLabel><text>Sample Presentations</text></navLabel>
+<content src="202016321.xhtml"/>
+</navPoint>
+<navPoint class="chapter" id="chapter3" playOrder="3">
+<navLabel><text>September 5-11</text></navLabel>
+<content src="202016322.xhtml"/>
+</navPoint>
+<navPoint class="chapter" id="chapter4" playOrder="4">
+<navLabel><text>“Walk in the Law of Jehovah”</text></navLabel>
+<content src="202016323.xhtml"/>
+</navPoint>
+<navPoint class="chapter" id="chapter5" playOrder="5">
+<navLabel><text>If a Child Answers the Door</text></navLabel>
+<content src="202016324.xhtml"/>
+</navPoint>
+<navPoint class="chapter" id="chapter6" playOrder="6">
+<navLabel><text>September 12-18</text></navLabel>
+<content src="202016325.xhtml"/>
+</navPoint>
+<navPoint class="chapter" id="chapter7" playOrder="7">
+<navLabel><text>“My Help Comes From Jehovah”</text></navLabel>
+<content src="202016326.xhtml"/>
+</navPoint>
+<navPoint class="chapter" id="chapter8" playOrder="8">
+<navLabel><text>September 19-25</text></navLabel>
+<content src="202016327.xhtml"/>
+</navPoint>
+<navPoint class="chapter" id="chapter9" playOrder="9">
+<navLabel><text>We Are Wonderfully Made</text></navLabel>
+<content src="202016328.xhtml"/>
+</navPoint>
+<navPoint class="chapter" id="chapter10" playOrder="10">
+<navLabel><text>Avoid These Pitfalls When Conducting a Bible Study</text></navLabel>
+<content src="202016329.xhtml"/>
+</navPoint>
+<navPoint class="chapter" id="chapter11" playOrder="11">
+<navLabel><text>September 26–October 2</text></navLabel>
+<content src="202016330.xhtml"/>
+</navPoint>
+<navPoint class="chapter" id="chapter12" playOrder="12">
+<navLabel><text>“Jehovah Is Great and Most Worthy of Praise”</text></navLabel>
+<content src="202016331.xhtml"/>
+</navPoint>
+<navPoint class="chapter" id="chapter13" playOrder="13">
+<navLabel><text>Improving Our Skills in the Ministry—Encouraging Interested Ones to Attend Meetings</text></navLabel>
+<content src="202016332.xhtml"/>
+</navPoint>
+<navPoint class="chapter" id="chapter14" playOrder="14">
+<navLabel><text>Page Navigation</text></navLabel>
+<content src="pagenav8.xhtml"/>
+</navPoint>
+</navMap>
+<pageList id="page-mapping" class="pagenavnum">
+<navLabel><text>Page Navigation</text></navLabel>
+<pageTarget id="page-1" value="1" type="normal" playOrder="15">
+<navLabel><text>1</text></navLabel>
+<content src="202016320.xhtml#page1"/>
+</pageTarget>
+<pageTarget id="page-2" value="2" type="normal" playOrder="16">
+<navLabel><text>2</text></navLabel>
+<content src="202016322.xhtml#page2"/>
+</pageTarget>
+<pageTarget id="page-3" value="3" type="normal" playOrder="17">
+<navLabel><text>3</text></navLabel>
+<content src="202016323.xhtml#page3"/>
+</pageTarget>
+<pageTarget id="page-4" value="4" type="normal" playOrder="18">
+<navLabel><text>4</text></navLabel>
+<content src="202016325.xhtml#page4"/>
+</pageTarget>
+<pageTarget id="page-5" value="5" type="normal" playOrder="19">
+<navLabel><text>5</text></navLabel>
+<content src="202016327.xhtml#page5"/>
+</pageTarget>
+<pageTarget id="page-6" value="6" type="normal" playOrder="20">
+<navLabel><text>6</text></navLabel>
+<content src="202016330.xhtml#page6"/>
+</pageTarget>
+<pageTarget id="page-7" value="7" type="normal" playOrder="21">
+<navLabel><text>7</text></navLabel>
+<content src="202016332.xhtml#page7"/>
+</pageTarget>
+<pageTarget id="page-8" value="8" type="normal" playOrder="22">
+<navLabel><text>8</text></navLabel>
+<content src="202016329.xhtml#page8"/>
+</pageTarget>
+</pageList>
+</ncx>

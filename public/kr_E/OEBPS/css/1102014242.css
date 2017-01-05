@@ -1,0 +1,32 @@
+/* ch 3 */
+/* 1102014242 */
+@import "kr_13.css";
+/* boxes */
+ .imgWestQuarter  {clear:both; margin-left:0em; margin-top:3em; margin-bottom:2em;}
+.imgWestQuarter p {display:block;}
+.imgWestQuarter li {margin-bottom:2em;}
+
+ .listSpacing p{margin-left:40%; } /*ch 3*/
+ .listSpacing li p:last-child {padding-bottom:3em;}
+ .imgWestQuarter img {width:30%; margin-left:-40%; padding-bottom:1em;} /* ch 3*/
+
+div.west_left, div.west_left .quarter, .wide div.west_left .quarter /*.west_left.quarter*/, div.west_left.quarter /*.west_left.quarter*/{
+   /*width: 25% !important;*/
+    line-height: 1.20em !important;
+    margin: 0em 1em 0em 0em !important;
+    float: left;
+    display:inline;
+	clear:both;}
+
+.timeline div.west_left /*.quarter*/, div.west_left.quarter{
+ /*   width: 25% !important;*/
+    line-height: 1.20em !important;
+    margin: 0em 1em 2em 0em !important;
+    float: left;
+    display:inline;
+	clear:both;}
+div.boxSupplement div.boxContent p{
+	margin-left: 27%;
+}
+element.style {
+}

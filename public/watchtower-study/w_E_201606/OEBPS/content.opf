@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<package version="3.0" xmlns="http://www.idpf.org/2007/opf" unique-identifier="BookId">
+<metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:opf="http://www.idpf.org/2007/opf">
+<dc:title>The Watchtower, June 2016</dc:title>
+<dc:creator id="creator" xml:lang="en" dir="ltr">WATCHTOWER</dc:creator>
+<meta refines="#creator" property="role" scheme="marc:relators" id="role">aut</meta><dc:language>en</dc:language>
+<dc:publisher>Watchtower Bible and Tract Society of New York, Inc.</dc:publisher>
+<dc:identifier id="BookId">urn:uuid:23EC3883-7686-43B5-B3F6-B792A740AE40</dc:identifier>
+<meta property="dcterms:modified">2016-01-17T19:21:20Z</meta>
+
+<meta name="cover" content="cover-image"/>
+</metadata>
+<manifest>
+<item id="toc" properties="nav" href="toc.xhtml" media-type="application/xhtml+xml" />
+<item id="ncx" href="toc.ncx" media-type="application/x-dtbncx+xml" />
+<item id="style1" href="css/default.css" media-type="text/css" />
+<item id="style2" href="css/fonts.css" media-type="text/css" />
+<item id="style3" href="css/w16_39.css" media-type="text/css" />
+<item id="style4" href="css/w16_68.css" media-type="text/css" />
+<item id="style5" href="css/w16_10.css" media-type="text/css" />
+<item id="style6" href="css/2016442.css" media-type="text/css" />
+<item id="style7" href="css/w16_40.css" media-type="text/css" />
+<item id="style8" href="css/2016444.css" media-type="text/css" />
+<item id="style9" href="css/w16_44.css" media-type="text/css" />
+<item id="style10" href="css/extracted.css" media-type="text/css" />
+<item id="style11" href="css/epub2toc.css" media-type="text/css" />
+<item id="cover" href="cover.xhtml" media-type="application/xhtml+xml" />
+<item id="cover-image" properties="cover-image" href="images/2016446_E_cvr.jpg" media-type="image/jpeg" />
+<item id="chapter1" href="2016446.xhtml" media-type="application/xhtml+xml" />
+<item id="chapter2" href="2016440.xhtml" media-type="application/xhtml+xml" />
+<item id="chapter3" href="2016441.xhtml" media-type="application/xhtml+xml" />
+<item id="chapter4" href="2016442.xhtml" media-type="application/xhtml+xml" />
+<item id="chapter5" href="2016443.xhtml" media-type="application/xhtml+xml" />
+<item id="chapter6" href="2016444.xhtml" media-type="application/xhtml+xml" />
+<item id="chapter7" href="2016445.xhtml" media-type="application/xhtml+xml" />
+<item id="chapter8" href="2016447.xhtml" media-type="application/xhtml+xml" />
+<item id="chapter9" href="2016448.xhtml" media-type="application/xhtml+xml" />
+<item id="chapter10" href="2016450.xhtml" media-type="application/xhtml+xml" />
+<item id="chapter11" href="pagenav5.xhtml" media-type="application/xhtml+xml" />
+<item id="chapter12" href="2016446-extracted.xhtml" media-type="application/xhtml+xml" />
+<item id="chapter13" href="2016440-extracted.xhtml" media-type="application/xhtml+xml" />
+<item id="chapter14" href="2016441-extracted.xhtml" media-type="application/xhtml+xml" />
+<item id="chapter15" href="2016442-extracted.xhtml" media-type="application/xhtml+xml" />
+<item id="chapter16" href="2016443-extracted.xhtml" media-type="application/xhtml+xml" />
+<item id="chapter17" href="2016444-extracted.xhtml" media-type="application/xhtml+xml" />
+<item id="chapter18" href="2016445-extracted.xhtml" media-type="application/xhtml+xml" />
+<item id="chapter19" href="2016447-extracted.xhtml" media-type="application/xhtml+xml" />
+<item id="chapter20" href="2016448-extracted.xhtml" media-type="application/xhtml+xml" />
+<item id="chapter21" href="2016450-extracted.xhtml" media-type="application/xhtml+xml" />
+<item id="image2" href="images/2016441_univ_cnt_1.jpg" media-type="image/jpeg" />
+<item id="image3" href="images/2016441_univ_cnt_2.jpg" media-type="image/jpeg" />
+<item id="image4" href="images/2016441_univ_cnt_3.jpg" media-type="image/jpeg" />
+<item id="image5" href="images/2016441_univ_cnt_4.jpg" media-type="image/jpeg" />
+<item id="image6" href="images/2016441_univ_cnt_5.jpg" media-type="image/jpeg" />
+<item id="image7" href="images/2016442_univ_cnt_1.jpg" media-type="image/jpeg" />
+<item id="image8" href="images/2016442_univ_cnt_2.jpg" media-type="image/jpeg" />
+<item id="image9" href="images/2016443_univ_cnt_1.jpg" media-type="image/jpeg" />
+<item id="image10" href="images/2016443_univ_cnt_2.jpg" media-type="image/jpeg" />
+<item id="image11" href="images/2016444_univ_cnt_1.jpg" media-type="image/jpeg" />
+<item id="image12" href="images/2016445_univ_cnt_1.jpg" media-type="image/jpeg" />
+<item id="image13" href="images/2016445_univ_cnt_2.jpg" media-type="image/jpeg" />
+<item id="image14" href="images/2016447_univ_cnt_1.jpg" media-type="image/jpeg" />
+<item id="image15" href="images/2016447_univ_cnt_2.jpg" media-type="image/jpeg" />
+<item id="image16" href="images/2016448_univ_cnt_1.jpg" media-type="image/jpeg" />
+<item id="image17" href="images/2016448_univ_cnt_2.jpg" media-type="image/jpeg" />
+</manifest>
+<spine toc="ncx" page-progression-direction="ltr">
+<itemref idref="cover" linear="no" />
+<itemref idref="toc" linear="no" />
+<itemref idref="chapter1" />
+<itemref idref="chapter2" />
+<itemref idref="chapter3" />
+<itemref idref="chapter4" />
+<itemref idref="chapter5" />
+<itemref idref="chapter6" />
+<itemref idref="chapter7" />
+<itemref idref="chapter8" />
+<itemref idref="chapter9" />
+<itemref idref="chapter10" />
+<itemref idref="chapter11" />
+<itemref idref="chapter12" linear="no" />
+<itemref idref="chapter13" linear="no" />
+<itemref idref="chapter14" linear="no" />
+<itemref idref="chapter15" linear="no" />
+<itemref idref="chapter16" linear="no" />
+<itemref idref="chapter17" linear="no" />
+<itemref idref="chapter18" linear="no" />
+<itemref idref="chapter19" linear="no" />
+<itemref idref="chapter20" linear="no" />
+<itemref idref="chapter21" linear="no" />
+</spine>
+<guide><reference type="cover" href="cover.xhtml" title="Cover"/></guide>
+</package>

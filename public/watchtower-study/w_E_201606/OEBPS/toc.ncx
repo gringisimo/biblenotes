@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ncx version="2005-1" xml:lang="en" xmlns="http://www.daisy.org/z3986/2005/ncx/">
+<head>
+<meta name="dtb:uid" content="urn:uuid:23EC3883-7686-43B5-B3F6-B792A740AE40"/>
+<meta name="dtb:depth" content="1"/>
+<meta name="dtb:totalPageCount" content="0"/>
+<meta name="dtb:maxPageNumber" content="0"/>
+</head>
+<docTitle>
+<text>The Watchtower, June 2016</text>
+</docTitle>
+<docAuthor>
+<text>WATCHTOWER</text>
+</docAuthor>
+<navMap>
+<navPoint class="chapter" id="chapter1" playOrder="1">
+<navLabel><text>Study Edition</text></navLabel>
+<content src="2016446.xhtml"/>
+</navPoint>
+<navPoint class="chapter" id="chapter2" playOrder="2">
+<navLabel><text>Table of Contents</text></navLabel>
+<content src="2016440.xhtml"/>
+</navPoint>
+<navPoint class="chapter" id="chapter3" playOrder="3">
+<navLabel><text>Jehovah “Cares for You”</text></navLabel>
+<content src="2016441.xhtml"/>
+</navPoint>
+<navPoint class="chapter" id="chapter4" playOrder="4">
+<navLabel><text>Appreciating Jehovah as Our Potter</text></navLabel>
+<content src="2016442.xhtml"/>
+</navPoint>
+<navPoint class="chapter" id="chapter5" playOrder="5">
+<navLabel><text>Do You Let the Great Potter Mold You?</text></navLabel>
+<content src="2016443.xhtml"/>
+</navPoint>
+<navPoint class="chapter" id="chapter6" playOrder="6">
+<navLabel><text>Questions From Readers</text></navLabel>
+<content src="2016444.xhtml"/>
+</navPoint>
+<navPoint class="chapter" id="chapter7" playOrder="7">
+<navLabel><text>“Jehovah Our God Is One Jehovah”</text></navLabel>
+<content src="2016445.xhtml"/>
+</navPoint>
+<navPoint class="chapter" id="chapter8" playOrder="8">
+<navLabel><text>Do Not Let the Faults of Others Stumble You</text></navLabel>
+<content src="2016447.xhtml"/>
+</navPoint>
+<navPoint class="chapter" id="chapter9" playOrder="9">
+<navLabel><text>A Godly Quality More Precious Than Diamonds</text></navLabel>
+<content src="2016448.xhtml"/>
+</navPoint>
+<navPoint class="chapter" id="chapter10" playOrder="10">
+<navLabel><text>Do You Remember?</text></navLabel>
+<content src="2016450.xhtml"/>
+</navPoint>
+<navPoint class="chapter" id="chapter11" playOrder="11">
+<navLabel><text>Page Navigation</text></navLabel>
+<content src="pagenav5.xhtml"/>
+</navPoint>
+</navMap>
+<pageList id="page-mapping" class="pagenavnum">
+<navLabel><text>Page Navigation</text></navLabel>
+<pageTarget id="page-1" value="1" type="normal" playOrder="12">
+<navLabel><text>1</text></navLabel>
+<content src="2016446.xhtml#page1"/>
+</pageTarget>
+<pageTarget id="page-2" value="2" type="normal" playOrder="13">
+<navLabel><text>2</text></navLabel>
+<content src="2016440.xhtml#page2"/>
+</pageTarget>
+<pageTarget id="page-3" value="3" type="normal" playOrder="14">
+<navLabel><text>3</text></navLabel>
+<content src="2016441.xhtml#page3"/>
+</pageTarget>
+<pageTarget id="page-4" value="4" type="normal" playOrder="15">
+<navLabel><text>4</text></navLabel>
+<content src="2016441.xhtml#page4"/>
+</pageTarget>
+<pageTarget id="page-5" value="5" type="normal" playOrder="16">
+<navLabel><text>5</text></navLabel>
+<content src="2016441.xhtml#page5"/>
+</pageTarget>
+<pageTarget id="page-6" value="6" type="normal" playOrder="17">
+<navLabel><text>6</text></navLabel>
+<content src="2016442.xhtml#page6"/>
+</pageTarget>
+<pageTarget id="page-7" value="7" type="normal" playOrder="18">
+<navLabel><text>7</text></navLabel>
+<content src="2016442.xhtml#page7"/>
+</pageTarget>
+<pageTarget id="page-8" value="8" type="normal" playOrder="19">
+<navLabel><text>8</text></navLabel>
+<content src="2016442.xhtml#page8"/>
+</pageTarget>
+<pageTarget id="page-9" value="9" type="normal" playOrder="20">
+<navLabel><text>9</text></navLabel>
+<content src="2016442.xhtml#page9"/>
+</pageTarget>
+<pageTarget id="page-10" value="10" type="normal" playOrder="21">
+<navLabel><text>10</text></navLabel>
+<content src="2016442.xhtml#page10"/>
+</pageTarget>
+<pageTarget id="page-11" value="11" type="normal" playOrder="22">
+<navLabel><text>11</text></navLabel>
+<content src="2016443.xhtml#page11"/>
+</pageTarget>
+<pageTarget id="page-12" value="12" type="normal" playOrder="23">
+<navLabel><text>12</text></navLabel>
+<content src="2016443.xhtml#page12"/>
+</pageTarget>
+<pageTarget id="page-13" value="13" type="normal" playOrder="24">
+<navLabel><text>13</text></navLabel>
+<content src="2016443.xhtml#page13"/>
+</pageTarget>
+<pageTarget id="page-14" value="14" type="normal" playOrder="25">
+<navLabel><text>14</text></navLabel>
+<content src="2016443.xhtml#page14"/>
+</pageTarget>
+<pageTarget id="page-15" value="15" type="normal" playOrder="26">
+<navLabel><text>15</text></navLabel>
+<content src="2016443.xhtml#page15"/>
+</pageTarget>
+<pageTarget id="page-16" value="16" type="normal" playOrder="27">
+<navLabel><text>16</text></navLabel>
+<content src="2016444.xhtml#page16"/>
+</pageTarget>
+<pageTarget id="page-17" value="17" type="normal" playOrder="28">
+<navLabel><text>17</text></navLabel>
+<content src="2016444.xhtml#page17"/>
+</pageTarget>
+<pageTarget id="page-18" value="18" type="normal" playOrder="29">
+<navLabel><text>18</text></navLabel>
+<content src="2016445.xhtml#page18"/>
+</pageTarget>
+<pageTarget id="page-19" value="19" type="normal" playOrder="30">
+<navLabel><text>19</text></navLabel>
+<content src="2016445.xhtml#page19"/>
+</pageTarget>
+<pageTarget id="page-20" value="20" type="normal" playOrder="31">
+<navLabel><text>20</text></navLabel>
+<content src="2016445.xhtml#page20"/>
+</pageTarget>
+<pageTarget id="page-21" value="21" type="normal" playOrder="32">
+<navLabel><text>21</text></navLabel>
+<content src="2016445.xhtml#page21"/>
+</pageTarget>
+<pageTarget id="page-22" value="22" type="normal" playOrder="33">
+<navLabel><text>22</text></navLabel>
+<content src="2016445.xhtml#page22"/>
+</pageTarget>
+<pageTarget id="page-23" value="23" type="normal" playOrder="34">
+<navLabel><text>23</text></navLabel>
+<content src="2016447.xhtml#page23"/>
+</pageTarget>
+<pageTarget id="page-24" value="24" type="normal" playOrder="35">
+<navLabel><text>24</text></navLabel>
+<content src="2016447.xhtml#page24"/>
+</pageTarget>
+<pageTarget id="page-25" value="25" type="normal" playOrder="36">
+<navLabel><text>25</text></navLabel>
+<content src="2016447.xhtml#page25"/>
+</pageTarget>
+<pageTarget id="page-26" value="26" type="normal" playOrder="37">
+<navLabel><text>26</text></navLabel>
+<content src="2016447.xhtml#page26"/>
+</pageTarget>
+<pageTarget id="page-27" value="27" type="normal" playOrder="38">
+<navLabel><text>27</text></navLabel>
+<content src="2016447.xhtml#page27"/>
+</pageTarget>
+<pageTarget id="page-28" value="28" type="normal" playOrder="39">
+<navLabel><text>28</text></navLabel>
+<content src="2016448.xhtml#page28"/>
+</pageTarget>
+<pageTarget id="page-29" value="29" type="normal" playOrder="40">
+<navLabel><text>29</text></navLabel>
+<content src="2016448.xhtml#page29"/>
+</pageTarget>
+<pageTarget id="page-30" value="30" type="normal" playOrder="41">
+<navLabel><text>30</text></navLabel>
+<content src="2016448.xhtml#page30"/>
+</pageTarget>
+<pageTarget id="page-31" value="31" type="normal" playOrder="42">
+<navLabel><text>31</text></navLabel>
+<content src="2016448.xhtml#page31"/>
+</pageTarget>
+<pageTarget id="page-32" value="32" type="normal" playOrder="43">
+<navLabel><text>32</text></navLabel>
+<content src="2016450.xhtml#page32"/>
+</pageTarget>
+</pageList>
+</ncx>

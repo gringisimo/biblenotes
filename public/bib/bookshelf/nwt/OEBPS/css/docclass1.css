@@ -1,0 +1,323 @@
+
+/* CSS Document */
+/* docclass1.css */
+/* 9-20-13, 9-23-13, 9-29-13, 10-5 REVISED 11-7, 12/29*/
+
+
+
+body { 	margin: 5%;
+		-webkit-font-smoothing: subpixel-antialiased; }
+
+h1 { 	font-family: 'Helvetica Neue', 'HelveticaNeue', Arial, Helvetica, sans-serif;
+		text-align:left;
+		color:gray;
+		font-weight:200;
+		font-size:1.5em;
+		letter-spacing:1px;
+		-webkit-font-smoothing: subpixel-antialiased;
+		margin-top: 1.5em;}
+		
+
+h1.strong {font-weight:200;}
+strong { 	
+		font-weight:200;
+		margin: 0em;
+		padding:0em;
+		-webkit-font-smoothing: subpixel-antialiased;}
+
+
+/* p dec */
+p {			font: .95em/1.4em "Times New Roman", Times, serif;
+			margin-left:0em; 
+			padding-left:0em;
+			padding-bottom:0;
+			text-indent:1em;
+			-webkit-font-smoothing: subpixel-antialiased;
+			orphans: 2;
+			widows: 2;}
+
+
+/* poetry alignment treatments with chapter headings, superscriptions */
+p:first-child, p:nth-of-type(2), 
+p:nth-of-type(2) .sl, 
+p:nth-of-type(2), 
+p.w_navigation w_biblebookname + p.sl 
+			{text-indent:0em; margin-left:0em; padding-left:0em;}
+p.w_navigation w_biblebookname + p.sl {text-indent:0em; margin-left:0em; padding-left:2em;}
+p.sl:nth-of-type(2){margin-left:1.75em; clear:both;}
+p.sw + p.sl:nth-of-type(2), 
+p.ss + p.sb:nth-of-type(3) {clear:both;padding:0em;margin-left:0em;text-indent:0em;}
+p.ss + p.sl:nth-of-type(3),  
+p.w_navigation w_biblebookname +  p.ss + p.sl:nth-of-type(2), 
+p.w_navigation w_biblebookname +  p.ss + p.sl {clear:both;padding:0em;margin-left:2em; text-indent:0em;}
+p.ss:nth-of-type(2) + p.ss {text-align:center;text-indent:-0.2em; margin-top:-1em;}
+p.sw + p.ss {padding-top:1em;}
+h1 + p.ss + p.sb {clear:both;padding:0em;margin-left:0em; text-indent:0em;} /*lamentations*/
+
+p.w_biblebookname {
+	font-size: 1em;
+	font-weight: 200;
+	text-transform: uppercase;
+	text-indent:0em;
+	color: #333;
+	letter-spacing:1px;
+	
+}
+
+
+.w_ch, .w_ch strong {
+	font-family: 'Helvetica Neue', 'HelveticaNeue', Arial, Helvetica, sans-serif; /*10-16-13*/
+	vertical-align:top;       
+    font-weight: 500;  
+ 	position: relative;
+	line-height: 0.8em;
+	margin:0;
+    padding: 0px 1px 4px 0px; 
+	font-size: x-large;
+	text-indent:-.02em;
+	-webkit-font-smoothing: subpixel-antialiased;
+	clear:both;}
+	
+
+.sl + .w_ch, .sb + .w_ch{ 		
+			font: .95em/1.4em "Times New Roman", Times, serif;
+			text-align: left;
+			text-indent:0em; margin:0em;
+			-webkit-font-smoothing: subpixel-antialiased;}
+
+.sb{ 		
+			font: .95em/1.4em "Times New Roman", Times, serif;
+			text-align: left;
+			text-indent:1em; 
+			margin:0.5em 0;
+			-webkit-font-smoothing: subpixel-antialiased;}
+
+
+sup {	
+		font-weight:700;
+		font-family:Arial, Helvetica, sans-serif;
+		-webkit-font-smoothing: subpixel-antialiased;}
+
+p + p.sl, p + p.sz {margin: .5em 0 0 0; }
+
+.sl {   
+	font: .95em/1.4em "Times New Roman", Times, serif;
+	text-indent: -2.1em;
+	padding-left:4em;
+	 margin: 0.2em 0 0 0;
+	-webkit-font-smoothing: subpixel-antialiased;}
+
+p.sl span[id*=_verse] + .sl {   
+	text-indent: -2.1em;
+	padding-left:5em;
+	-webkit-font-smoothing: subpixel-antialiased;}
+
+p.sl span[id*=_verse]  {margin-left:-.75em;}  /*10-22 fix for sl verse and non verse formatting*/
+p.sz span[id*=_verse]  {margin-left:-1.15em;}
+p.sl span[id*=chapter] {margin-left:-.9em;} 
+
+.sl .cl {
+    margin-left: 0;
+    padding-left: 0;
+    text-indent: 0;
+}
+
+.sz{   
+	font: .95em/1.4em "Times New Roman", Times, serif;
+	text-indent: -2.25em;
+	 margin: 0.2em 0 0 0;
+	padding-left: 5.5em;
+	-webkit-font-smoothing: subpixel-antialiased;}
+
+
+/* superscriptions */
+.sw {
+	text-align:left;
+	font: "Times New Roman", Times, serif;
+	font-size:small;
+	margin-top:1.75em;
+	margin-bottom: 1em;
+	-webkit-font-smoothing: subpixel-antialiased;}
+
+
+.ss {
+	font-family: "Times New Roman", Times, serif;
+	text-align: center;
+	-webkit-font-smoothing: subpixel-antialiased;
+	font-size: small;
+	margin-bottom: 1.75em;
+	margin-top:1em;}
+
+/* psalm 112 */
+p.ss + p.ss {margin: 1em 0;
+             padding-top: .5em;
+			 padding-bottom: .5em;}
+
+p.ss + p.sz {margin: -1em 0;
+             padding-top: 0em;
+			 padding-bottom: 0.5em;}
+
+p.sz + p.ss  {margin: 1.2em 0em 0.5em 0em;
+			 padding-bottom: .5em;}
+
+
+p.sz + p.sl, p.ss + p.sl {margin:0.5em 0em;}
+
+
+p.sc {
+	font: 0.95em "Times New Roman", Times, sans-serif;
+	text-align: left;
+	padding-top: 0em;
+	margin-top: .2em;
+	margin-bottom: 0em;
+}
+
+
+/* cite*/
+
+
+div.groupFootnote p{
+	font-size: 0.75em;
+	margin: 1.25em 0em;
+	-webkit-font-smoothing: subpixel-antialiased;}
+
+div.groupExtScrpCite p {
+	font-size: 0.75em;
+	margin-top: 1em;
+	-webkit-font-smoothing: subpixel-antialiased;}
+
+div.groupExtScrpCite {
+	padding-top: .25em;}
+
+div.groupExt {
+	margin-top: 2em;}
+
+
+
+/************************************/
+
+
+/* navigation */
+p.w_navigation.w_biblebookname a:active, 
+p.w_navigation.w_biblebookname a:link, 
+p.w_navigation.w_biblebookname a:visited
+    {
+       font-size:.9em;
+ 		font-family: 'Helvetica Neue', 'HelveticaNeue', "Arial", Helvetica, sans-serif;
+        font-weight: 200;
+        -webkit-text-fill-color: #fff;
+		color:#fff;
+		text-align:left;
+ 		text-decoration: none;
+		padding:2px;
+		-webkit-font-smoothing: subpixel-antialiased;
+background: #746B84;
+-webkit-border-radius: 2px;
+-moz-border-radius: 2px;
+border-radius: 2px;
+-webkit-box-shadow: #666 0px 0px 1px;
+-moz-box-shadow: #666 0px 0px 1px;
+box-shadow: #666 0px 0px 1px;
+margin-top: 0 !important;
+border: 1px solid gray;
+padding: 4px 10px  !important;
+    }
+
+a:active,
+a:link
+    {
+        font-family: 'Helvetica Neue', 'HelveticaNeue', "Arial", Helvetica, sans-serif;
+        font-weight: 200;
+        -webkit-text-fill-color: #6195c7;
+        color: #6195c7; 
+		text-align:left;
+		-webkit-font-smoothing: subpixel-antialiased;
+		text-decoration:none;}
+		
+		a:visited
+    {
+        font-family: 'Helvetica Neue', 'HelveticaNeue', "Arial", Helvetica, sans-serif;
+        font-weight: 200;
+        -webkit-text-fill-color: #6195c7;
+        color: #6195c7; 
+		text-align:left;
+		-webkit-font-smoothing: subpixel-antialiased;
+		text-decoration:none;}
+
+a:hover {
+	 -webkit-text-fill-color: grey;
+        color: grey; }
+
+
+p.w_navigation.w_biblebookname a:hover {
+	 -webkit-text-fill-color: #fff;
+        background: #3d3d3d;
+		color:#fff;}
+
+
+p.w_navigation.w_biblebookname {
+    font-family: 'Helvetica Neue', 'HelveticaNeue', "Arial", Helvetica, sans-serif;
+    font-weight: 200;
+ font-size:1.2em;
+    color:#999;
+	text-align:left;
+padding:4px;
+  min-width: 200px;
+  line-height: 1.5em;
+text-decoration:none;
+-webkit-border-radius: 2px;
+-moz-border-radius: 2px;
+border-radius: 2px;
+border-bottom:1px solid silver;
+}
+
+p.w_navigation.w_biblebookname a {
+    text-decoration: none;
+    margin: 0;
+    padding: 0.15em 0; 
+font-size:1.2em;
+ border-bottom: 2px solid #6195c7;
+	text-align:left;
+-webkit-font-smoothing: subpixel-antialiased;
+}
+
+
+/* MOBI */
+
+e:link {
+	color: #6195c7;
+}
+ 
+e:visited {
+	color: #6195c7; 
+	text-decoration: none;
+}
+
+e:active {
+	color: #6195c7;
+} 
+
+e:hover {
+	color: #666; 
+	text-decoration: none;
+} 
+
+e:focus {
+	color: #3fa2bf; 
+	background-color: #c5b587;
+}
+p.sn {
+	font-size: .95em;
+	text-align: left;
+	padding-top: .5em;
+	margin-top: .2em;
+	margin-bottom: 0em;
+}
+
+p.st {
+	font-family: "Times New Roman", "Times", serif;
+	font-size: 1.25em;
+	text-transform: uppercase;
+	text-align: center;
+}
+

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ncx version="2005-1" xml:lang="en" xmlns="http://www.daisy.org/z3986/2005/ncx/">
+<head>
+<meta name="dtb:uid" content="urn:uuid:ADA08CB1-B329-431D-8BEF-FDBCC9DFF1EA"/>
+<meta name="dtb:depth" content="1"/>
+<meta name="dtb:totalPageCount" content="0"/>
+<meta name="dtb:maxPageNumber" content="0"/>
+</head>
+<docTitle>
+<text>Life and Ministry Meeting Workbook, August 2016</text>
+</docTitle>
+<docAuthor>
+<text>WATCHTOWER</text>
+</docAuthor>
+<navMap>
+<navPoint class="chapter" id="chapter1" playOrder="1">
+<navLabel><text>Our Christian Life and Ministry—Meeting Workbook August 2016</text></navLabel>
+<content src="202016280.xhtml"/>
+</navPoint>
+<navPoint class="chapter" id="chapter2" playOrder="2">
+<navLabel><text>Sample Presentations</text></navLabel>
+<content src="202016281.xhtml"/>
+</navPoint>
+<navPoint class="chapter" id="chapter3" playOrder="3">
+<navLabel><text>August 1-7</text></navLabel>
+<content src="202016282.xhtml"/>
+</navPoint>
+<navPoint class="chapter" id="chapter4" playOrder="4">
+<navLabel><text>Remain in the Secret Place of the Most High</text></navLabel>
+<content src="202016283.xhtml"/>
+</navPoint>
+<navPoint class="chapter" id="chapter5" playOrder="5">
+<navLabel><text>Improving Our Skills in the Ministry—Helping Bible Students to Progress to Dedication and Baptism</text></navLabel>
+<content src="202016284.xhtml"/>
+</navPoint>
+<navPoint class="chapter" id="chapter6" playOrder="6">
+<navLabel><text>August 8-14</text></navLabel>
+<content src="202016285.xhtml"/>
+</navPoint>
+<navPoint class="chapter" id="chapter7" playOrder="7">
+<navLabel><text>Thriving Spiritually in Old Age</text></navLabel>
+<content src="202016286.xhtml"/>
+</navPoint>
+<navPoint class="chapter" id="chapter8" playOrder="8">
+<navLabel><text>August 15-21</text></navLabel>
+<content src="202016287.xhtml"/>
+</navPoint>
+<navPoint class="chapter" id="chapter9" playOrder="9">
+<navLabel><text>Jehovah Remembers That We Are Dust</text></navLabel>
+<content src="202016288.xhtml"/>
+</navPoint>
+<navPoint class="chapter" id="chapter10" playOrder="10">
+<navLabel><text>August 22-28</text></navLabel>
+<content src="202016289.xhtml"/>
+</navPoint>
+<navPoint class="chapter" id="chapter11" playOrder="11">
+<navLabel><text>“Give Thanks to Jehovah”</text></navLabel>
+<content src="202016290.xhtml"/>
+</navPoint>
+<navPoint class="chapter" id="chapter12" playOrder="12">
+<navLabel><text>August 29–September 4</text></navLabel>
+<content src="202016291.xhtml"/>
+</navPoint>
+<navPoint class="chapter" id="chapter13" playOrder="13">
+<navLabel><text>“With What Will I Repay Jehovah?”</text></navLabel>
+<content src="202016292.xhtml"/>
+</navPoint>
+<navPoint class="chapter" id="chapter14" playOrder="14">
+<navLabel><text>Teach the Truth</text></navLabel>
+<content src="202016293.xhtml"/>
+</navPoint>
+<navPoint class="chapter" id="chapter15" playOrder="15">
+<navLabel><text>Special Campaign to Distribute The Watchtower in September</text></navLabel>
+<content src="202016294.xhtml"/>
+</navPoint>
+<navPoint class="chapter" id="chapter16" playOrder="16">
+<navLabel><text>Page Navigation</text></navLabel>
+<content src="pagenav7.xhtml"/>
+</navPoint>
+</navMap>
+<pageList id="page-mapping" class="pagenavnum">
+<navLabel><text>Page Navigation</text></navLabel>
+<pageTarget id="page-1" value="1" type="normal" playOrder="17">
+<navLabel><text>1</text></navLabel>
+<content src="202016280.xhtml#page1"/>
+</pageTarget>
+<pageTarget id="page-2" value="2" type="normal" playOrder="18">
+<navLabel><text>2</text></navLabel>
+<content src="202016282.xhtml#page2"/>
+</pageTarget>
+<pageTarget id="page-3" value="3" type="normal" playOrder="19">
+<navLabel><text>3</text></navLabel>
+<content src="202016283.xhtml#page3"/>
+</pageTarget>
+<pageTarget id="page-4" value="4" type="normal" playOrder="20">
+<navLabel><text>4</text></navLabel>
+<content src="202016285.xhtml#page4"/>
+</pageTarget>
+<pageTarget id="page-5" value="5" type="normal" playOrder="21">
+<navLabel><text>5</text></navLabel>
+<content src="202016287.xhtml#page5"/>
+</pageTarget>
+<pageTarget id="page-6" value="6" type="normal" playOrder="22">
+<navLabel><text>6</text></navLabel>
+<content src="202016289.xhtml#page6"/>
+</pageTarget>
+<pageTarget id="page-7" value="7" type="normal" playOrder="23">
+<navLabel><text>7</text></navLabel>
+<content src="202016291.xhtml#page7"/>
+</pageTarget>
+<pageTarget id="page-8" value="8" type="normal" playOrder="24">
+<navLabel><text>8</text></navLabel>
+<content src="202016293.xhtml#page8"/>
+</pageTarget>
+</pageList>
+</ncx>

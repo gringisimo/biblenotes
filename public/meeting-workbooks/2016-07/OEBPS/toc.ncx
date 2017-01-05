@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ncx version="2005-1" xml:lang="en" xmlns="http://www.daisy.org/z3986/2005/ncx/">
+<head>
+<meta name="dtb:uid" content="urn:uuid:76CDCE46-30EE-454E-966E-46F38503AC35"/>
+<meta name="dtb:depth" content="1"/>
+<meta name="dtb:totalPageCount" content="0"/>
+<meta name="dtb:maxPageNumber" content="0"/>
+</head>
+<docTitle>
+<text>Life and Ministry Meeting Workbook, July 2016</text>
+</docTitle>
+<docAuthor>
+<text>WATCHTOWER</text>
+</docAuthor>
+<navMap>
+<navPoint class="chapter" id="chapter1" playOrder="1">
+<navLabel><text>Our Christian Life and Ministry—Meeting Workbook July 2016</text></navLabel>
+<content src="202016252.xhtml"/>
+</navPoint>
+<navPoint class="chapter" id="chapter2" playOrder="2">
+<navLabel><text>Sample Presentations</text></navLabel>
+<content src="202016253.xhtml"/>
+</navPoint>
+<navPoint class="chapter" id="chapter3" playOrder="3">
+<navLabel><text>July 4-10</text></navLabel>
+<content src="202016241.xhtml"/>
+</navPoint>
+<navPoint class="chapter" id="chapter4" playOrder="4">
+<navLabel><text>Praise Jehovah, the Hearer of Prayer</text></navLabel>
+<content src="202016242.xhtml"/>
+</navPoint>
+<navPoint class="chapter" id="chapter5" playOrder="5">
+<navLabel><text>Keeping Our Life Simple Helps Us Praise God</text></navLabel>
+<content src="202016243.xhtml"/>
+</navPoint>
+<navPoint class="chapter" id="chapter6" playOrder="6">
+<navLabel><text>July 11-17</text></navLabel>
+<content src="202016244.xhtml"/>
+</navPoint>
+<navPoint class="chapter" id="chapter7" playOrder="7">
+<navLabel><text>Jehovah’s People Are Zealous for True Worship</text></navLabel>
+<content src="202016245.xhtml"/>
+</navPoint>
+<navPoint class="chapter" id="chapter8" playOrder="8">
+<navLabel><text>Could You Try It for One Year?</text></navLabel>
+<content src="202016246.xhtml"/>
+</navPoint>
+<navPoint class="chapter" id="chapter9" playOrder="9">
+<navLabel><text>Schedules for Regular Pioneering</text></navLabel>
+<content src="202016247.xhtml"/>
+</navPoint>
+<navPoint class="chapter" id="chapter10" playOrder="10">
+<navLabel><text>July 18-24</text></navLabel>
+<content src="202016248.xhtml"/>
+</navPoint>
+<navPoint class="chapter" id="chapter11" playOrder="11">
+<navLabel><text>Remember the Works of Jehovah</text></navLabel>
+<content src="202016249.xhtml"/>
+</navPoint>
+<navPoint class="chapter" id="chapter12" playOrder="12">
+<navLabel><text>July 25-31</text></navLabel>
+<content src="202016250.xhtml"/>
+</navPoint>
+<navPoint class="chapter" id="chapter13" playOrder="13">
+<navLabel><text>Who Is the Most Important Person in Your Life?</text></navLabel>
+<content src="202016251.xhtml"/>
+</navPoint>
+<navPoint class="chapter" id="chapter14" playOrder="14">
+<navLabel><text>Page Navigation</text></navLabel>
+<content src="pagenav6.xhtml"/>
+</navPoint>
+</navMap>
+<pageList id="page-mapping" class="pagenavnum">
+<navLabel><text>Page Navigation</text></navLabel>
+<pageTarget id="page-1" value="1" type="normal" playOrder="15">
+<navLabel><text>1</text></navLabel>
+<content src="202016252.xhtml#page1"/>
+</pageTarget>
+<pageTarget id="page-2" value="2" type="normal" playOrder="16">
+<navLabel><text>2</text></navLabel>
+<content src="202016241.xhtml#page2"/>
+</pageTarget>
+<pageTarget id="page-3" value="3" type="normal" playOrder="17">
+<navLabel><text>3</text></navLabel>
+<content src="202016242.xhtml#page3"/>
+</pageTarget>
+<pageTarget id="page-4" value="4" type="normal" playOrder="18">
+<navLabel><text>4</text></navLabel>
+<content src="202016244.xhtml#page4"/>
+</pageTarget>
+<pageTarget id="page-5" value="5" type="normal" playOrder="19">
+<navLabel><text>5</text></navLabel>
+<content src="202016245.xhtml#page5"/>
+</pageTarget>
+<pageTarget id="page-6" value="6" type="normal" playOrder="20">
+<navLabel><text>6</text></navLabel>
+<content src="202016248.xhtml#page6"/>
+</pageTarget>
+<pageTarget id="page-7" value="7" type="normal" playOrder="21">
+<navLabel><text>7</text></navLabel>
+<content src="202016250.xhtml#page7"/>
+</pageTarget>
+<pageTarget id="page-8" value="8" type="normal" playOrder="22">
+<navLabel><text>8</text></navLabel>
+<content src="202016247.xhtml#page8"/>
+</pageTarget>
+</pageList>
+</ncx>

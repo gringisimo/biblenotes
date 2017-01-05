@@ -1,0 +1,51 @@
+/* kr 13 for chapter 21 */
+/* 1102014263 */
+@import "kr_13.css";
+
+/* boxes */
+ 
+.timeline div.west_left.quarter /*.west_left.quarter*/{
+ /*   width: 25% !important;*/
+    line-height: 1.20em !important;
+    margin: 0em 1em 2em 0em !important;
+    float: left;
+    display:inline;
+	clear:both;}
+ 
+div.north_left.quarter p { 
+	text-indent: 0em;
+    padding-bottom: .90em;
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-size: .85em !important;
+    margin: .75em 0em 0em 0em;
+    }
+ 
+.grpItems { padding: 0.25em; display:inline;}
+.imgGrid {     text-align:left; display:inline; width:auto;
+                margin-top:.5%;}
+
+.align-vertical {vertical-align:middle; display:inline;}
+
+.boxSupplement.rule .alignBottom {vertical-align: bottom;}
+
+
+.boxSupplement.rule .threeColumn, ul.listImgGrid .threeColumn {
+	-webkit-column-count: 3;
+   -moz-column-count:    3;
+   column-count:         3;
+}
+
+.quarter {width:30%;}
+
+.wide h4 {
+	margin-left:0em;
+	color: #645C5C;
+	
+}
+.wide h4 strong {
+	font-weight: 200;
+}
+ul.noMarker.noIndent p,.wide li.timeline-bigFinish p {
+margin-left: 0em;
+vertical-align: top;
+}

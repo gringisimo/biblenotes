@@ -1,0 +1,176 @@
+/* kr_19.css  */
+ 
+div {margin:1px;}
+ 
+@page {    
+    border: .3ex;
+}
+                         
+body {
+    margin: 5%;
+    -webkit-font-smoothing: subpixel-antialiased;
+}
+ 
+p {
+    text-align: left;
+    text-indent: 0em;
+    font-family: sans-serif;
+    font-size: .95em;
+    orphans: 2;
+    widows: 2;
+    -webkit-font-smoothing: subpixel-antialiased;
+}
+ 
+ 
+/* HEADER */
+ 
+h1.contextTtl {
+    text-align: center;
+    color:#3d3d3d;
+    text-transform: uppercase;
+    padding-bottom: 0.3em;
+    font: .95em Arial, Helvetica, sans-serif !important;
+    margin-bottom: 2em;
+    border-bottom: thin solid #3d3d3d;
+    -webkit-font-smoothing: subpixel-antialiased;
+}
+ 
+#p2 {
+text-align:left;
+font: 1em Helvetica, Arial, sans-serif !important;
+margin-top:1em;
+margin-left: .25em;
+font-weight:200;
+word-spacing:.85em;
+-webkit-font-smoothing: subpixel-antialiased;}
+ 
+ #p2 strong {font-weight:inherit;}
+ 
+/* HEADER */
+ 
+div.groupTOC {
+   /* text-indent: 1.25em;*/
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-size: 1em;
+    text-align:left;
+    margin-left:2em;
+}  
+ 
+ 
+/* added to add space in TOC for chapters */
+ 
+div.groupTOC p>a {
+list-style-position: outside;
+font: 1.1em/1.2em 'Helvetica Neue', 'HelveticaNeue', "Arial", Helvetica, sans-serif;
+text-align: left;
+padding-left: 3em;
+margin-right: 0em; /*for epub*/
+margin-left: 0em; /*for mobi*/
+-webkit-font-smoothing: subpixel-antialiased; }
+ 
+div.groupTOC p {
+font-size:1em;
+text-indent:-5em; /*epub value */
+/*text-indent:-4.75em;  /*mobi value*/
+padding-right:4px;
+padding-left:4em;
+}
+ 
+div.groupTOC strong {
+font-size: 1.2em;
+margin-top: 2em;
+text-indent:0em;
+/*margin-left: -1.1em;*/
+/*padding-left: 3em;*/
+-webkit-font-smoothing: subpixel-antialiased; }
+ 
+ 
+strong > a, a.strong {margin-top:0em; padding:0em; text-decoration:none; }
+ 
+#p5, #p9, #p14, #p18, #p22, #p25, #p29 {
+text-align: left;
+/*border-top: 1px solid silver;*/
+margin-top: 2em;
+padding-top: 1em;
+-webkit-font-smoothing: subpixel-antialiased;
+}
+
+div.groupTOC #p5 strong + div.groupTOC #p5 strong {display:inline;}
+
+
+div.groupTOC #p3 > a{
+    margin-left: -.1em;
+	text-indent:0em;
+   	font-size: 1em;
+    -webkit-font-smoothing: subpixel-antialiased;
+}  
+
+div.groupTOC #p3:before {content: "----"; color:transparent;}
+div.groupTOC #p4:before, div.groupTOC #p6:before, div.groupTOC #p7:before, div.groupTOC #p8:before, div.groupTOC #p10:before, div.groupTOC #p11:before, div.groupTOC #p12:before, div.groupTOC #p13:before {content: "--"; color:transparent;}
+
+ 
+div.groupTOC #p4 > a, div.groupTOC #p6 > a, div.groupTOC #p7 > a, div.groupTOC #p8 > a, div.groupTOC #p10 > a,  div.groupTOC #p11 > a, div.groupTOC #p12 > a, div.groupTOC #p13 > a{
+    font-size: 1em;
+	margin-left: 0em;
+	text-indent:-.5em;
+    -webkit-font-smoothing: subpixel-antialiased;} 
+ 
+div.groupTOC #p15 > a, div.groupTOC #p16 > a, div.groupTOC #p17 > a, div.groupTOC #p19 > a,div.groupTOC #p20 > a, div.groupTOC #p21 > a, div.groupTOC #p23 > a, div.groupTOC #p24 > a, div.groupTOC #p26 > a,div.groupTOC #p27 > a,div.groupTOC #p28 > a, div.groupTOC #p30 > a,div.groupTOC #p31 > a
+{
+    font-size: 1em;
+   /* margin-left:.5em;*/
+	text-indent: -1.4em;
+    -webkit-font-smoothing: subpixel-antialiased;} 
+ 
+ 
+ 
+/* LINK ELEMENTS */
+ 
+
+a:link {   
+    -webkit-text-fill-color: #3fa2bf;
+    color: #3fa2bf;
+	}
+     
+a:visited {
+    -webkit-text-fill-color: gray;
+    color: #c9c9c9;
+    text-decoration: none;
+}
+ 
+a:hover {
+    color: #0000FF;
+    -webkit-text-fill-color: blue;
+    text-decoration: none;
+}
+ 
+a:active  {
+    -webkit-text-fill-color: maroon;
+    color: #800000;
+}
+ 
+ 
+/* MOBI */
+ 
+e:link {
+    color: #3fa2bf;
+}
+  
+e:visited {
+    color: #c9c9c9;
+    text-decoration: none;
+}
+ 
+e:active {
+    color: #800000;
+}
+ 
+e:hover {
+    color: #0000FF;
+    text-decoration: none;
+}
+ 
+e:focus {
+    color: #3fa2bf;
+    background-color: #c5b587;
+}

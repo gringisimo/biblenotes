@@ -1,0 +1,291 @@
+/* w16_39.css - Watchtower Regular Cover */
+
+/* ------------------------------------------------------ */
+
+* { 
+	text-indent: 0em;
+	margin-top: 0em;
+	margin-right: 0em;
+	margin-bottom: 0em;
+	margin-left: 0em;
+	padding-top: 0em;
+	padding-right: 0em;
+	padding-bottom: 0em;	
+	padding-left: 0em;		
+	border: 0em;
+}
+						
+
+/*NEW DEFAULT STYLES */
+
+@page {    	
+	border: .5ex; 
+}
+						
+body {
+	margin-top: 5%;
+	margin-right: 5%;
+	margin-bottom: 5%;
+	margin-left: 5%;
+	-webkit-font-smoothing: subpixel-antialiased;
+}
+
+body p {
+	text-indent: 0em; 
+	font-family: Arial, Helvetica, sans-serif !important;
+}
+
+.altsize { 
+	font-size: 75%;
+}  
+
+
+/* H */
+
+h1 { 
+	text-align: left;
+	line-height: normal;
+	font-family: Arial, Helvetica, sans-serif !important;
+	font-size: 2em;
+	padding-top: 1em;
+	padding-right: 0em;
+	padding-bottom: .75em;
+	padding-left: 0em;
+}	
+
+h1 strong{
+	font-weight: 500;
+}
+
+h2 {
+	text-align: left; 
+	line-height: normal; 
+	font-family: Arial, Helvetica, sans-serif !important;
+	font-size: 1.2em;
+	font-weight: 500;
+	margin-top: 0em;
+	margin-right: 0em;
+	margin-bottom: 0em;
+	margin-left: 0em;
+	-webkit-font-smoothing: subpixel-antialiased;
+}
+
+h3 {
+	text-align: left; 
+	line-height: normal; 
+	font-family: Arial, Helvetica, sans-serif !important;
+	font-size: .95em;
+	font-weight: 500;
+	margin-top: .5em;
+	margin-right: 0em;
+	margin-bottom: 0em;
+	margin-left: 0em;
+	padding-top: 1em;
+	padding-right: 0em;
+	padding-bottom: .5em;
+	padding-left: 0em;
+	-webkit-font-smoothing: subpixel-antialiased;
+}
+
+h4 {
+	text-align: left; 
+	line-height: normal; 
+	font-family: Arial, Helvetica, sans-serif !important;
+	font-size: 1.1em;
+	font-weight: 500;
+	padding-top: 0em;
+	padding-right: 0em;
+	padding-bottom: 1em;
+	padding-left: 0em;
+	-webkit-font-smoothing: subpixel-antialiased;
+}
+
+h5 {
+	text-align: left; 
+	line-height: normal; 
+	font-family: Arial, Helvetica, sans-serif !important;
+	font-size: 1.3em;
+	font-weight: 500;
+	margin-top: -.5em;
+	margin-right: 0em;
+	margin-bottom: 0em;
+	margin-left: 0em;
+	padding-top: 0em;
+	padding-right: 0em;
+	padding-bottom: 1em;
+	padding-left: 0em;
+	-webkit-font-smoothing: subpixel-antialiased;
+}
+
+h6 {
+	text-align: left; 
+	line-height: normal; 
+	font-family: Arial, Helvetica, sans-serif !important;
+	font-size: 1.2em;
+	-webkit-font-smoothing: subpixel-antialiased;
+}
+
+
+/* P */
+
+p { 
+	text-align: left; 
+	line-height: normal; 
+	font-family: Arial, Helvetica, sans-serif !important;
+	font-size: .95em;
+	padding-top: 0em;
+	padding-right: 0em;
+	padding-bottom: 1em;
+	padding-left: 0em;
+	orphans: 2;
+	widows: 2;
+	-webkit-font-smoothing: subpixel-antialiased;
+}
+
+
+/* DIV */
+
+div.copyrightInfo {
+	margin-top: 1em;
+	margin-right: 0em;
+	margin-bottom: 1em;
+	margin-left: 0em;
+}
+
+div.copyrightInfo p {
+	font-size: .8em;
+}
+
+div.groupTOC {	
+	padding-top: 1em;
+	padding-right: 0em;
+	padding-bottom: 0em;
+	padding-left: 0em;
+	border-top: 2px solid black;
+	border-bottom: 2px solid black;
+}
+
+div.groupTOC p {	
+	margin-top: 0em;
+	margin-right: 0em;
+	margin-bottom: .5em;
+	margin-left: .5em;
+}
+
+
+div.closingContent {
+	margin-top: 1.50em;
+	margin-right: 0em;
+	margin-bottom: 0em;
+	margin-left: 0em;
+} 
+
+div.w_afterparimg { 
+	clear: both; 
+}
+
+
+/* images */
+
+div.north_center { 
+	width: 100% !important;
+	clear: both;
+    margin-top: 0em;
+    margin-right: 0em;
+    margin-bottom: 0em;	
+    margin-left: 0em;
+ }
+
+img, figure{     
+	width: 100% !important; 
+	clear: both;
+    margin-top: 0em;
+    margin-right: 0em;
+    margin-bottom: 0em;	
+    margin-left: 0em;
+ }
+ 
+ 
+/* EXTRACTED */
+
+div.groupFootnote:before, div.groupExtScrpCite:before, div.groupEndnote:before {
+	color: #ccc;
+	content: "_______________";
+}
+
+div.groupFootnote, div.groupExt, div.groupEndnote {
+	clear: both; 
+	font-size: .95em;
+	margin-top: 0em;
+	margin-right: 0em;
+	margin-bottom: 0em;
+	margin-left: 0em;
+}
+
+div.groupFootnote p, div.groupExtScrpCite p, div.groupEndnote p {
+	text-indent: 0em;
+	font-family: Arial, Helvetica, sans-serif !important; 
+    margin-top: 1em;
+	margin-right: 0em;
+	margin-bottom: 1em;
+	margin-left: 0em;
+	padding-top: 0em;
+	padding-right: 0em;
+	padding-bottom: 0em;
+	padding-left: 0em;
+}
+
+
+/* LINK ELEMENTS */
+
+/* apple : iBooks, iPad, iPhone */
+
+a:link {
+	-webkit-text-fill-color: #3fa2bf;
+	color: #3fa2bf;
+} 
+
+a:visited {
+	text-decoration: none;
+	-webkit-text-fill-color: gray;
+	color: #c9c9c9;
+}
+
+a:hover {
+	text-decoration: none;
+	-webkit-text-fill-color: blue;
+	color: #0000ff;
+} 
+
+a:active {
+	-webkit-text-fill-color: maroon;
+	color: #800000;
+} 
+
+
+/* mobi */
+
+e:link {
+	color: #3fa2bf;
+} 
+
+e:visited {
+	color: #c9c9c9;
+	text-decoration: none;
+}
+
+e:active {
+	color: #800000;
+} 
+
+e:hover {
+	color: #0000ff;
+	text-decoration: none;
+} 
+
+e:focus {
+	color: #3fa2bf;
+	background-color: #c5b587;
+}
+
+/* ------------------------------------------------------ */

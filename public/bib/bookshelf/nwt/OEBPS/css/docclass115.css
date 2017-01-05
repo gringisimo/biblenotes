@@ -1,0 +1,173 @@
+
+/*docclass115 */
+/* outline of contents */
+/* repository keywords: inline chapter number outline, altsize, span*/ 
+
+strong { 	
+		font-weight:200;
+		margin: 0em;
+		padding:0em;
+		-webkit-font-smoothing: subpixel-antialiased;}
+body { 	
+		margin: 5%; 
+		text-align: left;
+		-webkit-font-smoothing: subpixel-antialiased; }
+	
+
+	h1 strong, h2 strong, h1.strong, h2.strong {font-weight:200;}
+
+	
+h1{ 	font: 24px 'Helvetica Neue', 'HelveticaNeue', Arial, Helvetica, sans-serif;
+		text-align:left;
+		color:#75000b;
+		font-weight:200;
+		margin: 0em;
+		padding:0em;
+		-webkit-font-smoothing: subpixel-antialiased;}
+		
+.contextTtl {
+	color:#8a8a8a;
+	text-align:left;
+	font: 1em 'Helvetica Neue', 'HelveticaNeue', Helvetica, Arial, sans-serif !important;
+	margin: 0em; padding:0em;
+	-webkit-hyphens:none;
+	font-weight:200;
+	-webkit-font-smoothing: subpixel-antialiased;}
+
+
+ul.outline li.chapterNo, 
+li.chapterNo {margin: 2em 0 0 0; }
+
+/*aligned chapterNo inline to block*/
+      .chapterNo a strong{
+                display: inline-block;
+                font-size: 1.5em; 
+				text-decoration:none;
+                margin-left:1px;
+				padding-right:8px; /*new*/
+				font-weight: 400;
+                margin-top: -0.3em;
+                width: 1.5em;
+                padding-top: 0;
+                text-align:right;
+                vertical-align: top;
+				-webkit-font-smoothing: subpixel-antialiased; }
+
+	 .chapterNo .hover	{	
+						text-decoration:none;
+						font-weight:600;
+						color:gray;}
+
+/*altsize span verses */
+
+li.L1 				{clear:both; margin-top:2em;}
+.L1:not(.chapterNo) {/*font-weight:600;*/
+					margin-top:2em; 
+					-webkit-font-smoothing: subpixel-antialiased;    }  /*altsize top margin*/
+
+
+/* parenthesis and inline p*/
+li.L1  + .altsize {		
+				clear:both; 
+				font-size: 95%; 
+ 				max-width: 80%;
+				padding:0;
+				-webkit-font-smoothing: subpixel-antialiased;}
+
+
+
+/* lists */
+ul li p .altspan{ margin: 0 0 3em 0; -webkit-font-smoothing: subpixel-antialiased;}
+ul li p{ margin: 0em 0.2em; -webkit-font-smoothing: subpixel-antialiased;}
+
+ul.outline {margin-left:-16px;}
+ul.outline li {
+            display: inline-block;
+            margin: 0.1em 0 0 0;
+            max-width: 99%;
+            padding: 0; 
+			clear:both;
+			-webkit-font-smoothing: subpixel-antialiased;}
+
+ul.outline li {
+        display: block;
+		margin:0em;
+		padding:0em;
+		width:100%; }
+
+        ul.outline li p {
+            display: inline-block;
+			margin:0em;
+			padding:0em;
+			text-indent: -16px;
+			-webkit-font-smoothing: subpixel-antialiased;}
+
+        ul.outline li.chapterNo p {
+ 			margin:0em;
+			padding:0em;
+			text-align:left; 
+			vertical-align: top;
+			-webkit-font-smoothing: subpixel-antialiased;}
+
+        ul.outline li.chapterNo > ul {
+            display: inline-block;
+            margin-left: 0;
+            margin-top: 0.1em;	
+			width:80%;
+			text-align:left;}
+
+
+li.L1 p, li.L2 p, li.L3 p, li.L4 p, li.L5 p{ 	
+			font-size: .95em;
+			margin: 0em; 
+			padding-bottom:2em;
+			-webkit-font-smoothing: subpixel-antialiased;    
+			}
+            
+/************************************/
+
+/* navigation */
+p.w_navigation.w_biblebookname a:active, a:active,
+p.w_navigation.w_biblebookname a:link, a:link,
+p.w_navigation.w_biblebookname a:visited, a:visited
+    {
+        font-family: 'Helvetica Neue', 'HelveticaNeue', 'Arial', Helvetica, sans-serif;
+        font-weight: 400;
+		font-size:100%;
+        -webkit-text-fill-color: #6195c7;
+        color: #6195c7; 
+		text-align:left;
+		-webkit-font-smoothing: subpixel-antialiased;   
+    }
+
+p.w_navigation.w_biblebookname a:hover, a:hover {
+	 -webkit-text-fill-color: grey;
+        color: grey; 
+	-webkit-font-smoothing: subpixel-antialiased;   }
+
+
+
+/* MOBI */
+
+e:link {
+	color: #6195c7;
+}
+ 
+e:visited {
+	color: #6195c7; 
+	text-decoration: none;
+}
+
+e:active {
+	color: #6195c7;
+} 
+
+e:hover {
+	color: #666; 
+	text-decoration: none;
+} 
+
+e:focus {
+	color: #3fa2bf; 
+	background-color: #c5b587;
+}

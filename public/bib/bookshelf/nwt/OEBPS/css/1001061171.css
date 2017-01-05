@@ -1,0 +1,228 @@
+
+/* 1001061171.css
+CSS Document */
+/* Table of the Books of the Bible 10-17*/
+/* TABLE OF CONTENTS */
+/* respository search words: table, tableDiv stripe wide, reader reset, strong p for font*/
+/*  body 
+	headers
+	p dec 
+	table 
+	p style classes for body and table 	
+	a links */
+
+
+body { 	margin: 5%; 
+		text-align: left;
+		 }
+
+/* headers____________________________________________________*/
+
+h1 { 	font: 1.5em 'Helvetica Neue', 'HelveticaNeue', Arial, Helvetica, sans-serif;
+		text-align:left;
+		color:#75000b;
+		font-weight:200;
+		margin:0em;
+		padding:0 0 1em 0;
+		-webkit-font-smoothing: subpixel-antialiased;}
+
+
+h2{ font: bold 1.2em/1.25em 'Helvetica Neue', Arial, Helvetica, sans-serif;
+	text-align: left;
+	text-indent: 0em;
+	color:#75000b;
+	font-weight:200;
+	margin: 0 0 1em 0;
+	-webkit-font-smoothing: subpixel-antialiased;
+	padding:1em 0em 0em 0em;}
+
+
+h1 strong, h2 strong, h1.strong, h2.strong {font-weight:200;}
+
+strong { 	
+		font-weight:200;
+		margin: 0em;
+		padding:0em;
+		-webkit-font-smoothing: subpixel-antialiased;}
+
+th {font-weight:700;}
+
+/* p dec ____________________________*/
+p 				{	margin-top:  0em; 
+					-webkit-font-smoothing: subpixel-antialiased;}
+
+
+div.pGroup   {		
+					text-align:left;
+					margin:0em;}
+
+
+
+		  th p.se strong, th p.s5 strong{
+				font-size: 90%; 
+		   		font-weight:800;
+				font-family: 'Helvetica Neue', 'HelveticaNeue', Arial, Helvetica, sans-serif;
+				padding:1px 1px 0px 1px;
+				-webkit-font-smoothing: subpixel-antialiased;}
+
+p.s5 strong{
+				font-size: 90%; 
+		   		font-weight:800;
+				font-family: 'Helvetica Neue', 'HelveticaNeue', Arial, Helvetica, sans-serif;
+				padding:1px 1px 0px 1px;
+				-webkit-font-smoothing: subpixel-antialiased;}
+
+ th p.se strong, p.se.strong {
+				
+				font-size: 90%; 
+		   		font-weight:800;
+				font-family: 'Helvetica Neue', 'HelveticaNeue', Arial, Helvetica, sans-serif;
+				padding:1px 1px 0px 1px;
+				-webkit-font-smoothing: subpixel-antialiased;}
+
+/*tables: Names and Order of the Books*/
+
+h2 + div.tableDiv {padding-top:-1em;}
+
+div.table {
+	display:table;
+	border:1px solid #e5e5e5;
+	border-collapse: collapse;	border-spacing:0px;
+	margin:0px;padding:0px;}  /* browser reader resets */
+
+thead {
+	background-color:#e5e5e5;
+	border-width:1pt;
+	border-color:#e5e5e5;
+	font-size:100%;
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:700;
+	margin:0.2em 0.2em 0em 0.2em;
+	text-align:left;
+	vertical-align:bottom;}
+
+td{
+	margin:0em;
+	vertical-align:top;
+	text-align:left;
+	font-size:90%;
+	}
+
+.stripe tr:nth-child(odd) { background-color:#f9f8f4; }
+
+
+.se{
+	font-size: 95%;
+	padding: 0em;margin-top:0em;
+		margin-bottom:0em;
+		}
+		
+		.se strong{
+		font-size: 95%;
+		font-weight:600;
+		padding: 0em;
+		margin-top:0em;
+		margin-bottom:0em;
+		}
+
+.s5:first-child{
+	font-size: 95%;
+	padding: 0;margin:0em;}
+
+.s5{
+	font-size: 95%;
+	padding: 0;
+	margin-top:0em;
+	margin-bottom:0em;}
+	
+	
+th	.s5 strong{   /*added th */
+	font-size: 95%;
+	padding: 0;
+	font-weight:600;
+	margin-top:0em;
+	margin-bottom:0em;}
+
+.sc {
+	font: 95%;
+	
+	text-align: left;
+	padding-top: 0em;
+	margin-top: .2em;
+	margin-bottom: 0em;}
+
+div.bodyTxt p.sn {
+	font-size: 0.95em ;
+	padding-top: .5em;
+	margin-top: .2em;
+	margin-bottom: 2em;
+	text-align: left;}
+
+
+/* cite*/
+div.groupFootnote:before {
+	font-size: 1em;
+	color: grey;
+	content: "_______________";}
+
+div.groupFootnote p{
+	font-size: 0.75em;
+	margin: 1.25em 0em;
+	-webkit-font-smoothing: subpixel-antialiased;}
+
+div.groupExtScrpCite p {
+	font-size: 0.75em;
+	margin-top: 1em;
+	-webkit-font-smoothing: subpixel-antialiased;}
+
+div.groupExtScrpCite {
+	padding-top: .25em;}
+
+div.groupExt {
+	margin-top: 1.75em;}
+
+
+/* a links */
+p.w_navigation.w_biblebookname a:active, a:active,
+p.w_navigation.w_biblebookname a:link, a:link,
+p.w_navigation.w_biblebookname a:visited, a:visited
+    {
+font-family:inherit;
+        font-weight: 200;
+        color: #6195c7;
+		-webkit-text-fill-color: #6195c7;
+		margin:0em;
+		padding:0em;
+		text-align:left;}
+
+p.w_navigation.w_biblebookname a:hover, a:hover {
+	 	-webkit-text-fill-color: grey;
+        color: grey;
+		text-align:left; }
+
+
+/* MOBI */
+
+e:link {
+	color: #6195c7;
+}
+ 
+e:visited {
+	color: #6195c7; 
+	text-decoration: none;
+}
+
+e:active {
+	color: #6195c7;
+} 
+
+e:hover {
+	color: #666; 
+	text-decoration: none;
+} 
+
+e:focus {
+	color: #3fa2bf; 
+	background-color: #c5b587;
+}
+

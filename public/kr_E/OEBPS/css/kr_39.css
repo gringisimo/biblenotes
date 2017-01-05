@@ -1,0 +1,40 @@
+/* be_39.css - Front Cover */
+
+  
+/* ------------------------------------------------------ */
+
+body { 
+	text-align: center; 
+}
+
+h1 { 
+	display: none; 
+}
+
+img, figure { 
+	text-align: center; 
+}
+
+div.w_north_center, div.north_center { 
+	width: 100% !important;
+    line-height: 1.20em !important;
+    margin: 10% 0em 10% 0em !important;
+    float: right;
+    display: inline-block;
+	page-break-after:always;
+	/*page-break-before:always;*/
+}
+
+/*
+
+div.north_center { 
+		   width: 100% !important;
+           float: left;
+           margin-top: 1em  !important;
+		   margin-right: 0em;
+		   margin-bottom: 1em;
+		   margin-left: 0em;
+           line-height: 1.20em !important;
+           display: inline-block;
+}*/
+/* ------------------------------------------------------ */

@@ -1,0 +1,6 @@
+/* 1102014248.css  march-2 - ch 9  */
+@import "kr_13.css";
+
+div.tableDiv.hidden{
+	display: none;
+}

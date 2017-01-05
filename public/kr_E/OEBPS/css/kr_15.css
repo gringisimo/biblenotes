@@ -1,0 +1,28 @@
+/*kr_15.css - Section Inserts */
+@import "default.css";
+
+ 
+p.contextTtl  strong{
+    color:silver;
+    text-align: left;
+    font: .95em Helvetica, Arial, sans-serif !important;
+    font-weight:200;
+}
+
+h1 strong {
+    margin-right: 0em;
+    margin-bottom: .5em;
+    margin-left: 0em;
+    -webkit-font-smoothing: subpixel-antialiased;
+	font-weight: 300;
+	color:#6B6867
+}
+
+
+h2 strong {
+	font-weight: 300;
+	color:#8C8886}
+
+div.north_center p:last-child {
+margin-top: 0em;
+}

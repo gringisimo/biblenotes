@@ -1,0 +1,36 @@
+
+/* CSS Document */
+/* kr chapter 18 */
+
+@import "kr_13.css";
+
+
+ol.numberedDiagram .imgWestQuarter{margin-left:3%; }
+ol.numberedDiagram.imgWestQuarter li p {margin-left:25%; text-align: left;}
+ol.numberedDiagram.imgWestQuarter li ul {margin-left:50%; text-align: left;}
+ol.numberedDiagram.imgWestQuarter li ul li {list-style-type:disc; line-height:.95em;  text-align: left;}
+ol.numberedDiagram.imgWestQuarter li ul li p{list-style-type:disc; line-height:1em; margin-left:0%; text-align: left;}
+/* classes */
+.noMarker {list-style-type: none;}
+.noIndent {margin:0em; text-indent:0em;}
+
+/* ch 18 donation*/
+#p84, #p86, #p87 {margin-top:25%; }
+.imgWestQuarter li p:last-child {padding-bottom:7%; text-align:left; text-indent:0em;}
+ .imgWestQuarter li ul li p {line-height:normal; padding-bottom:-2em; text-align:left; text-indent:0em;}
+  
+div.west_left .quarter, .wide div.west_left .quarter /*.west_left.quarter*/, div.west_left.quarter /*.west_left.quarter*/{
+   /*width: 25% !important;*/
+    line-height: 1.20em !important;
+    margin: 0em 1em 0em 0em !important;
+    float: left;
+    display:inline-block;
+	clear:both;}
+
+.half {width:50%;}
+ 
+img, figure{    
+    width: 100% !important;
+    margin: 0em;
+}
+

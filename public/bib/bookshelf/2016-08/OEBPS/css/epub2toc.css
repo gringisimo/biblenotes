@@ -1,0 +1,52 @@
+/*------------------------------------------------------------------------------
+    MEPS styles - TOC-specific overrides
+------------------------------------------------------------------------------*/
+/**************************************************
+// Watchtower Font Stacks
+**************************************************/
+/*#00d0ff; */
+/*#787372;*/
+/*#65605E; */
+/*#B2AbA9;*/
+/* link on gray: #2878bb; */
+/* link on white: #2878bb; */
+/* old link color: #4477a1; */
+@page {
+  border: .5ex;
+}
+body {
+  margin: 5%;
+}
+
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-font-smoothing: subpixel-antialiased;
+  border-bottom: 1px solid gray;
+  padding-top: .25em;
+  padding-left: 0em;
+  padding-bottom: 0em;
+  padding-right: 0em;
+  margin-bottom: 0em;
+}
+
+h2 {
+  font-size: .85em;
+  line-height: 1.2em;
+  text-align: center;
+  margin: 0em;
+  text-indent: 0em;
+  page-break-after: avoid;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+
+p {
+  font-size: small;
+  -webkit-font-smoothing: subpixel-antialiased;
+  orphans: 2;
+  widows: 2;
+}
+
+li {
+  display: none;
+}

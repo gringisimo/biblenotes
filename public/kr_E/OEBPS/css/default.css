@@ -1,0 +1,535 @@
+/* default.css - */
+
+/* ------------------------------------------------------ */
+
+
+@page {    	
+	border: .3ex; 
+}
+						
+body {
+	margin: 5%;
+	-webkit-font-smoothing: subpixel-antialiased;
+}
+p {
+	font-family: Arial, Helvetica, sans-serif !important; 
+    text-align: left;
+	font-size: 100%;
+    line-height: normal;
+    text-indent: 0em;
+    orphans: 2;
+    widows: 2;
+    -webkit-font-smoothing: subpixel-antialiased;
+}
+ 
+p.w_pagenavnum /* this displays correctly in Apple */{	
+	text-indent: 0;
+	font-family: Arial, Helvetica, sans-serif !important; 
+	font-size: x-large;
+}
+
+/* HEADER */
+
+h1 {
+	text-align: left;
+	font-family: Arial, Helvetica, sans-serif !important;
+	font-size: 170%;
+	padding-bottom: .2em;
+}
+
+h2 {
+	text-align: left;
+	font-family: Arial, Helvetica, sans-serif !important;
+	font-size: 140%;
+	font-variant: normal;
+	margin-top: 2em;
+	margin-right: 0em;
+	margin-bottom: .5em;
+	margin-left: 0em;
+	-webkit-font-smoothing: subpixel-antialiased;
+}
+
+h3.centered
+{text-align:center;
+    text-indent: 0em;
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-size: 130%;
+    font-variant: normal;
+    margin-top: 2em;
+    margin-right: 0em;
+    margin-bottom: .5em;
+    margin-left: 0em;
+    -webkit-font-smoothing: subpixel-antialiased;}
+ 
+/* DIV */
+
+
+div.bodyTxt {
+	margin-top: .20em;
+	margin-bottom: .50em;
+}
+
+div.bodyTxt p.qu  {
+    color: #1f9c0a; 
+	text-indent: -.092em;
+	font: .90em/1.11em Arial, Helvetica, sans-serif !important;
+	margin-top: 1.25em;
+	margin-bottom: -.7em;
+}
+
+
+/* blurbs */
+
+div.stdPullQuote p, div.blockTxt.rule p {
+	color: #848484;
+	text-indent: 0em;
+	padding-top: 1em;
+	padding-right: 1.5em;
+	padding-bottom: 1em;
+	padding-left: 1.5em;
+	font-family: Arial, Helvetica, sans-serif !important;
+	font-size: 1.2em !important;
+	margin: .5em 0em .5em 0em;
+	border-top: 1px solid #848484;
+	border-bottom: 1px solid #848484;
+	display: block;
+}
+
+/* boxes */
+
+div.boxTtl {
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif !important;
+	font-size: .95em !important;
+	margin-left: 2%;
+	margin-right: 2%;
+}
+
+div.boxTtl.rule {	
+	font-family: Arial, Helvetica, sans-serif !important;
+	font-size: .95em !important;
+	margin-left: 2%;
+	margin-right: 2%;
+	padding-bottom: .2em;
+	border-bottom: 1px solid #CCC; /* supplemental box rule */
+}
+
+div.boxTtl.emphasized {	
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif !important;
+	font-size: .95em !important;
+	margin-left: 2%;
+	margin-right: 2%;
+	padding-bottom: .2em;
+}
+
+div.boxContent {
+	font-family: Arial, Helvetica, sans-serif !important;
+	font-size: .90em !important;
+	margin-right: 2%;
+	margin-bottom: 2%;	
+	margin-left: 2%;
+	display: block;	
+}
+.boxSupplement.rule .boxSubTtl.rule strong{  
+    text-align: left;
+	padding-top:1em;
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-size: 1.1em !important;
+    padding-bottom: .2em;
+	font-weight:700;
+    border-bottom: 1px solid #CCC; /* supplemental box rule */
+	clear:both;
+}
+
+.boxSupplement.rule .boxTtl {  
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-size: 130% !important;
+    padding-bottom: .2em;
+	padding-top:1em;
+	padding-left: 1em;
+	color:#8C8886}
+/* MM */
+
+/* mm content */
+
+div.north_left, div.north_right { 
+	width: 50% !important;
+    line-height: 1.20em !important;
+    margin: 0em 0em 2em 0em !important;
+    float: right;
+    display: inline-block;
+}
+
+
+div.north_left.quarter { 
+	width: 25% !important;
+    line-height: 1.20em !important;
+    margin: 0em  !important;
+    float: left;
+}
+
+div.north_left.quarter p { 
+	text-indent: 0em;
+    padding-bottom: .90em;
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-size: .85em !important;
+    margin: .75em 0em 0em 0em;
+    }
+ 
+div.south_center p:last-child, div.north_center p:last-child{
+ 	text-indent: 0em;
+    padding-bottom: .90em;
+    font: .9em Arial, Helvetica, sans-serif !important;
+ 	padding-top: 0.4em;
+	margin-top:-.2em;
+    margin-bottom: .8em;
+    padding-left:0.3em;
+    margin-bottom: 2em;
+    padding-left:.1em;
+    font-weight:600;
+    border-bottom: 1px solid;
+    text-align:left;
+ 	}
+ 
+div.south_center p {
+    text-indent: 0em;
+    font: .9em Arial, Helvetica, sans-serif !important;
+    padding-top: 0em;
+	margin-top:0em;
+    margin-bottom: 0em;
+    padding-left:0.3em;
+    text-align:left;}
+ 
+
+div.south_left { 
+	width: 50% !important;
+    line-height: 1.20em !important;
+    margin: 2em 0em 0em 0em !important;
+    float: right;
+    display: inline-block;
+}
+
+
+/* images */
+
+div.north_center  { 
+	width : 100% !important;
+	clear : both;
+    margin-bottom : 1em;
+}
+
+div.south_center { 
+	width : 100% !important;
+	clear : both;
+	margin-top: 0em;
+	margin-right: 0em;
+	margin-bottom: 1em;
+	margin-left: 0em;
+}
+
+div.east_right {
+	width : 40% !important;
+	clear : both;
+	float : right;
+	margin-top: 1em;
+	margin-right: 0em;
+	margin-bottom: 1em;
+	margin-left: 1em;
+	display : inline-block;
+}
+
+div.east_left  {
+	width : 25% !important;
+	clear : both;
+	float : right;
+	margin-top: 0em;
+	margin-right: 0em;
+	margin-bottom: 1em;
+	margin-left: 1em;
+	display : inline-block;
+}
+
+div.west_left {
+	width : 25% !important;
+	clear : both;
+	float : left;
+	margin-top: 0em;
+	margin-right: 0em;
+	margin-bottom: 1em;
+	margin-left: 1em;
+	display : inline-block;
+}
+
+img, figure{     
+	width : 100% !important; /* Android - !important */
+	clear : both;
+    margin : 0;
+}
+
+/* image caption */
+
+div.north_center p, div.south_center p, div.east_right p {
+	text-indent : 0;
+	font-family : Arial, Helvetica, sans-serif !important; 
+	font-size : .80em;
+	padding-top: .45em;
+	padding-right: 0em;
+	padding-bottom: .75em;
+	padding-left: 0em;
+	border-bottom : 1px solid;
+}
+
+div.south_center p:first-child /* for double captions */ {
+	border-bottom : none;
+}
+
+div.south_center p:last-child /* for double captions */ {
+	border-bottom : 1px solid;
+}
+
+div.east_right p:first-child /* for double captions */ {
+	border-bottom : none;
+}
+
+div.east_right p:last-child /* for double captions */ {
+	border-bottom : 1px solid;
+}
+
+
+div.west_center { 
+	width: 30% !important;
+    line-height: 1.20em !important;
+    margin: 0em 1em 0em 0em !important;
+    float: left;
+    display: inline-block;
+}
+
+div.west_right { 
+	width: 40% !important;
+    line-height: 1.20em !important;
+    margin: 0em 1em 0em 0em !important;
+    float: left;
+    display: inline-block;
+}
+
+div.east_left { 
+	width: 25% !important;
+    line-height: 1.20em !important;
+    margin: 0em 0em 0em 1em !important;
+    float: right;
+    display: inline-block;
+}
+
+div.east_center { 
+	width: 30% !important;
+    line-height: 1.20em !important;
+    margin: 0em 0em 0em 1em !important;
+    float: right;
+    display: inline-block;
+}
+
+
+div.east_right.half { 
+	width: 40% !important;
+    line-height: 1.20em !important;
+    margin: 0em 0em 0em 1em !important;
+    float: right;
+	
+}
+
+div.east_right, div.w_east_right {
+    width: 40% !important;
+    line-height: 1.20em !important;
+    margin: 1em 0em 1em 1em !important;
+    padding-right: 0em;
+    padding-left:1px;
+    float: right;
+    display: inline-block;
+    clear: both;
+}
+ 
+div.east_right.half, div.w_east_right.half {
+    width:50%;
+    line-height: 1.20em !important;
+    margin: 1em 0em 0em 1em !important;
+    float: right;
+    clear: both;
+    display: inline-block;
+}
+
+/* captions */
+
+div.north_left p, div.north_center p, div.north_right p,   
+div.south_left p, div.south_center p, div.south_center p:last-child /* for double captions */, div.south_right p,    
+div.west_left p,  div.west_center p,  div.west_right p,       
+fig.caption{
+	text-indent: 0em;
+	padding-bottom: .90em;
+	font-family: Arial, Helvetica, sans-serif !important;
+	font-size: .85em !important;
+	margin: .75em 0em 0em 0em;
+	border-bottom: 1px solid;
+}
+
+div.east_left p,  div.east_center p,  div.east_right p,        
+fig.caption{
+	text-indent: 0em;
+	padding-bottom: .90em;
+	font-family: Arial, Helvetica, sans-serif !important;
+	font-size: .85em !important;
+	margin: .75em 0em 0em 0em;
+	border-bottom: 1px solid;
+}
+
+/* images */
+
+img, figure{     
+	width: 100% !important;
+    clear: both;
+    margin: 0em;
+	vertical-align: text-top;
+}
+
+div.w_afterparimg { 
+	clear: both; 
+}
+
+
+/* EXTRACTED */
+
+div.groupFootnote:before, div.groupExtScrpCite:before {
+	font-size: 1em !important;
+	color: grey;
+	content: "_______________";
+}
+
+div.groupFootnote {
+	padding-top: .50em;
+	font-size: .90em !important;
+}
+
+div.groupFootnote p{
+	text-indent: 0em;
+	font-family: Arial, Helvetica, sans-serif !important;
+	font-size: .90em !important;
+	margin-top: 1em;
+}
+
+div.groupExt {
+	margin-top: 1em;
+}
+
+div.groupExtScrpCite  {
+	padding-top: .50em;
+	font-size: .90em !important;
+}
+
+div.groupExtScrpCite p {
+	text-indent: 0em;
+	font-family: Arial, Helvetica, sans-serif !important;
+	font-size: .90em !important;
+	margin-top: 1em;
+}
+
+
+/* FORMATTING COMMAND ARGUMENTS */
+
+.CI { 
+	text-align: center; 
+	margin-top: 0px; 
+	margin-bottom: 0px; 
+	padding: 0px; 
+}
+
+.center { 
+	text-align: center; 
+}
+
+.smcap { 
+	font-variant: small-caps; 
+}
+
+.u { 
+	text-decoration: underline; 
+}
+
+.bold { 
+	font-weight: bold; 
+}
+
+
+/* LINK ELEMENTS */
+
+/*apple: ibooks, ipad, iphone*/
+
+a:link {	
+	-webkit-text-fill-color: #3fa2bf;}
+	
+ 
+a:visited { 
+	-webkit-text-fill-color: gray;
+	text-decoration: none;
+	
+}
+
+a:hover {
+	-webkit-text-fill-color: blue;
+	text-decoration: none;
+	
+} 
+
+a:active  { 
+	-webkit-text-fill-color: maroon;
+	
+} 
+
+/*web browsers + other */
+
+a:link    {
+	color: #3fa2bf;
+}
+  
+a:visited {
+	color: #c9c9c9; 
+	text-decoration: none;
+}
+
+a:hover   {
+	color: #0000FF;
+	text-decoration: none;
+}
+ 
+a:active  {
+	color: #800000;
+} 
+
+/* MOBI */
+
+e:link {
+	color: #3fa2bf;
+}
+ 
+e:visited {
+	color: #c9c9c9; 
+	text-decoration: none;
+}
+
+e:active {
+	color: #800000;
+} 
+
+e:hover {
+	color: #0000FF; 
+	text-decoration: none;
+} 
+
+e:focus {
+	color: #3fa2bf; 
+	background-color: #c5b587;
+}
+
+/* ----------------------------------------------------------------- */	 
+
+
